@@ -14,5 +14,5 @@
     };
   };
 
-  home.packages = with pkgs; [ git-credential-manager ];
+  home.packages = with pkgs; [git-credential-manager];
 }
