@@ -18,5 +18,6 @@
     ./terminals/alacritty.nix
 
     ./tui/btop.nix
+    ./tui/lazygit.nix
   ];
 }

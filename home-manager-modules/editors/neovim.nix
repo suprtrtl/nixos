@@ -94,6 +94,8 @@
         }
 
         vim-nix
+
+        vim-be-good
       ];
 
       extraLuaConfig = ''
