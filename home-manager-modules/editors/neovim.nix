@@ -17,7 +17,7 @@
     in {
       enable = true;
 
-            # Redirects vi, vim and vimdiff binaries to nvim
+      # Redirects vi, vim and vimdiff binaries to nvim
       viAlias = true;
       vimAlias = true;
       vimdiffAlias = true;
@@ -104,20 +104,19 @@
         ${builtins.readFile ./nvim/options.lua}
       '';
     };
-    
+
     home.packages = with pkgs; [
-        wl-clipboard
+      wl-clipboard
 
-        lua-language-server
-        luajitPackages.lua-lsp
-        nixd
+      lua-language-server
+      luajitPackages.lua-lsp
+      nixd
+      bash-language-server
 
-        alejandra
+      alejandra
 
-        ripgrep
-      ];
-
-
+      ripgrep
+    ];
 
     nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
   };
