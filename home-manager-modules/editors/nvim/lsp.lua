@@ -61,4 +61,9 @@ require('lspconfig').nixd.setup {
 	},
 }
 
+require('lspconfig').bashls.setup {
+	cmd = { 'bash-language-server', 'start' },
+	filetypes = { 'bash', 'sh' },
+}
+
 
