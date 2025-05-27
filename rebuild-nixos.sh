@@ -53,10 +53,19 @@ fi
 # === Metadata for commit ===
 current=$(nixos-rebuild list-generations | grep current || echo "Unknown Generation")
 
+gen_num=$(echo "$current" | awk '{print $1}')
+date_part=$(echo "$current" | awk '{print $3}')
+time_part=$(echo "$current" | awk '{print $4}' | cut -c1-5)
+hash_full=$(echo "$current" | awk '{print $5}')
+hash_short=${hash_full##*.}
+kernel_version=$(echo "$current" | awk '{print $6}')
+
+commit_msg="gen $gen_num @ $date_part $time_part ($hash_short) kernel $kernel_version"
+
 # === Git commit and push ===
-echo -e "\n${GEN_COLOR}Committing changes: ${NC}$current\n"
+echo -e "\n${GEN_COLOR}Committing changes: ${NC}$commit_msg\n"
 sudo git add -A
-sudo git commit -m "$current" || echo -e "${ERR_COLOR}Nothing to commit.${NC}"
+sudo git commit -m "$commit_msg" || echo -e "${ERR_COLOR}Nothing to commit.${NC}"
 
 if [ "$AUTO_PUSH" = true ]; then
     echo -e "\n${GEN_COLOR}Pushing to remote '$REMOTE'...${NC}\n"
