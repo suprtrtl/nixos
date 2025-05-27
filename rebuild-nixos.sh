@@ -9,7 +9,7 @@ set -euo pipefail
 FLAKE_PATH="/etc/nixos"
 BRANCH="main"
 REMOTE="origin"
-LOG_DIR="$HOME/.cache/nixos-rebuild-logs"
+LOG_DIR="$FLAKE_PATH/logs"
 TIMESTAMP=$(date +'%Y-%m-%d_%H-%M-%S')
 LOG_FILE="$LOG_DIR/rebuild-$TIMESTAMP.log"
 GEN_COLOR="\e[32m"
