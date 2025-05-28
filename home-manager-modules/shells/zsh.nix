@@ -23,4 +23,6 @@
       export PATH="$HOME/bin:$PATH"
     '';
   };
+
+  home.file."bin/rebuild-nixos".source = ./../../rebuild-nixos.sh;
 }
