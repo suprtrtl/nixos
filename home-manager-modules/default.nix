@@ -7,7 +7,6 @@
   imports = [
     ./cli/fzf.nix
     ./cli/git.nix
-    ./cli/tmux.nix
     ./cli/zoxide.nix
 
     ./editors/neovim.nix
@@ -19,5 +18,6 @@
 
     ./tui/btop.nix
     ./tui/lazygit.nix
+    ./tui/terminal-multiplexers/tmux.nix
   ];
 }

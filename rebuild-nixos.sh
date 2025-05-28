@@ -54,6 +54,7 @@ git diff --color=always
 echo -e "\n${GEN_COLOR}End of git diff output.${NC}\n"
 
 # === NixOS Rebuild ===
+git add -A
 echo -e "${GEN_COLOR}Rebuilding NixOS...${NC}\n"
 if ! sudo nixos-rebuild switch --flake "$FLAKE_PATH#$1" &> "$LOG_FILE"; then
     echo -e "\n${ERR_COLOR}Rebuild failed. Showing errors:${NC}\n"
@@ -76,7 +77,6 @@ commit_msg="gen $gen_num @ $date_part $time_part ($hash_short) kernel $kernel_ve
 
 # === Git commit and push ===
 echo -e "\n${GEN_COLOR}Committing changes: ${NC}$commit_msg\n"
-git add -A
 git commit -m "$commit_msg" || echo -e "${ERR_COLOR}Nothing to commit.${NC}"
 
 if [ "$AUTO_PUSH" = true ]; then
