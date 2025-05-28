@@ -17,8 +17,20 @@ ERR_COLOR="\e[31m"
 NC="\e[0m" # No color
 AUTO_PUSH=true
 
+
+# === Check for Sudo Access ===
+echo -e "\n${GEN_COLOR}Requesting sudo access...${NC}"
+if sudo -v; then
+    echo -e "${GEN_COLOR}✅ Sudo authentication successful.${NC}\n"
+else
+    echo -e "${ERR_COLOR}❌ Failed to authenticate with sudo. Exiting.${NC}\n"
+    exit 1
+fi
+
 mkdir -p "$LOG_DIR"
 pushd "$FLAKE_PATH" > /dev/null
+
+
 
 # === Check for tracked file changes ===
 if [[ -z "$(git status --porcelain)" ]]; then
