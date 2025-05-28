@@ -18,5 +18,9 @@
         "tmux"
       ];
     };
+
+    initContent = lib.mkOrder 1000 ''
+      export PATH="$HOME/bin:$PATH"
+    '';
   };
 }

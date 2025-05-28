@@ -6,7 +6,7 @@
 set -euo pipefail
 
 # === Configuration ===
-FLAKE_PATH="/etc/nixos"
+FLAKE_PATH="$HOME/nixos"
 BRANCH="main"
 REMOTE="origin"
 LOG_DIR="$FLAKE_PATH/logs"
@@ -64,12 +64,12 @@ commit_msg="gen $gen_num @ $date_part $time_part ($hash_short) kernel $kernel_ve
 
 # === Git commit and push ===
 echo -e "\n${GEN_COLOR}Committing changes: ${NC}$commit_msg\n"
-sudo git add -A
-sudo git commit -m "$commit_msg" || echo -e "${ERR_COLOR}Nothing to commit.${NC}"
+git add -A
+git commit -m "$commit_msg" || echo -e "${ERR_COLOR}Nothing to commit.${NC}"
 
 if [ "$AUTO_PUSH" = true ]; then
     echo -e "\n${GEN_COLOR}Pushing to remote '$REMOTE'...${NC}\n"
-    sudo git push "$REMOTE" "$BRANCH" || echo -e "${ERR_COLOR}Push failed.${NC}"
+    git push "$REMOTE" "$BRANCH" || echo -e "${ERR_COLOR}Push failed.${NC}"
 fi
 
 popd > /dev/null
