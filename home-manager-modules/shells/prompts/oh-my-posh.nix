@@ -36,7 +36,7 @@
             segments = [
               {
                 background = "yellow";
-                foreground = "white";
+                foreground = "black";
                 leading_diamond = "";
                 template = " {{ .UserName }} ";
                 style = "diamond";
@@ -44,8 +44,8 @@
                 type = "session";
               }
               {
-                background = "#61AFEF";
-                foreground = "#ffffff";
+                background = "blue";
+                foreground = "black";
                 powerline_symbol = "";
                 template = " {{ .Path }} ";
                 properties = {
