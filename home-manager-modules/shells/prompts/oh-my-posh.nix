@@ -35,8 +35,8 @@
             newline = true;
             segments = [
               {
-                background = "#ffb300";
-                foreground = "#ffffff";
+                background = "yellow";
+                foreground = "white";
                 leading_diamond = "";
                 template = " {{ .UserName }} ";
                 style = "diamond";
