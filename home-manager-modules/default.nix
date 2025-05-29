@@ -12,6 +12,7 @@
     ./editors/neovim.nix
 
     ./shells/zsh.nix
+    ./shells/prompts/oh-my-posh.nix
 
     ./terminals/ghostty.nix
     ./terminals/alacritty.nix

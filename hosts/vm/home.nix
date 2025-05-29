@@ -32,6 +32,8 @@
 
   btop.enable = true;
 
+  oh-my-posh.enable = true;
+
   tmux.enable = true;
   zellij.enable = true;
 
