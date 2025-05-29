@@ -6,7 +6,10 @@
 }: {
   programs.zsh = {
     enable = true;
-    autosuggestion.enable = true;
+    autosuggestion = {
+      enable = true;
+      highlight = "fg=#888888";
+    };
     enableCompletion = true;
 
     oh-my-zsh = {
