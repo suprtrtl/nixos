@@ -14,6 +14,6 @@
       enableZshIntegration = true;
     };
 
-    home.file.".config/zellij/config.kbl".source = ./zellij/config.kbl;
+    home.file.".config/zellij/config.kdl".source = ./zellij/config.kdl;
   };
 }
