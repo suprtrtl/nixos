@@ -17,6 +17,7 @@
       keyMode = "vi";
 
       shell = "${pkgs.zsh}/bin/zsh";
+      terminal = "screen-256color";
 
       shortcut = "s";
 
