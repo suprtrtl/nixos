@@ -16,6 +16,19 @@ GEN_COLOR="\e[32m"
 ERR_COLOR="\e[31m"
 NC="\e[0m" # No color
 AUTO_PUSH=true
+DELETE_OLD=false
+
+
+
+
+while getopts 'd' OPTION; do
+	case "$OPTION" in
+		d)
+			DELETE_OLD=true
+			;;
+	esac
+done
+
 
 
 # === Check for Sudo Access ===
@@ -82,6 +95,12 @@ git commit -m "$commit_msg" || echo -e "${ERR_COLOR}Nothing to commit.${NC}"
 if [ "$AUTO_PUSH" = true ]; then
     echo -e "\n${GEN_COLOR}Pushing to remote '$REMOTE'...${NC}\n"
     git push "$REMOTE" "$BRANCH" || echo -e "${ERR_COLOR}Push failed.${NC}"
+fi
+
+# === Delete Old Builds ===
+if p "$DELETE_OLD" = true ]; then
+	echo -e "\n${GEN_COLOR}Deleting Old Builds... (15d):\n"
+	nix-collect-garbage --delete-older-than 15d &> "$LOG_FILE"
 fi
 
 popd > /dev/null
