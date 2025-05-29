@@ -19,5 +19,6 @@
     ./tui/btop.nix
     ./tui/lazygit.nix
     ./tui/terminal-multiplexers/tmux.nix
+    ./tui/terminal-multiplexers/zellij.nix
   ];
 }

@@ -18,7 +18,6 @@
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
   fzf.enable = true;
-  tmux.enable = true;
   zoxide.enable = true;
 
   neovim.enable = true;
@@ -32,6 +31,9 @@
   ghostty.enable = true;
 
   btop.enable = true;
+
+  tmux.enable = true;
+  zellij.enable = true;
 
   home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
