@@ -1,6 +1,7 @@
 keybinds {
 	normal clear-defaults=true {
     	// tmux 
+		unbind "Ctrl s"
     	bind "Ctrl s" { SwitchToMode "Tmux"; }
     	unbind "Ctrl b"
     }
