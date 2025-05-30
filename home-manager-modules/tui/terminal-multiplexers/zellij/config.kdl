@@ -5,6 +5,7 @@ keybinds {
     	unbind "Ctrl b"
     }
     tmux clear-defaults=true {
+        // Modes
         bind "Ctrl f" { Write 2; SwitchToMode "Normal"; }
         bind "Esc" { SwitchToMode "Normal"; }
         bind "g" { SwitchToMode "Locked"; }
@@ -15,6 +16,9 @@ keybinds {
         bind "s" { SwitchToMode "Scroll"; }
         bind "o" { SwitchToMode "Session"; }
 		bind "q" { Quit; }
+
+        bind "[" { GoToPreviousTab; }
+        bind "]" { GoToNextTab; }
 	}
 }
   
