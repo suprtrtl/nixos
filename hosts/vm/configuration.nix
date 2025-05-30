@@ -72,8 +72,6 @@
 
   nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
 
-  main_fonts.enable = true;
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.suprtrtl = {
     isNormalUser = true;
@@ -107,18 +105,6 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    alejandra
-    curl
-    fastfetch
-    git
-    git-credential-manager
-    libnotify
-    neovim
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-  ];
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

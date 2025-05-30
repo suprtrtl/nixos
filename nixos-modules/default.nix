@@ -5,6 +5,7 @@
   ...
 }: {
   imports = [
-    ./fonts/fonts.nix
+    ./packages/essential.nix
+    ./packages/fonts/essential.nix
   ];
 }
