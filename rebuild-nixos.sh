@@ -98,7 +98,7 @@ if [ "$AUTO_PUSH" = true ]; then
 fi
 
 # === Delete Old Builds ===
-if p "$DELETE_OLD" = true ]; then
+if [ "$DELETE_OLD" = true ]; then
 	echo -e "\n${GEN_COLOR}Deleting Old Builds... (15d):\n"
 	nix-collect-garbage --delete-older-than 15d &> "$LOG_FILE"
 fi
