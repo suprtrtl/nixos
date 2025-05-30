@@ -15,6 +15,11 @@
 
       settings = {
         "$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json";
+        secondary_prompt = {
+          background = "transparent";
+          foreground = "#ffffff";
+          template = "-> ";
+        };
         blocks = [
           {
             segments = [
@@ -58,7 +63,7 @@
                 type = "path";
               }
               {
-                background = "black";
+                background = "transparent";
                 template = "{{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}";
                 properties = {
                   branch_icon = "";
