@@ -59,20 +59,10 @@
               }
               {
                 background = "black";
-                background_templates = [
-                  "{{ if or (.Working.Changed) (.Staging.Changed) }}#f36943{{ end }}"
-                  "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#a8216b{{ end }}"
-                  "{{ if gt .Ahead 0 }}#35b5ff{{ end }}"
-                  "{{ if gt .Behind 0 }}#f89cfa{{ end }}"
-                ];
-                foreground = "white";
-                foreground_templates = [
-                  "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ffffff{{ end }}"
-                ];
-                powerline_symbol = "";
-                template = " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }} ";
+                template = "{{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}";
                 properties = {
-                  branch_template = "{{ trunc 25 .Branch }}";
+                  branch_icon = "";
+                  commit_icon = "@";
                   fetch_status = true;
                 };
                 style = "plain";
