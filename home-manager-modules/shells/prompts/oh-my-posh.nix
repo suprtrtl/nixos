@@ -64,7 +64,7 @@
               }
               {
                 background = "transparent";
-                template = "{{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}";
+                template = " ({{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}) ";
                 properties = {
                   branch_icon = "";
                   commit_icon = "@";
@@ -72,6 +72,12 @@
                 };
                 style = "plain";
                 type = "git";
+              }
+              {
+                background = "transparent";
+                foreground = "white";
+                type = "text";
+                template = "";
               }
             ];
             type = "prompt";
