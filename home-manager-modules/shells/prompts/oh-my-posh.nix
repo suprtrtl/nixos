@@ -58,14 +58,14 @@
                 type = "path";
               }
               {
-                background = "#2e9599";
+                background = "black";
                 background_templates = [
                   "{{ if or (.Working.Changed) (.Staging.Changed) }}#f36943{{ end }}"
                   "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#a8216b{{ end }}"
                   "{{ if gt .Ahead 0 }}#35b5ff{{ end }}"
                   "{{ if gt .Behind 0 }}#f89cfa{{ end }}"
                 ];
-                foreground = "#193549";
+                foreground = "white";
                 foreground_templates = [
                   "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ffffff{{ end }}"
                 ];
@@ -75,22 +75,8 @@
                   branch_template = "{{ trunc 25 .Branch }}";
                   fetch_status = true;
                 };
-                style = "powerline";
+                style = "plain";
                 type = "git";
-              }
-              {
-                background = "#00897b";
-                background_templates = [
-                  "{{ if gt .Code 0 }}#e91e63{{ end }}"
-                ];
-                foreground = "#ffffff";
-                template = "<parentBackground></>  ";
-                properties = {
-                  always_enabled = true;
-                };
-                style = "diamond";
-                trailing_diamond = "";
-                type = "status";
               }
             ];
             type = "prompt";
