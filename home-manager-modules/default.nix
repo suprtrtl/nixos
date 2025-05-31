@@ -19,6 +19,7 @@
 
     ./tui/btop.nix
     ./tui/lazygit.nix
+    ./tui/music/rmpc.nix
     ./tui/terminal-multiplexers/tmux.nix
     ./tui/terminal-multiplexers/zellij.nix
   ];

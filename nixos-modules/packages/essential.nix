@@ -3,6 +3,7 @@
     alejandra
     curl
     fastfetch
+    fzf
     git
     git-credential-manager
     libnotify

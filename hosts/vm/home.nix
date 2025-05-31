@@ -31,6 +31,7 @@
   ghostty.enable = true;
 
   btop.enable = true;
+  rmpc.enable = true;
 
   oh-my-posh.enable = true;
 
