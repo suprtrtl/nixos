@@ -20,7 +20,7 @@
           {
             segments = [
               {
-                foreground = "#007ACC";
+                foreground = "red";
                 template = " {{ .CurrentDate | date .Format }} ";
                 properties = {
                   time_format = "15:04:05";
@@ -60,7 +60,7 @@
               }
               {
                 background = "magenta";
-                template = " {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}";
+                template = " {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }} ";
                 properties = {
                   branch_icon = "";
                   commit_icon = "@";
@@ -68,7 +68,7 @@
                 };
                 foreground = "transparent";
                 style = "powerline";
-                powerline_symbol = "";
+                powerline_symbol = "";
                 type = "git";
               }
             ];
