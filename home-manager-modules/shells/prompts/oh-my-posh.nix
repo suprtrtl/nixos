@@ -35,12 +35,12 @@
                 type = "path";
               }
               {
-                foreground = "#F1502F";
+                foreground = "red";
                 properties = {
                   fetch_status = true;
                 };
                 style = "plain";
-                template = ":: {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }} ";
+                template = ":: {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }} ";
                 type = "git";
               }
             ];
@@ -56,40 +56,40 @@
                 type = "root";
               }
               {
-                foreground = "#06A4CE";
+                foreground = "blue";
                 style = "powerline";
-                template = "| \ue798 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ";
+                template = "|  {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ";
                 type = "dart";
               }
               {
-                foreground = "#6CA35E";
+                foreground = "green";
                 style = "powerline";
-                template = "| \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ";
+                template = "|  {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ";
                 type = "node";
               }
               {
-                foreground = "#4584b6";
+                foreground = "blue";
                 properties = {
                   display_mode = "context";
                   fetch_virtual_env = true;
                 };
                 style = "plain";
-                template = "| \ue235 {{ .Venv }} ";
+                template = "|  {{ .Venv }} ";
                 type = "python";
               }
               {
                 foreground_templates = [
-                  "{{if eq \"Charging\" .State.String}}#4caf50{{end}}"
-                  "{{if eq \"Discharging\" .State.String}}#40c4ff{{end}}"
-                  "{{if eq \"Full\" .State.String}}#ff0000{{end}}"
+                  "{{if eq \"Charging\" .State.String}}<green>{{end}}"
+                  "{{if eq \"Discharging\" .State.String}}<cyan>{{end}}"
+                  "{{if eq \"Full\" .State.String}}<red>{{end}}"
                 ];
                 invert_powerline = true;
                 properties = {
-                  charged_icon = "\uf00d ";
-                  charging_icon = "\ue234 ";
+                  charged_icon = "  ";
+                  charging_icon = "  ";
                 };
                 style = "powerline";
-                template = "| {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }} \uf295 ";
+                template = "| {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}  ";
                 type = "battery";
               }
               {
@@ -114,7 +114,7 @@
                   always_enabled = true;
                 };
                 style = "powerline";
-                template = "\u279c ";
+                template = " 󱞩 ";
                 type = "status";
               }
             ];
