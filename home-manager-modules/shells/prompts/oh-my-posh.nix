@@ -15,80 +15,112 @@
 
       settings = {
         "$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json";
-
         blocks = [
           {
+            alignment = "left";
+            segments = [
+              {
+                foreground = "cyan";
+                style = "powerline";
+                template = "{{ if .WSL }}WSL at {{ end }}{{.Icon}}";
+                type = "os";
+              }
+              {
+                foreground = "cyan";
+                properties = {
+                  style = "full";
+                };
+                style = "plain";
+                template = " {{ .Path }} ";
+                type = "path";
+              }
+              {
+                foreground = "#F1502F";
+                properties = {
+                  fetch_status = true;
+                };
+                style = "plain";
+                template = ":: {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }} ";
+                type = "git";
+              }
+            ];
+            type = "prompt";
+          }
+          {
+            alignment = "right";
             segments = [
               {
                 foreground = "red";
-                template = " {{ .CurrentDate | date .Format }} ";
+                style = "plain";
+                template = "| root ";
+                type = "root";
+              }
+              {
+                foreground = "#06A4CE";
+                style = "powerline";
+                template = "| \ue798 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ";
+                type = "dart";
+              }
+              {
+                foreground = "#6CA35E";
+                style = "powerline";
+                template = "| \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ";
+                type = "node";
+              }
+              {
+                foreground = "#4584b6";
                 properties = {
-                  time_format = "15:04:05";
+                  display_mode = "context";
+                  fetch_virtual_env = true;
                 };
                 style = "plain";
+                template = "| \ue235 {{ .Venv }} ";
+                type = "python";
+              }
+              {
+                foreground_templates = [
+                  "{{if eq \"Charging\" .State.String}}#4caf50{{end}}"
+                  "{{if eq \"Discharging\" .State.String}}#40c4ff{{end}}"
+                  "{{if eq \"Full\" .State.String}}#ff0000{{end}}"
+                ];
+                invert_powerline = true;
+                properties = {
+                  charged_icon = "\uf00d ";
+                  charging_icon = "\ue234 ";
+                };
+                style = "powerline";
+                template = "| {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }} \uf295 ";
+                type = "battery";
+              }
+              {
+                foreground = "lightGreen";
+                style = "plain";
+                template = "| {{ .CurrentDate | date .Format }} ";
                 type = "time";
               }
             ];
-            type = "rprompt";
+            type = "prompt";
           }
           {
             alignment = "left";
             newline = true;
             segments = [
               {
-                background = "yellow";
-                foreground = "black";
-                leading_diamond = "";
-                template = " {{ .UserName }} ";
-                style = "diamond";
-                trailing_diamond = "";
-                type = "session";
-              }
-              {
-                background = "blue";
-                foreground = "black";
-                powerline_symbol = "";
-                template = " {{ .Path }} ";
-                properties = {
-                  style = "folder";
-                };
-                exclude_folders = [
-                  "/super/secret/project"
+                foreground = "lightGreen";
+                foreground_templates = [
+                  "{{ if gt .Code 0 }}red{{ end }}"
                 ];
-                style = "powerline";
-                type = "path";
-              }
-              {
-                background = "magenta";
-                template = " {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <cyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }} ";
                 properties = {
-                  branch_icon = "";
-                  commit_icon = "@";
-                  fetch_status = true;
+                  always_enabled = true;
                 };
-                foreground = "transparent";
                 style = "powerline";
-                powerline_symbol = "";
-                type = "git";
+                template = "\u279c ";
+                type = "status";
               }
             ];
             type = "prompt";
           }
         ];
-
-        transient_prompt = {
-          background = "transparent";
-          foreground = "white";
-          template = ">>";
-        };
-
-        secondary_prompt = {
-          background = "transparent";
-          foreground = "white";
-          template = "-> ";
-        };
-
-        final_space = true;
         version = 3;
       };
     };
