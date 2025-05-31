@@ -68,7 +68,7 @@
                 };
                 foreground = "transparent";
                 style = "powerline";
-                powerline_symbol = "";
+                powerline_symbol = "";
                 type = "git";
               }
             ];
