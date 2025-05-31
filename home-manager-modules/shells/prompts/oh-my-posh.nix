@@ -15,11 +15,7 @@
 
       settings = {
         "$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json";
-        secondary_prompt = {
-          background = "transparent";
-          foreground = "#ffffff";
-          template = "-> ";
-        };
+
         blocks = [
           {
             segments = [
@@ -70,14 +66,28 @@
                   commit_icon = "@";
                   fetch_status = true;
                 };
+                foreground = "transparent";
                 style = "powerline";
-                powerline_symbol = "";
+                powerline_symbol = "";
                 type = "git";
               }
             ];
             type = "prompt";
           }
         ];
+
+        transient_prompt = {
+          background = "transparent";
+          foreground = "white";
+          template = ">>";
+        };
+
+        secondary_prompt = {
+          background = "transparent";
+          foreground = "white";
+          template = "-> ";
+        };
+
         final_space = true;
         version = 3;
       };

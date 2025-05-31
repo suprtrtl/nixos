@@ -15,5 +15,10 @@
       #      ${builtins.readFile ./rmpc/config.ron}
       #    '';
     };
+
+    services.mpd = {
+      enable = true;
+      musicDirectory = "${config.home.homeDirectory}/music";
+    };
   };
 }
