@@ -79,14 +79,14 @@
               }
               {
                 foreground_templates = [
-                  "{{if eq \"Charging\" .State.String}}<green>{{end}}"
-                  "{{if eq \"Discharging\" .State.String}}<cyan>{{end}}"
-                  "{{if eq \"Full\" .State.String}}<red>{{end}}"
+                  "{{if eq \"Charging\" .State.String}}<yellow>{{end}}"
+                  "{{if eq \"Discharging\" .State.String}}<red>{{end}}"
+                  "{{if eq \"Full\" .State.String}}<green>{{end}}"
                 ];
                 invert_powerline = true;
                 properties = {
-                  charged_icon = "  ";
-                  charging_icon = "  ";
+                  charged_icon = "󰁼 ";
+                  charging_icon = "󰁹 ";
                 };
                 style = "powerline";
                 template = "| {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}  ";
