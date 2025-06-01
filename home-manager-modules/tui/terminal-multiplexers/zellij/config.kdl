@@ -1,6 +1,6 @@
 load_plugins {
-	"~/.config/zellij/plugins/room.wasm"
-	"~/.config/zellij/plugins/zellij_forgot.wasm"
+	"file:~/.config/zellij/plugins/room.wasm"
+	"file:~/.config/zellij/plugins/zellij_forgot.wasm"
 }
 
 
