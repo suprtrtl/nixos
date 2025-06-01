@@ -1,3 +1,6 @@
+load
+
+
 keybinds {
 	normal clear-defaults=true {
     	// tmux 
@@ -19,6 +22,33 @@ keybinds {
 
         bind "[" { GoToPreviousTab; }
         bind "]" { GoToNextTab; }
+	}
+
+	shared_except "locked" "normal" {
+    	bind "Ctrl y" {
+        	LaunchOrFocusPlugin "file:~/.config/zellij/plugins/room.wasm" {
+            	floating true
+            	ignore_case true
+            	quick_jump true
+        	}
+   		}
+
+		bind "Ctrl ?" {
+        	LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
+            	floating true
+
+				"Ctrl + f + p"	"Pane Mode"
+				"Ctrl + f + t"	"Tab Mode"
+				"Ctrl + f + n"	"Resize Mode"
+				"Ctrl + f + h"	"Move Mode"
+				"Ctrl + f + s"	"Scroll Mode"
+				"Ctrl + f + o"	"Session Mode"
+				"Ctrl + f + q"	"Quit Zellij"
+
+				"Ctrl + f + Ctrl + y"	"room.wasm"
+				"Ctrl + f + Ctrl + ?"	"zellij_forgot.wasm"
+        	}
+   		}
 	}
 }
   
