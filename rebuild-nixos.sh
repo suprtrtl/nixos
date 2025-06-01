@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# Script by ChatGPT 
 # Expanded from 0atman's rebuild-nixos script: https://gist.github.com/0atman/1a5133b842f929ba4c1e195ee67599d5
 
 set -euo pipefail
@@ -18,17 +17,28 @@ NC="\e[0m" # No color
 AUTO_PUSH=true
 DELETE_OLD=false
 
+usage() {
+	echo "Usage: $0 [-d] <flake-host>";
+}
 
 
-
-while getopts 'd' OPTION; do
-	case "$OPTION" in
-		d)
-			DELETE_OLD=true
+while getopts "d" flag; do
+	case ${flag} in
+		d) DELETE_OLD=true
 			;;
+		*) echo "Usage: $0 [-d] <flake-host>"; exit 1 ;;
 	esac
 done
 
+shift $((OPTIND - 1))
+
+
+# === Check for hostname ===
+if [[ $# -lt 1 ]]; then
+  echo -e "${ERR_COLOR}❌ Error: You must provide a flake host name as the first argument.${NC}"
+  echo "Usage: $0 [-d] <flake-host>"
+  exit 1
+fi
 
 
 # === Check for Sudo Access ===
