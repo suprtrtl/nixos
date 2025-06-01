@@ -121,6 +121,13 @@
             type = "prompt";
           }
         ];
+
+        transient_prompt = {
+          background = "transparent";
+          foreground = "lightGreen";
+          template = " 󱞩 ";
+        };
+
         version = 3;
       };
     };
