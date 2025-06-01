@@ -25,10 +25,8 @@ keybinds {
 
         bind "[" { GoToPreviousTab; }
         bind "]" { GoToNextTab; }
-	}
 
-	shared_except "locked" "normal" {
-    	bind "Ctrl y" {
+		bind "Ctrl y" {
         	LaunchOrFocusPlugin "file:~/.config/zellij/plugins/room.wasm" {
             	floating true
             	ignore_case true
@@ -53,6 +51,7 @@ keybinds {
         	}
    		}
 	}
+
 }
   
 
