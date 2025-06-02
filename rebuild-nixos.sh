@@ -16,30 +16,41 @@ ERR_COLOR="\e[31m"
 NC="\e[0m" # No color
 AUTO_PUSH=true
 DELETE_OLD=false
+FORCE=false
+VERBOSE=false
 
 usage() {
-	echo "Usage: $0 [-d] <flake-host>";
+	echo -e "Usage: $0 [-dfv] <flake-host>\n"
+	echo -e "Flags:\n"
+	echo -e "-d | delete nixos builds older than 15 days\n"
+	echo -e "-f | force program to run\n"
+	echo -e "-v | verbose mode\n"
 }
 
 
-while getopts "d" flag; do
+while getopts "dfv" flag; do
 	case ${flag} in
-		d) DELETE_OLD=true
-			;;
-		*) echo "Usage: $0 [-d] <flake-host>"; exit 1 ;;
+		d) DELETE_OLD=true ;;
+		f) FORCE=true ;;
+		v) VERBOSE=true ;;
+		*) usage; exit 1 ;;
 	esac
 done
 
 shift $((OPTIND - 1))
 
+if [ "$VERBOSE" = true ]; then
+	set -x
+fi
 
 # === Check for hostname ===
 if [[ $# -lt 1 ]]; then
   echo -e "${ERR_COLOR}❌ Error: You must provide a flake host name as the first argument.${NC}"
-  echo "Usage: $0 [-d] <flake-host>"
+  usage
   exit 1
 fi
 
+FLAKE_HOST="$1"
 
 # === Check for Sudo Access ===
 echo -e "\n${GEN_COLOR}Requesting sudo access...${NC}"
@@ -57,9 +68,12 @@ pushd "$FLAKE_PATH" > /dev/null
 
 # === Check for tracked file changes ===
 if [[ -z "$(git status --porcelain)" ]]; then
-    echo -e "\n${GEN_COLOR}No tracked file changes detected. Exiting.${NC}\n"
-    popd > /dev/null
-    exit 0
+	if [ "$FORCE" = false ]; then 
+    	echo -e "\n${GEN_COLOR}No tracked file changes detected. Exiting.${NC}\n"
+    	popd > /dev/null
+    	exit 0
+	fi
+	echo -e "\n${GEN_COLOR}No tracked file changes detected. Continuing...${NC}\n"
 else
     echo -e "\n${GEN_COLOR}Detected changes in tracked files:${NC}"
     git status --porcelain
@@ -79,7 +93,7 @@ echo -e "\n${GEN_COLOR}End of git diff output.${NC}\n"
 # === NixOS Rebuild ===
 git add -A
 echo -e "${GEN_COLOR}Rebuilding NixOS...${NC}\n"
-if ! sudo nixos-rebuild switch --flake "$FLAKE_PATH#$1" &> "$LOG_FILE"; then
+if ! sudo nixos-rebuild switch --flake "$FLAKE_PATH#$LOG_FILE" &> "$LOG_FILE"; then
     echo -e "\n${ERR_COLOR}Rebuild failed. Showing errors:${NC}\n"
     grep --color=auto -Ei "error|failed|panic" "$LOG_FILE" || cat "$LOG_FILE"
     notify-send "❌ NixOS rebuild failed!" "Check $LOG_FILE" || true
