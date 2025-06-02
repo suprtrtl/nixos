@@ -13,10 +13,12 @@
   outputs = {
     self,
     nixpkgs,
+    home-manager,
     ...
   } @ inputs: {
     nixosConfigurations.main = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
+      system = "x86_64-linux";
       modules = [
         ./hosts/main/configuration.nix
         inputs.home-manager.nixosModules.default
@@ -26,6 +28,7 @@
 
     nixosConfigurations.vm = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
+      system = "x86_64-linux";
       modules = [
         ./hosts/vm/configuration.nix
         inputs.home-manager.nixosModules.default
@@ -34,5 +37,18 @@
     };
 
     homeManagerModules.default = ./home-manager-modules;
+
+    homeConfiguration.main = home-manager.lib.homeManagerConfiguration {
+      system = "x86_64-linux";
+      pkgs = import nixpkgs {
+        system = "x86_64-linux";
+        config.allowUnfree = true;
+      };
+
+      modules = [
+        ./home-manager-modules
+      ];
+      extraSpecialArgs = {inherit inputs;};
+    };
   };
 }

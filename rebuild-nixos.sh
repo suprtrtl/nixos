@@ -93,7 +93,7 @@ echo -e "\n${GEN_COLOR}End of git diff output.${NC}\n"
 # === NixOS Rebuild ===
 git add -A
 echo -e "${GEN_COLOR}Rebuilding NixOS...${NC}\n"
-if ! sudo nixos-rebuild switch --flake "$FLAKE_PATH#$LOG_FILE" &> "$LOG_FILE"; then
+if ! sudo nixos-rebuild switch --flake "$FLAKE_PATH#$FLAKE_HOST" &> "$LOG_FILE"; then
     echo -e "\n${ERR_COLOR}Rebuild failed. Showing errors:${NC}\n"
     grep --color=auto -Ei "error|failed|panic" "$LOG_FILE" || cat "$LOG_FILE"
     notify-send "❌ NixOS rebuild failed!" "Check $LOG_FILE" || true
