@@ -1,0 +1,14 @@
+### ROADMAP
+- [x] Refactor Flake to support independent home manager
+- [ ] Refactor RMPC to fix home manager (services.mpd)
+- [ ] Doom Emacs
+- [ ] Configure mcmpcpp
+- [ ] Alpha Neovim
+- [ ] Obsidian
+- [ ] Yazi File Manager
+- [ ] Configure Hyprland (can't test, on VM)
+- [ ] Configure Waybar ([inspiration](https://github.com/sejjy/mechabar))
+- [ ] Configure Wofi
+- [ ] Steam
+- [ ] Discord
+- [ ] Prism Launcher
