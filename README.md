@@ -2,6 +2,8 @@
 - [x] Refactor Flake to support independent home manager
 - [ ] Refactor RMPC to fix home manager (services.mpd)
 - [ ] Doom Emacs
+- [ ] Add Update flag to rebuild script (nix flake update)
+- [ ] Add push and pull git flags to rebuild script (-p | pull from github, -P | dont push to github)
 - [ ] Configure mcmpcpp
 - [ ] Alpha Neovim
 - [ ] Obsidian
