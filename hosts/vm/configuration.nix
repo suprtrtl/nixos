@@ -79,6 +79,8 @@
         ];
       };
     };
+
+    backupFileExtension = "bak";
   };
 
   # Install firefox.

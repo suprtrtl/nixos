@@ -56,6 +56,10 @@ in {
           exit 1
         fi
       '';
+
+      home.file.".config/doom/config.el".source = ./emacs/config.el;
+      home.file.".config/doom/init.el".source = ./emacs/init.el;
+      home.file.".config/doom/packages.el".source = ./emacs/packages.el;
     })
   ];
 }
