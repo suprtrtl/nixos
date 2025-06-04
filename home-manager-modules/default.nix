@@ -10,6 +10,7 @@
     ./cli/zoxide.nix
 
     ./editors/neovim.nix
+    ./editors/emacs.nix
 
     ./shells/zsh.nix
     ./shells/prompts/oh-my-posh.nix

@@ -21,6 +21,8 @@
   zoxide.enable = true;
 
   neovim.enable = true;
+  emacs.enable = true;
+  emacs.doom.enable = true;
 
   gtk = {
     enable = true;
