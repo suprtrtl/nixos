@@ -18,11 +18,6 @@
   emacs.enable = true;
   emacs.doom.enable = true;
 
-  gtk = {
-    enable = true;
-    theme.name = "adw-getk3";
-  };
-
   alacritty.enable = true;
   ghostty.enable = true;
 

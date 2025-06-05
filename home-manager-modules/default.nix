@@ -5,6 +5,8 @@
   ...
 }: {
   imports = [
+    ./styles.nix
+
     ./cli/fzf.nix
     ./cli/git.nix
     ./cli/zoxide.nix

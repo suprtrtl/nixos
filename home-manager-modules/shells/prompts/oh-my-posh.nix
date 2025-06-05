@@ -85,8 +85,8 @@
                 ];
                 invert_powerline = true;
                 properties = {
-                  charged_icon = "󰁼 ";
-                  charging_icon = "󰁹 ";
+                  charged_icon = "󰁹 ";
+                  charging_icon = "󰁼 ";
                 };
                 style = "powerline";
                 template = "| {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}  ";
