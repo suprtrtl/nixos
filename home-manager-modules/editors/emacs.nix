@@ -60,6 +60,20 @@ in {
       home.file.".config/doom/config.el".source = ./emacs/config.el;
       home.file.".config/doom/init.el".source = ./emacs/init.el;
       home.file.".config/doom/packages.el".source = ./emacs/packages.el;
+
+      home.activation.syncDoomEmacs = lib.hm.dag.entryAfter ["installDoomEmacs"] ''
+        if [ -x "${doomDir}/bin/doom" ]; then
+          echo "Syncing Doom Emacs..." | tee -a "${logFile}"
+          export PATH="${pkgs.emacs30}/bin:${pkgs.git}/bin:$PATH"
+          if ! "${doomDir}/bin/doom" sync --force &>> "${logFile}"; then
+            echo "❌ Doom sync failed. See ${logFile}" | tee -a "${logFile}"
+            exit 1
+          fi
+        else
+          echo "❌ Doom sync failed. See ${logFile}" | tee -a "${logFile}"
+          exit 1
+        fi
+      '';
     })
   ];
 }
