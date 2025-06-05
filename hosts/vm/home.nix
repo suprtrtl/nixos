@@ -7,8 +7,7 @@
   home.username = "suprtrtl";
   home.homeDirectory = "/home/suprtrtl";
 
-  home.stateVersion = "24.11"; 
-
+  home.stateVersion = "24.11";
 
   # Programs
 
