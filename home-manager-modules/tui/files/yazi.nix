@@ -12,6 +12,10 @@
     programs.yazi = {
       enable = true;
       enableZshIntegration = true;
+
+      flavors = {
+        nord = pkgs.yaziPlugins.nord;
+      };
     };
   };
 }
