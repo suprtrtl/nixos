@@ -24,6 +24,8 @@
   btop.enable = true;
   rmpc.enable = true;
 
+  yazi.enable = true;
+
   oh-my-posh.enable = true;
 
   tmux.enable = true;

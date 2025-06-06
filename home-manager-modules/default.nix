@@ -15,6 +15,7 @@
     ./editors/emacs.nix
 
     ./shells/zsh.nix
+
     ./shells/prompts/oh-my-posh.nix
 
     ./terminals/ghostty.nix
@@ -22,7 +23,10 @@
 
     ./tui/btop.nix
     ./tui/lazygit.nix
+
+    ./tui/files/yazi.nix
     ./tui/music/rmpc.nix
+
     ./tui/terminal-multiplexers/tmux.nix
     ./tui/terminal-multiplexers/zellij.nix
   ];
