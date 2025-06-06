@@ -16,6 +16,12 @@
       flavors = {
         nord = pkgs.yaziPlugins.nord;
       };
+
+      settings = {
+        flavor = {
+          dark = "nord";
+        };
+      };
     };
   };
 }
