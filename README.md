@@ -7,7 +7,7 @@
 - [ ] Configure mcmpcpp
 - [ ] Alpha Neovim
 - [ ] Obsidian
-- [ ] Yazi File Manager
+- [x] Yazi File Manager
 - [ ] Configure Hyprland (can't test, on VM)
 - [ ] Configure Waybar ([inspiration](https://github.com/sejjy/mechabar))
 - [ ] Configure Wofi

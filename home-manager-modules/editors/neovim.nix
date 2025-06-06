@@ -96,6 +96,11 @@
         vim-nix
 
         vim-be-good
+
+        {
+          plugin = alpha-nvim;
+          config = toLuaFile ./nvim/alpha.lua;
+        }
       ];
 
       extraLuaConfig = ''
