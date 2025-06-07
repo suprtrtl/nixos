@@ -18,20 +18,23 @@ AUTO_PUSH=true
 DELETE_OLD=false
 FORCE=false
 VERBOSE=false
+UPDATE=false
 
 usage() {
 	echo -e "Usage: $0 [-dfv] <flake-host>\n"
 	echo -e "Flags:\n"
 	echo -e "-d | delete nixos builds older than 15 days\n"
 	echo -e "-f | force program to run\n"
+	echo -e "-u | update nix flake\n"
 	echo -e "-v | verbose mode\n"
 }
 
 
-while getopts "dfv" flag; do
+while getopts "dfuv" flag; do
 	case ${flag} in
 		d) DELETE_OLD=true ;;
 		f) FORCE=true ;;
+		u) UPDATE=true ;;
 		v) VERBOSE=true ;;
 		*) usage; exit 1 ;;
 	esac

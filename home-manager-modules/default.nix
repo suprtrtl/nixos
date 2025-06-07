@@ -14,6 +14,8 @@
     ./editors/neovim.nix
     ./editors/emacs.nix
 
+    ./gui/notes/obsidian.nix
+
     ./shells/zsh.nix
 
     ./shells/prompts/oh-my-posh.nix

@@ -5,7 +5,7 @@
 - [ ] Add Update flag to rebuild script (nix flake update)
 - [ ] Add push and pull git flags to rebuild script (-p | pull from github, -P | dont push to github)
 - [ ] Configure mcmpcpp
-- [ ] Alpha Neovim
+- [x] Alpha Neovim
 - [ ] Obsidian
 - [x] Yazi File Manager
 - [ ] Configure Hyprland (can't test, on VM)

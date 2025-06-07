@@ -9,6 +9,8 @@
 
   home.stateVersion = "24.11";
 
+  nixpkgs.config.allowUnfree = true;
+
   # Programs
 
   fzf.enable = true;
@@ -17,6 +19,8 @@
   neovim.enable = true;
   emacs.enable = true;
   emacs.doom.enable = true;
+
+  obsidian.enable = true;
 
   alacritty.enable = true;
   ghostty.enable = true;
