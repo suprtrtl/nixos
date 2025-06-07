@@ -12,6 +12,10 @@
     programs.obsidian = {
       enable = true;
       vaults = {
+        "test-vault" = {
+          enable = true;
+          target = "vault/test-vault";
+        };
       };
     };
   };
