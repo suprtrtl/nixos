@@ -12,14 +12,9 @@
     };
     enableCompletion = true;
 
-    oh-my-zsh = {
-      enable = true;
-      theme = "af-magic";
-      plugins = [
-        "git"
-        "sudo"
-        "tmux"
-      ];
+    shellAliases = {
+      ll = "ls -l";
+      fman = "compgen -c | fzf | xargs man";
     };
 
     initContent = lib.mkOrder 1000 ''
