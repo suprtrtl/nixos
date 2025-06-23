@@ -4,6 +4,7 @@
     bat
     curl
     fastfetch
+    fd
     fzf
     git
     git-credential-manager
