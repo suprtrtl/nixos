@@ -6,12 +6,6 @@
 }: {
   programs.fish = {
     enable = true;
-    plugins = [
-      {
-        name = "fish-autosuggestions";
-        src = pkgs.fishPlugins.autosuggestions.src;
-      }
-    ];
     shellAliases = {
       ll = "ls -l";
       fman = "complete -C '' | fzf | xargs man";

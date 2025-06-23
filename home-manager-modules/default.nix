@@ -17,6 +17,7 @@
     ./gui/notes/obsidian.nix
 
     ./shells/zsh.nix
+    ./shells/fish.nix
 
     ./shells/prompts/oh-my-posh.nix
 
