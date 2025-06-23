@@ -16,6 +16,8 @@
   fzf.enable = true;
   zoxide.enable = true;
 
+  bundles.cli.misc.enable = true;
+
   neovim.enable = true;
   emacs.enable = true;
   emacs.doom.enable = true;

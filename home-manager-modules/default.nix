@@ -11,6 +11,8 @@
     ./cli/git.nix
     ./cli/zoxide.nix
 
+    ./cli/misc.nix
+
     ./editors/neovim.nix
     ./editors/emacs.nix
 
