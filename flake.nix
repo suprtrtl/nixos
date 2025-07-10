@@ -50,5 +50,18 @@
       ];
       extraSpecialArgs = {inherit inputs;};
     };
+
+    homeConfiguration.wsl = home-manager.lib.homeManagerConfiguration {
+      pkgs = import nixpkgs {
+        system = "x86_64-linux";
+        config.allowUnfree = true;
+      };
+
+      modules = [
+        ./hosts/wsl/home.nix
+        ./home-manager-modules
+      ];
+      extraSpecialArgs = {inherit inputs;};
+    };
   };
 }
