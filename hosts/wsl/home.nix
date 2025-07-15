@@ -9,6 +9,8 @@
   home.stateVersion = "24.11";
   nixpkgs.config.allowUnfree = true;
 
+  dconf.enable = false;
+
   # CLI tools that work well in WSL
   bundles.cli.misc.enable = true;
   neovim.enable = true;

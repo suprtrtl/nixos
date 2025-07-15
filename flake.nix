@@ -38,7 +38,7 @@
 
     homeManagerModules.default = ./home-manager-modules;
 
-    homeConfiguration.main = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.main = home-manager.lib.homeManagerConfiguration {
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         system = "x86_64-linux";
@@ -51,7 +51,7 @@
       extraSpecialArgs = {inherit inputs;};
     };
 
-    homeConfiguration.wsl = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.wsl = home-manager.lib.homeManagerConfiguration {
       pkgs = import nixpkgs {
         system = "x86_64-linux";
         config.allowUnfree = true;

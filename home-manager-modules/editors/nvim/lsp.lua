@@ -66,4 +66,22 @@ require('lspconfig').bashls.setup {
 	filetypes = { 'bash', 'sh' },
 }
 
+require('lspconfig').rust_analyzer.setup {
+	settings = {
+		["rust-analyzer"] = {
+			cargo = {
+				loadOutDirsFromCheck = true,
+				runBuildScripts = true,
+				features = "all",
+			},
+			procMacro = {
+				enable = true,
+			},
+			checkOnSave = {
+				command = "check"
+			}
+		}
+	}
+}
+
 
