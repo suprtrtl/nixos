@@ -47,6 +47,8 @@ require('lspconfig').lua_ls.setup {
 }
 
 require('lspconfig').nixd.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
 	cmd = {'nixd'},
 	settings = {
 		nixd = {
@@ -62,11 +64,15 @@ require('lspconfig').nixd.setup {
 }
 
 require('lspconfig').bashls.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
 	cmd = { 'bash-language-server', 'start' },
 	filetypes = { 'bash', 'sh' },
 }
 
 require('lspconfig').rust_analyzer.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
 	settings = {
 		["rust-analyzer"] = {
 			cargo = {
