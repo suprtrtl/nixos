@@ -28,6 +28,7 @@
           config = toLuaFile ./nvim/lsp.lua;
         }
 
+
         {
           plugin = comment-nvim;
           config = toLua "require(\"Comment\").setup()";
@@ -103,23 +104,9 @@
           config = toLuaFile ./nvim/alpha.lua;
         }
 
-        rust-vim
-
         {
-          plugin = rust-tools-nvim;
-          config = toLua ''
-local rt = require("rust-tools")
-rt.setup({
-  server = {
-    on_attach = function(_, bufnr)
-      -- Hover actions
-      vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
-      -- Code action groups
-      vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
-    end,
-  },
-})
-          '';
+          plugin = rustaceanvim;
+          config = toLuaFile ./nvim/rust.lua;
         }
       ];
 
@@ -142,7 +129,7 @@ rt.setup({
 
       ripgrep
 
-      
+      typescript-language-server      
     ];
 
     nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
