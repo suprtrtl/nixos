@@ -1,13 +1,36 @@
 vim.g.rustaceanvim = {
 	tools = {},
 	server = {
-		on_attach = function (client, bufnr)
-			vim.keymap.set('n', 'K', function ()
+		on_attach = function(client, bufnr)
+			local bufmap = function(keys, func)
+				vim.keymap.set('n', keys, func, { buffer = bufnr })
+			end
+
+			bufmap('<leader>rn', vim.lsp.buf.rename)
+
+			bufmap('gd', vim.lsp.buf.definition)
+			bufmap('gD', vim.lsp.buf.declaration)
+			bufmap('gI', vim.lsp.buf.implementation)
+			bufmap('<leader>D', vim.lsp.buf.type_definition)
+
+			bufmap('gr', require('telescope.builtin').lsp_references)
+			bufmap('<leader>s', require('telescope.builtin').lsp_document_symbols)
+			bufmap('<leader>S', require('telescope.builtin').lsp_dynamic_workspace_symbols)
+
+
+			bufmap('<leader>fmt', vim.lsp.buf.format)
+
+			bufmap('K', function()
 				vim.cmd.RustLsp({ 'hover', 'actions' })
-			end, { buffer = bufnr })
-			vim.keymap.set('n', '<leader>ca', function ()
+			end)
+			bufmap('<leader>ca', function()
 				vim.cmd.RustLsp('codeAction')
-			end, { buffer = bufnr })
+			end)
+
+			bufmap('<leader>ih', function ()
+				vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+			end)
+
 		end
 	}
 }

@@ -1,5 +1,4 @@
 local on_attach = function(_, bufnr)
-
 	local bufmap = function(keys, func)
 		vim.keymap.set('n', keys, func, { buffer = bufnr })
 	end
@@ -18,13 +17,7 @@ local on_attach = function(_, bufnr)
 
 	bufmap('K', vim.lsp.buf.hover)
 
-	vim.api.nvim_buf_create_user_command(bufnr,'Format', function(_)
-		vim.lsp.buf.format({ async = true }, function(err)
-			if err then
-				vim.notify('Format error: ' .. err.message, vim.log.levels.ERROR)
-			end
-		end)
-	end, {})
+	bufmap('<leader>fmt', vim.lsp.buf.format)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -37,7 +30,7 @@ require('lspconfig').lua_ls.setup {
 	root_dir = function()
 		return vim.loop.cwd()
 	end,
-	cmd = {"lua-language-server"},
+	cmd = { "lua-language-server" },
 	settings = {
 		Lua = {
 			workspace = { checkThirdParty = false },
@@ -49,14 +42,14 @@ require('lspconfig').lua_ls.setup {
 require('lspconfig').nixd.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
-	cmd = {'nixd'},
+	cmd = { 'nixd' },
 	settings = {
 		nixd = {
 			nixpkgs = {
 				expr = 'import <nixpkgs> { }',
 			},
 			formatting = {
-				command = {"alejandra"},
+				command = { "alejandra" },
 			},
 			formattingProvider = true,
 		},
@@ -102,7 +95,7 @@ local bufnr = vim.api.nvim_get_current_buf()
 vim.keymap.set(
 	'n',
 	'<leader>ca',
-	function ()
+	function()
 		vim.cmd.RustLsp('codeAction')
 	end,
 	{ buffer = bufnr }
@@ -110,8 +103,8 @@ vim.keymap.set(
 vim.keymap.set(
 	'n',
 	'K',
-	function ()
-		vim.cmd.RustLsp({'hover', 'actions'})
+	function()
+		vim.cmd.RustLsp({ 'hover', 'actions' })
 	end,
 	{ buffer = bufnr }
 )
