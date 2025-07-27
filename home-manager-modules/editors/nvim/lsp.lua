@@ -35,6 +35,7 @@ require('lspconfig').lua_ls.setup {
 		Lua = {
 			workspace = { checkThirdParty = false },
 			telemetry = { enable = false },
+			hint = { enable = true },
 		},
 	}
 }
@@ -83,28 +84,33 @@ require('lspconfig').bashls.setup {
 -- 	}
 -- }
 
+local inlayHints = {
+	includeInlayParameterNameHints = "all",
+	includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+	includeInlayFunctionParameterTypeHints = true,
+	includeInlayVariableTypeHints = true,
+	includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+	includeInlayPropertyDeclarationTypeHints = true,
+	includeInlayFunctionLikeReturnTypeHints = true,
+	includeInlayEnumMemberValueHints = true,
+}
+
 require('lspconfig').ts_ls.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 	filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
+	settings = {
+		typescript = {
+			inlayHints = inlayHints,
+		},
+		javascript = {
+			inlayHints = inlayHints,
+		},
+	}
 }
 
--- Rustaceanvim setup
-
-local bufnr = vim.api.nvim_get_current_buf()
-vim.keymap.set(
-	'n',
-	'<leader>ca',
-	function()
-		vim.cmd.RustLsp('codeAction')
-	end,
-	{ buffer = bufnr }
-)
-vim.keymap.set(
-	'n',
-	'K',
-	function()
-		vim.cmd.RustLsp({ 'hover', 'actions' })
-	end,
-	{ buffer = bufnr }
-)
+require('lspconfig').html.setup{
+	on_attach = on_attach,
+	capabilities = capabilities,
+}
+require('lspconfig').cssls.setup{}

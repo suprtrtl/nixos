@@ -17,3 +17,5 @@ vim.keymap.set('n', '<leader>n', ':Neotree filesystem focus toggle left<CR>')
 vim.keymap.set('n', '<leader>gs', ':Neotree git_status focus toggle float<CR>')
 vim.keymap.set('n', '<leader>N', ':Neotree buffers focus toggle left<CR>')
 
+-- Undotree
+vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle)

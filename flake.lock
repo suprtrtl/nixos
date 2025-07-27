@@ -36,10 +36,27 @@
         "type": "github"
       }
     },
+    "plugin-nvim-lsp-endhints": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1750099890,
+        "narHash": "sha256-ZssCVWm7/4U7oAsEXB1JgLoSzcdAjXsO2wEDyS40/SQ=",
+        "owner": "chrisgrieser",
+        "repo": "nvim-lsp-endhints",
+        "rev": "7917c7af1ec345ca9b33e8dbcd3723fc15d023c0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "chrisgrieser",
+        "repo": "nvim-lsp-endhints",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "plugin-nvim-lsp-endhints": "plugin-nvim-lsp-endhints"
       }
     }
   },

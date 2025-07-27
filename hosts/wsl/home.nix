@@ -30,6 +30,7 @@
 
   home.packages = with pkgs; [
     # Add any WSL-specific packages
+    fastfetch
   ];
 
   home.sessionVariables = {

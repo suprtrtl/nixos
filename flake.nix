@@ -8,6 +8,12 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    
+    # Neovim Plugins
+    plugin-nvim-lsp-endhints = {
+      url = "github:chrisgrieser/nvim-lsp-endhints";
+      flake = false;
+    };
   };
 
   outputs = {

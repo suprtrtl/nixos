@@ -11,6 +11,21 @@
   };
 
   config = lib.mkIf config.neovim.enable {
+    nixpkgs = {
+      overlays = [
+        (final: prev: {
+          vimPlugins =
+            prev.vimPlugins
+            // {
+              nvim-lsp-endhints = prev.vimUtils.buildVimPlugin {
+                name = "nvim-lsp-endhints";
+                src = inputs.plugin-nvim-lsp-endhints;
+              };
+            };
+        })
+      ];
+    };
+
     programs.neovim = let
       toLua = str: "lua << EOF\n${str}\nEOF\n";
       toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
@@ -27,7 +42,6 @@
           plugin = nvim-lspconfig;
           config = toLuaFile ./nvim/lsp.lua;
         }
-
 
         {
           plugin = comment-nvim;
@@ -108,6 +122,16 @@
           plugin = rustaceanvim;
           config = toLuaFile ./nvim/rust.lua;
         }
+        {
+          plugin = nvim-lsp-endhints;
+          config = toLua ''
+            require('lsp-endhints').setup {
+              label = { truncateAtChars = 35, padding = 2 }
+            }
+          '';
+        }
+
+        undotree
       ];
 
       extraLuaConfig = ''
@@ -124,12 +148,13 @@
       luajitPackages.lua-lsp
       nixd
       bash-language-server
-
+      typescript-language-server
+      vscode-langservers-extracted
+      
       alejandra
 
       ripgrep
 
-      typescript-language-server      
     ];
 
     nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
