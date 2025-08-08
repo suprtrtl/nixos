@@ -15,6 +15,8 @@
     shellAliases = {
       ll = "ls -l";
       fman = "compgen -c | fzf | xargs man";
+      ":q" = "exit";
+      q = "exit";
     };
 
     initContent = lib.mkOrder 1000 ''

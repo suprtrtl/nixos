@@ -40,7 +40,7 @@
       plugins = with pkgs.vimPlugins; [
         {
           plugin = nvim-lspconfig;
-          config = toLuaFile ./nvim/lsp.lua;
+          config = toLuaFile ./nvim/lsp/lsp.lua;
         }
 
         {
@@ -64,12 +64,12 @@
         nvim-cmp
         {
           plugin = nvim-cmp;
-          config = toLuaFile ./nvim/cmp.lua;
+          config = toLuaFile ./nvim/lsp/cmp.lua;
         }
 
         {
           plugin = telescope-nvim;
-          config = toLuaFile ./nvim/telescope.lua;
+          config = toLuaFile ./nvim/plugins/telescope.lua;
         }
 
         telescope-fzf-native-nvim
@@ -82,7 +82,7 @@
 
         {
           plugin = neo-tree-nvim;
-          config = toLuaFile ./nvim/neo-tree.lua;
+          config = toLuaFile ./nvim/plugins/neo-tree.lua;
         }
 
         {
@@ -105,8 +105,11 @@
             p.tree-sitter-python
             p.tree-sitter-json
             p.tree-sitter-rust
+            p.tree-sitter-regex
+            p.tree-sitter-markdown
+            p.tree-sitter-markdown_inline
           ]);
-          config = toLuaFile ./nvim/treesitter.lua;
+          config = toLuaFile ./nvim/plugins/treesitter.lua;
         }
 
         vim-nix
@@ -115,12 +118,12 @@
 
         {
           plugin = alpha-nvim;
-          config = toLuaFile ./nvim/alpha.lua;
+          config = toLuaFile ./nvim/plugins/alpha.lua;
         }
 
         {
           plugin = rustaceanvim;
-          config = toLuaFile ./nvim/rust.lua;
+          config = toLuaFile ./nvim/lsp/langs/rust.lua;
         }
         {
           plugin = nvim-lsp-endhints;
@@ -132,6 +135,11 @@
         }
 
         undotree
+
+        {
+          plugin = noice-nvim;
+          config = toLuaFile ./nvim/plugins/noice.lua;
+        }
       ];
 
       extraLuaConfig = ''

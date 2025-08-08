@@ -12,8 +12,13 @@ local on_attach = function(_, bufnr)
 	bufmap('<leader>D', vim.lsp.buf.type_definition)
 
 	bufmap('gr', require('telescope.builtin').lsp_references)
-	bufmap('<leader>s', require('telescope.builtin').lsp_document_symbols)
-	bufmap('<leader>S', require('telescope.builtin').lsp_dynamic_workspace_symbols)
+	bufmap('<leader>ls', require('telescope.builtin').lsp_document_symbols)
+	bufmap('<leader>lS', require('telescope.builtin').lsp_dynamic_workspace_symbols)
+
+	bufmap('<leader>K', vim.diagnostic.open_float)
+	bufmap('<leader>fd', function ()
+		vim.cmd.Telescope('diagnostics')
+	end)
 
 	bufmap('K', vim.lsp.buf.hover)
 

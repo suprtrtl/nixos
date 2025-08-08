@@ -3,6 +3,8 @@
 vim.g.mapleader = ' '
 
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+vim.keymap.set({ 'n', 'v', 'x' }, '<leader>s', ':e #<CR>')
+vim.keymap.set({ 'n', 'v', 'x' }, '<leader>S', ':sf #<CR>')
 
 
 -- Telescope Keymaps
