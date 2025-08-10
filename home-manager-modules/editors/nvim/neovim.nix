@@ -87,12 +87,7 @@
 
         {
           plugin = lualine-nvim;
-          config = toLua ''
-            require("lualine").setup({
-              icons_enabled = true,
-              theme = 'onedark',
-            })
-          '';
+          config = toLuaFile ./nvim/plugins/lualine.lua;
         }
         nvim-web-devicons
 
@@ -140,6 +135,23 @@
           plugin = noice-nvim;
           config = toLuaFile ./nvim/plugins/noice.lua;
         }
+        {
+          plugin = nvim-notify;
+          config = toLua ''
+            require('notify').setup {
+              render = "compact",
+            }
+          '';
+        }
+
+        # Comment Out Lines to disable Copilot  -------
+        # {
+        #   plugin = copilot-lua;
+        #   config = toLuaFile ./nvim/plugins/copilot.lua;
+        # }
+        # copilot-lualine
+        # copilot-cmp 
+        # --------------------------------------------
       ];
 
       extraLuaConfig = ''
@@ -158,11 +170,11 @@
       bash-language-server
       typescript-language-server
       vscode-langservers-extracted
-      
+      copilot-language-server
+
       alejandra
 
       ripgrep
-
     ];
 
     nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
