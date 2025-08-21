@@ -37,7 +37,7 @@
         "format-alt-click": "click-right",
         "format-icons": {
             "wifi": ["", "" ,""],
-            "ethernet": [""],
+            "ethernet": ["󰈁"],
             "disconnected": [""]
         },
         "on-click": "termite -e nmtui",
