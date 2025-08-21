@@ -5,6 +5,7 @@
     curl
     fastfetch
     fd
+    flameshot
     fzf
     git
     git-credential-manager
