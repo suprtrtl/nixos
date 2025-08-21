@@ -16,6 +16,7 @@
 
     environment.systemPackages = with pkgs; [
       kitty
+      playerctl
     ];
 
     environment.sessionVariables = {
