@@ -26,5 +26,10 @@
       cliphist
       hyprpicker
     ];
+
+    xdg.configFile = {
+      # "tofi".source = ./tofi;
+      "waybar".source = ./waybar;
+    };
   };
 }
