@@ -1,0 +1,3 @@
+[submodule "home-manager-modules/editors/neovim"]
+	path = home-manager-modules/editors/neovim
+	url = https://github.com/suprtrtl/neovim.git
