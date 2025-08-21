@@ -16,7 +16,7 @@ local on_attach = function(_, bufnr)
 	bufmap('<leader>lS', require('telescope.builtin').lsp_dynamic_workspace_symbols)
 
 	bufmap('<leader>K', vim.diagnostic.open_float)
-	bufmap('<leader>fd', function ()
+	bufmap('<leader>fd', function()
 		vim.cmd.Telescope('diagnostics')
 	end)
 
@@ -114,8 +114,8 @@ require('lspconfig').ts_ls.setup {
 	}
 }
 
-require('lspconfig').html.setup{
+require('lspconfig').html.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
-require('lspconfig').cssls.setup{}
+require('lspconfig').cssls.setup {}

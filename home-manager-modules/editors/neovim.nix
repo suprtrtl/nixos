@@ -26,6 +26,7 @@
     home.packages = with pkgs; [
       wl-clipboard
       zig
+      tree-sitter
 
       lua-language-server
       luajitPackages.lua-lsp
