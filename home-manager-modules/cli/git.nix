@@ -11,6 +11,12 @@
 
     extraConfig = {
       init.defaultBranch = "main";
+
+      credential = {
+        helper = "manager";
+        "https://github.com".username = "suprtrtl";
+        credentialStore = "cache";
+      };
     };
   };
 
