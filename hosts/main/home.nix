@@ -1,8 +1,15 @@
 {
   config,
+  inputs,
   pkgs,
   ...
-}: {
+}: let
+  system = "x86_64-linux";
+in {
+  imports = [
+    inputs.zen-browser.homeModules.beta
+  ];
+
   # User Values
   home.username = "suprtrtl";
   home.homeDirectory = "/home/suprtrtl";
@@ -37,8 +44,11 @@
   tmux.enable = true;
   zellij.enable = true;
 
+  programs.zen-browser.enable = true;
+
   # User specific packages
-  home.packages = with pkgs; [];
+  home.packages = with pkgs; [
+  ];
 
   # For dotfiles
   home.file = {};

@@ -9,6 +9,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+
     # Neovim Plugins
     plugin-nvim-lsp-endhints = {
       url = "github:chrisgrieser/nvim-lsp-endhints";
@@ -53,7 +55,10 @@
       modules = [
         ./home-manager-modules
       ];
-      extraSpecialArgs = {inherit inputs;};
+      extraSpecialArgs = {
+        inherit inputs;
+        system = "x86_64-linux";
+      };
     };
 
     homeConfigurations.wsl = home-manager.lib.homeManagerConfiguration {
