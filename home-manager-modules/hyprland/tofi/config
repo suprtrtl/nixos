@@ -50,7 +50,7 @@
 	# Default text color
 	#
 	# All text defaults to this color if not otherwise specified.
-	text-color = #FFFFFF
+	text-color = #EEEEEE
 
 	# All pieces of text have the same theming attributes available:
 	#
@@ -142,7 +142,7 @@
 ### Text layout
 #
 	# Prompt to display.
-	prompt-text = "run: "
+	prompt-text = ""
 
 	# Extra horizontal padding between prompt and input.
 	prompt-padding = 0
@@ -174,13 +174,13 @@
 	background-color = #1B1D1E
 
 	# Width of the border outlines in pixels.
-	outline-width = 2
+	outline-width = 4
 
 	# Border outline color
 	outline-color = #080800
 
 	# Width of the border in pixels.
-	border-width = 2
+	border-width = 20
 
 	# Border color
 	border-color = #F92672
