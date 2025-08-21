@@ -18,7 +18,7 @@
 
   bundles.cli.misc.enable = true;
 
-  neovim.enable = false;
+  neovim.enable = true;
   emacs.enable = false;
   emacs.doom.enable = false;
 

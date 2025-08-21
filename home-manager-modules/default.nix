@@ -13,7 +13,7 @@
 
     ./cli/misc.nix
 
-    ./editors/nvim/neovim.nix
+    ./editors/neovim/neovim.nix
     ./editors/emacs/emacs.nix
 
     ./gui/notes/obsidian.nix
