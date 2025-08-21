@@ -36,7 +36,7 @@
       bash-language-server
       typescript-language-server
       vscode-langservers-extracted
-      copilot-language-server
+      hyprls
 
       alejandra
 
@@ -47,6 +47,7 @@
 
     home.sessionVariables = {
       NIX_NEOVIM = 1;
+      KITTY_IMAGE_PROTOCOL = 1;
     };
 
     nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
