@@ -28,7 +28,7 @@
     ];
 
     xdg.configFile = {
-      # "tofi".source = ./tofi;
+      "tofi".source = ./tofi;
       "waybar".source = ./waybar;
     };
   };
