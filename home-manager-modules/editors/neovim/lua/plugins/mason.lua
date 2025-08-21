@@ -1,6 +1,4 @@
-if os.getenv('NIX_NEOVIM') == '1' then
-	return {}
-else
+if os.getenv('NIX_NEOVIM') ~= '1' then
 	return { 
 	"williamboman/mason.nvim",
 
@@ -24,4 +22,6 @@ else
         })
     end
 }
+else
+	return {}
 end
