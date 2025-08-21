@@ -6,9 +6,6 @@
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["tray", "backlight", "pulseaudio", "network", "idle_inhibitor", "battery", "clock"],
-    "hyprland/mode": {
-        "format": " {}"
-    },
     "hyprland/workspaces": {
         "format": "{name}",
         "disable-scroll": true
