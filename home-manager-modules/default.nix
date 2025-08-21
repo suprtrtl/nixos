@@ -18,6 +18,8 @@
 
     ./gui/notes/obsidian.nix
 
+    ./hyprland/hyprland.nix
+
     ./shells/zsh.nix
     ./shells/fish.nix
 
