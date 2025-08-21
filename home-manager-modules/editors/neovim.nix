@@ -25,6 +25,7 @@
 
     home.packages = with pkgs; [
       wl-clipboard
+      zig
 
       lua-language-server
       luajitPackages.lua-lsp
