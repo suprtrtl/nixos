@@ -48,6 +48,8 @@ in {
 
   # User specific packages
   home.packages = with pkgs; [
+    steamcmd
+    steam-tui
   ];
 
   # For dotfiles
