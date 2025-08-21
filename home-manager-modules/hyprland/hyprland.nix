@@ -13,10 +13,18 @@
     wayland.windowManager.hyprland = {
       enable = true;
 
-      extraConfig = "${builtins.readFile ./hyprland.conf}";
+      extraConfig = "${builtins.readFile ./hypr/hyprland.conf}";
     };
 
+    services.mako.enable = true;
+    services.hyprpaper.enable = true;
+
+    programs.waybar.enable = true;
+    programs.tofi.enable = true;
+
     home.packages = with pkgs; [
+      cliphist
+      hyprpicker
     ];
   };
 }
