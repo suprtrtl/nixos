@@ -48,6 +48,8 @@ in {
 
   # User specific packages
   home.packages = with pkgs; [
+    steam
+    steamcmd
   ];
 
   # For dotfiles
