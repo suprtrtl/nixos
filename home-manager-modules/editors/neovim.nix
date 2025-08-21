@@ -41,6 +41,10 @@
 
     xdg.configFile."nvim".source = ./neovim;
 
+    home.sessionVariables = {
+      NIX_NEOVIM = 1;
+    };
+
     nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
   };
 }
