@@ -180,13 +180,13 @@
 	outline-color = #080800
 
 	# Width of the border in pixels.
-	border-width = 12
+	border-width = 2
 
 	# Border color
 	border-color = #F92672
 
 	# Radius of window corners in pixels.
-	corner-radius = 0
+	corner-radius = 3
 
 	# Padding between borders and text. Can be pixels or a percentage.
 	padding-top = 8
