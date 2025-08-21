@@ -29,7 +29,7 @@ in {
   emacs.enable = false;
   emacs.doom.enable = false;
 
-  obsidian.enable = false;
+  obsidian.enable = true;
 
   alacritty.enable = true;
   ghostty.enable = true;
