@@ -20,6 +20,8 @@ in {
 
   # Programs
 
+  hyprland.enable = true;
+
   fzf.enable = true;
   zoxide.enable = true;
 
