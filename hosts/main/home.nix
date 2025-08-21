@@ -18,11 +18,11 @@
 
   bundles.cli.misc.enable = true;
 
-  neovim.enable = true;
-  emacs.enable = true;
-  emacs.doom.enable = true;
+  neovim.enable = false;
+  emacs.enable = false;
+  emacs.doom.enable = false;
 
-  obsidian.enable = true;
+  obsidian.enable = false;
 
   alacritty.enable = true;
   ghostty.enable = true;

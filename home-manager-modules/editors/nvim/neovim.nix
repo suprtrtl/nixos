@@ -150,7 +150,7 @@
         #   config = toLuaFile ./nvim/plugins/copilot.lua;
         # }
         # copilot-lualine
-        # copilot-cmp 
+        # copilot-cmp
         # --------------------------------------------
       ];
 

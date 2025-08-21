@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: {
-  home.username = "suprtrtl";  # your WSL username
+  home.username = "suprtrtl"; # your WSL username
   home.homeDirectory = "/home/suprtrtl";
 
   home.stateVersion = "24.11";
