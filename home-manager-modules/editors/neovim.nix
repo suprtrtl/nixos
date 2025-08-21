@@ -39,7 +39,7 @@
       ripgrep
     ];
 
-    xdg.configFile."nvim".source = ".";
+    xdg.configFile."nvim".source = ./neovim;
 
     nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
   };
