@@ -186,11 +186,11 @@
 	border-color = #00E050
 
 	# Radius of window corners in pixels.
-	corner-radius = 3
+	corner-radius = 12
 
 	# Padding between borders and text. Can be pixels or a percentage.
 	padding-top = 8
-	padding-bottom = 8
+	padding-bottom = 0
 	padding-left = 8
 	padding-right = 8
 
