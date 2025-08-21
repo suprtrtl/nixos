@@ -174,16 +174,16 @@
 	background-color = #1B1D1E
 
 	# Width of the border outlines in pixels.
-	outline-width = 20
+	outline-width = 2
 
 	# Border outline color
 	outline-color = #080800
 
 	# Width of the border in pixels.
-	border-width = 20
+	border-width = 3
 
 	# Border color
-	border-color = #F92672
+	border-color = #00E050
 
 	# Radius of window corners in pixels.
 	corner-radius = 3
