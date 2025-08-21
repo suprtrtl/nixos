@@ -174,7 +174,7 @@
 	background-color = #1B1D1E
 
 	# Width of the border outlines in pixels.
-	outline-width = 4
+	outline-width = 20
 
 	# Border outline color
 	outline-color = #080800
