@@ -61,6 +61,11 @@ require('lspconfig').bashls.setup {
 	filetypes = { 'bash', 'sh' },
 }
 
+require('lspconfig').nixd.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
+}
+
 -- require('lspconfig').rust_analyzer.setup {
 -- 	on_attach = on_attach,
 -- 	capabilities = capabilities,
