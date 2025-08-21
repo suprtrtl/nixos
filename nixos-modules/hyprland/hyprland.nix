@@ -1,7 +1,18 @@
-{pkgs, ...}: {
-  programs.hyprland.enable = true;
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
+  options = {
+    hyprland.enable = lib.mkEnableOption "enable hyprland";
+  };
 
-  environment.systemPackages = with pkgs; [
-    kitty
-  ];
+  config = lib.mkIf config.hyprland.enable {
+    programs.hyprland.enable = true;
+
+    environment.systemPackages = with pkgs; [
+      kitty
+    ];
+  };
 }

@@ -63,6 +63,9 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
+  # Hyprland
+  hyprland.enable = true;
+
   nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
 
   users.users.suprtrtl = {
