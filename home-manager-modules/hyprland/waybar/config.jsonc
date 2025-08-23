@@ -130,7 +130,7 @@
     "device": "intel_backlight",
     "format": "<span color='#FFD700'>{icon}</span>{percent}% ",
     "tooltip": true,
-    "tooltip-format": "当前屏幕亮度: {percent}%",
+    "tooltip-format": "Backlight: {percent}%",
     "format-icons": [
       "<span color='#696969'> 󰃞 </span>",  // 暗 - 深灰
       "<span color='#A9A9A9'> 󰃝 </span>",  // 中 - 灰
