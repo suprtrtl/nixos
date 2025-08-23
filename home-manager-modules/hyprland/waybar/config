@@ -5,7 +5,7 @@
 
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "backlight", "pulseaudio", "network", "idle_inhibitor", "battery", "clock"],
+    "modules-right": ["tray", "backlight", "pulseaudio", "network", "idle_inhibitor", "battery", "clock", "custom/power" ],
     "hyprland/workspaces": {
         "format": "{name}",
         "disable-scroll": true
@@ -15,6 +15,10 @@
         "tooltip": false,
 		"seperate-outputs": true
     },
+	"custom/power": {
+		"on-click": "~/.config/waybar/scripts/power-menu.sh",
+		"format": "  "
+	},
     "clock": {
         "format": "{:%a %d %b %H:%M}",
         "tooltip": false

@@ -35,12 +35,10 @@
       "waybar/config".source = ./waybar/config;
       "waybar/styles.css".source = ./waybar/styles.css;
 
-	  "waybar/scripts" = {
-	  	source = ./waybar/scripts;
-		recursive = true;
-	  };
+      "waybar/scripts" = {
+        source = ./waybar/scripts;
+        recursive = true;
+      };
     };
-
-
   };
 }
