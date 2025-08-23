@@ -52,6 +52,7 @@ in {
   home.packages = with pkgs; [
     steamcmd
     steam-tui
+    webcord
   ];
 
   # For dotfiles
