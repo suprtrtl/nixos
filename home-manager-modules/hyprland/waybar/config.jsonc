@@ -28,9 +28,6 @@
     "all-outputs": true,
     "format": "{icon}",
     "on-click": "activate",
-    "persistent-workspaces": {
-    "*":[1,2,3,4,5,6,7,8,9]
-    },
     "format-icons": {
       "1": "1",
       "2": "2",
@@ -48,19 +45,19 @@
   "format": "<span color='#00FFFF'>  </span>",
   "on-click": "hyprlock",
   "tooltip": true,
-  "tooltip-format": "锁屏"
+  "tooltip-format": "Lock"
   },
   "custom/reboot": {
     "format": "<span color='#FFD700'>  </span>",
     "on-click": "systemctl reboot",
     "tooltip": true,
-    "tooltip-format": "重启"
+    "tooltip-format": "Reboot"
   },
   "custom/power": {
     "format": "<span color='#FF4040'>  </span>",
     "on-click": "systemctl poweroff",
     "tooltip": true,
-    "tooltip-format": "关机"
+    "tooltip-format": "Power-Off"
   },
   "network": {
     "format-wifi": "<span color='#00FFFF'> 󰤨 </span>{essid} ",
@@ -111,20 +108,19 @@
     "tooltip-format": "当前 CPU 温度: {}°C"
   },
   "memory": {
-    "format": "<span color='#8A2BE2'>  </span>{used:0.1f}G/{total:0.1f}G ",
+    "format": "<span color='#8A2BE2'>   </span>{used:0.1f}G/{total:0.1f}G ",
     "tooltip": true,
     "tooltip-format": "当前内存占比: {used:0.2f}G/{total:0.2f}G"
   },
   "cpu": {
-    "format": "<span color='#FF9F0A'>  </span>{usage}% ",
+    "format": "<span color='#FF9F0A'>   </span>{usage}% ",
     "tooltip": true
   },
   "clock": {
     "interval": 1,
-    "timezone": "Asia/Chengdu",
     "format": "<span color='#BF00FF'>  </span>{:%H:%M} ",
     "tooltip": true,
-    "tooltip-format": "{:L%Y 年 %m 月 %d 日, %A}"
+    "tooltip-format": "{:L%Y / %m / %d , %A}"
   },
   "tray": {
     "icon-size": 17,
