@@ -6,10 +6,7 @@
   "spacing": 0,
   "modules-left": [
     "hyprland/workspaces",
-    "tray",
-    "custom/lock",
-    "custom/reboot",
-    "custom/power"
+    "tray"
   ],
   "modules-center": ["hyprland/window"],
   "modules-right": [
@@ -21,7 +18,8 @@
     "custom/temperature",
     "memory",
     "cpu",
-    "clock"
+    "clock",
+    "custom/power"
   ],
   "hyprland/workspaces": {
     "disable-scroll": false,
@@ -40,24 +38,6 @@
       "9": "9",
       "default": "0"
     }
-  },
-  "custom/lock": {
-  "format": "<span color='#00FFFF'>  </span>",
-  "on-click": "hyprlock",
-  "tooltip": true,
-  "tooltip-format": "Lock"
-  },
-  "custom/reboot": {
-    "format": "<span color='#FFD700'>  </span>",
-    "on-click": "systemctl reboot",
-    "tooltip": true,
-    "tooltip-format": "Reboot"
-  },
-  "custom/power": {
-    "format": "<span color='#FF4040'>  </span>",
-    "on-click": "systemctl poweroff",
-    "tooltip": true,
-    "tooltip-format": "Power-Off"
   },
   "network": {
     "format-wifi": "<span color='#00FFFF'> 󰤨 </span>{essid} ",
@@ -121,6 +101,12 @@
     "format": "<span color='#BF00FF'>  </span>{:%H:%M} ",
     "tooltip": true,
     "tooltip-format": "{:L%Y / %m / %d , %A}"
+  },
+  "custom/power": {
+    "format": "<span color='#FF4040'>  </span>",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh",
+    "tooltip": true,
+    "tooltip-format": "Power Menu"
   },
   "tray": {
     "icon-size": 17,
