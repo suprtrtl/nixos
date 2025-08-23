@@ -38,7 +38,7 @@
       "7": "7",
       "8": "8",
       "9": "9",
-      "default": "0"
+      "default": "0e
     }
   },
   "custom/lock": {
@@ -98,7 +98,7 @@
     "on-click-right": "pavucontrol -t 3",
     "on-click": "pactl -- set-sink-mute 0 toggle",
     "tooltip": true,
-    "tooltip-format": "当前系统声音: {volume}%"
+    "tooltip-format": "Volume: {volume}%"
   },
   "custom/temperature": {
     "exec": "sensors | awk '/^Package id 0:/ {print int($4)}'",
@@ -110,7 +110,7 @@
   "memory": {
     "format": "<span color='#8A2BE2'>   </span>{used:0.1f}G/{total:0.1f}G ",
     "tooltip": true,
-    "tooltip-format": "当前内存占比: {used:0.2f}G/{total:0.2f}G"
+    "tooltip-format": "Memory: {used:0.2f}G/{total:0.2f}G"
   },
   "cpu": {
     "format": "<span color='#FF9F0A'>   </span>{usage}% ",
