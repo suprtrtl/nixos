@@ -25,6 +25,7 @@
     home.packages = with pkgs; [
       cliphist
       hyprpicker
+      lm_sensors
     ];
 
     xdg.configFile = {
