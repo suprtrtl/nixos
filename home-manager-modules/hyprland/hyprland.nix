@@ -28,8 +28,12 @@
     ];
 
     xdg.configFile = {
+      "hypr/hyprpaper.conf".source = ./hypr/hyprpaper.conf;
+
       "tofi".source = ./tofi;
-      "waybar".source = ./waybar;
+
+      "waybar/config".source = ./waybar/config;
+      "waybar/styles.css".source = ./waybar/styles.css;
     };
   };
 }
