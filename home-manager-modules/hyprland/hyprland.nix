@@ -34,7 +34,7 @@
       "tofi".source = ./tofi;
 
       "waybar/config.jsonc".source = ./waybar/config.jsonc;
-      "waybar/styles.css".source = ./waybar/styles.css;
+      "waybar/style.css".source = ./waybar/style.css;
 
       "waybar/scripts" = {
         source = ./waybar/scripts;
