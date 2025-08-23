@@ -14,8 +14,6 @@
     "battery",
     "bluetooth",
     "pulseaudio",
-    "backlight",
-    "custom/temperature",
     "memory",
     "cpu",
     "clock",
