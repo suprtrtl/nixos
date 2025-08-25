@@ -1,12 +1,13 @@
 {
     "layer": "top",
     "position": "top",
+	"margin": "8 8 0",
     "height": 24,
     "spacing": 5,
 
     "modules-left": ["hyprland/workspaces", "temperature"],
-    "modules-center": ["clock"],
-    "modules-right": ["wireplumber", "battery", "idle_inhibitor", "network", "bluetooth", "tray", "custom/power"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["wireplumber", "battery", "idle_inhibitor", "network", "bluetooth", "tray", "clock", "custom/power"],
 
     "hyprland/workspaces": {
         "on-click": "activate",
