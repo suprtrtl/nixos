@@ -45,6 +45,7 @@
   services.printing.enable = true;
 
   hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -71,7 +72,7 @@
   users.users.suprtrtl = {
     isNormalUser = true;
     description = "suprtrtl";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "bluetooth"];
     shell = pkgs.zsh;
     packages = with pkgs; [
       #  thunderbird
