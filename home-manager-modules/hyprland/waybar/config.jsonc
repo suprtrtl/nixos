@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces", "temperature"],
     "modules-center": ["clock"],
-    "modules-right": ["wireplumber", "battery", "idle_inhibitor", "network", "bluetooth", "tray"],
+    "modules-right": ["wireplumber", "battery", "idle_inhibitor", "network", "bluetooth", "tray", "custom/power"],
 
     "hyprland/workspaces": {
         "on-click": "activate",
@@ -63,6 +63,11 @@
         "icon-size": 16,
         "spacing": 16
     },
+
+	"custom/power": {
+		"format": "\uf011"
+		"on-click": "~/.config/waybar/scripts/power-menu.sh"
+	},
 
     "idle_inhibitor": {
         "format": "{icon}",
