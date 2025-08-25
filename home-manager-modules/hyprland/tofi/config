@@ -50,7 +50,7 @@
 	# Default text color
 	#
 	# All text defaults to this color if not otherwise specified.
-	text-color = #EEEEEE
+	text-color = #dcdfe4
 
 	# All pieces of text have the same theming attributes available:
 	#
@@ -102,7 +102,7 @@
 	# alternate-result-background-corner-radius = 0
 
 	# Selection text
-	selection-color = #00E050
+	selection-color = #98c379
 	selection-background = #00000000
 	selection-background-padding = 0
 	selection-background-corner-radius = 0
@@ -174,10 +174,10 @@
 	background-color = #282c34
 
 	# Width of the border outlines in pixels.
-	outline-width = 0
+	outline-width = 2
 
 	# Border outline color
-	outline-color = #080800
+	outline-color = #98c379
 
 	# Width of the border in pixels.
 	border-width = 0
