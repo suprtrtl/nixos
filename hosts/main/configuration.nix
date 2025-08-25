@@ -44,7 +44,16 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+    settings = {
+      General = {
+        Experimental = true;
+      };
+    };
+  };
+
   services.blueman.enable = true;
 
   # Enable sound with pipewire.
