@@ -11,6 +11,7 @@
 	margin: 5px 5px 0px 5px;
 	border-radius: 5px;
 	padding: 0px 3px;
+	opacity: 0.7;
 }
 
 #workspaces button {
@@ -21,11 +22,7 @@
 }
 
 #workspaces button.active {
-	background-color: #98c379;
-}
-
-#workspaces button.active {
-	color: #e06c75;
+	color: #98c379;
 }
 
 #wireplumber,
