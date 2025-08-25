@@ -9,20 +9,17 @@
     color: #EEEEEE;
     background-color: #000000;
 	margin: 5px 5px 0px 5px;
+	border-radius: 3px;
 }
 
 #workspaces button {
     color: #EEEEEE;
-    padding-left: 0.7em;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 #workspaces button.empty {
     color: #AAAAAA;
-}
-
-#memory,
-#custom-platform-profile {
-    padding-left: 1em
 }
 
 #wireplumber,
@@ -32,6 +29,7 @@
 #network,
 #bluetooth,
 #tray,
+#clock,
 #custon-power {
-    padding-right: 1em 
+    padding-right: 3px
 }
