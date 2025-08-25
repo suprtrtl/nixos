@@ -6,21 +6,26 @@
 }
 
 #waybar {
-    color: #EEEEEE;
-    background-color: #000000;
+    color: #dcdfe4;
+    background-color: #282c34;
 	margin: 5px 5px 0px 5px;
-	border-radius: 3px;
+	border-radius: 5px;
 	padding: 0px 3px;
 }
 
 #workspaces button {
-    color: #EEEEEE;
+    color: #dcdfe4;
     padding-left: 3px;
     padding-right: 3px;
+	border-radius: 5px;
 }
 
-#workspaces button.empty {
-    color: #AAAAAA;
+#workspaces button.active {
+	background-color: #98c379;
+}
+
+#workspaces button.active {
+	color: #e06c75;
 }
 
 #wireplumber,
