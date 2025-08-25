@@ -29,6 +29,7 @@
 
     home.packages = with pkgs; [
       cliphist
+      helvum
       hyprpicker
       lm_sensors
     ];
