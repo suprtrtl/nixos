@@ -1,6 +1,7 @@
 * {
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "Cousine Nerd Font";
     font-size: 12;
+	font-weight: bold;
     padding: 0;
     margin: 0;
 }
@@ -15,7 +16,6 @@
 
 #workspaces button {
     color: rgba(220, 223, 228, 1.0);
-	font-weight: bold;
     padding-left: 3px;
     padding-right: 3px;
 	margin: 3px;
@@ -23,7 +23,7 @@
 }
 
 #workspaces button.active {
-	background-color: rgba(132, 175, 101, 1.0);
+	background-color: rgba(127, 170, 96, 1.0);
 }
 
 #wireplumber,

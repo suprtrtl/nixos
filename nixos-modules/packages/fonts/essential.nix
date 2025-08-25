@@ -9,7 +9,7 @@
 
     packages = with pkgs; [
       nerd-fonts.jetbrains-mono
-      nerd-fonts.caskaydia-cove
+      nerd-fonts.cousine
       font-awesome
       cm_unicode
       corefonts
