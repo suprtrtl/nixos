@@ -30,6 +30,7 @@
 #language,
 #network,
 #bluetooth,
-#tray {
+#tray,
+#custon-power {
     padding-right: 1em 
 }
