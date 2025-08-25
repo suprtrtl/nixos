@@ -25,6 +25,7 @@
     services.hyprpaper.enable = true;
 
     programs.waybar.enable = true;
+    programs.hyprlock.enable = true;
     programs.tofi.enable = true;
 
     home.packages = with pkgs; [
