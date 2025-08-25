@@ -28,6 +28,7 @@
 		"format-muted" : " ",
 		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"on-click-right": "helvum",
+		"format-icons": [" ", " ", " "],
         "max-volume": 100,
         "scroll-step": 5
     },
