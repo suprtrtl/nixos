@@ -26,7 +26,7 @@
     "wireplumber": {
         "format": "{icon}  {volume}%",
 		"format-muted" : " ",
-		"on-click": "wpctl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
 		"on-click-right": "helvum",
 		"format-icons": ["", " ", " "],
         "max-volume": 100,
