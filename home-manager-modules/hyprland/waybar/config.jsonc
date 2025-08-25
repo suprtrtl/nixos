@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces", "temperature"],
     "modules-center": ["clock"],
-    "modules-right": ["wireplumber", "hyprland/language", "idle_inhibitor", "network", "bluetooth", "tray"],
+    "modules-right": ["wireplumber", "battery", "idle_inhibitor", "network", "bluetooth", "tray"],
 
     "hyprland/workspaces": {
         "format": "<span size='larger'>{icon}</span>",
