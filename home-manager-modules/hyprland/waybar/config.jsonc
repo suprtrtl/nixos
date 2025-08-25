@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces", "temperature"],
     "modules-center": ["clock"],
-    "modules-right": ["wireplumber", "battery", "hyprland/language", "idle_inhibitor", "network", "bluetooth", "tray"],
+    "modules-right": ["wireplumber", "hyprland/language", "idle_inhibitor", "network", "bluetooth", "tray"],
 
     "hyprland/workspaces": {
         "format": "<span size='larger'>{icon}</span>",
@@ -37,7 +37,6 @@
     },
 
     "battery": {
-        "bat": "BAT1",
         "interval": 60,
         "format": "{icon}  {capacity}%",
         "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
@@ -70,10 +69,6 @@
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
-    },
-
-    "hyprland/language": {
-        "format": "{short}"
     },
 
     "tray": {

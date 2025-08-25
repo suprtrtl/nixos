@@ -16,7 +16,12 @@
       extraConfig = "${builtins.readFile ./hypr/hyprland.conf}";
     };
 
-    services.mako.enable = true;
+    services.mako = {
+      enable = true;
+      settings = {
+        default-timeout = 500;
+      };
+    };
     services.hyprpaper.enable = true;
 
     programs.waybar.enable = true;
