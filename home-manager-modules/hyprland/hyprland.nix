@@ -32,6 +32,7 @@
       cliphist
       helvum
       hyprpicker
+      hyprshot
       lm_sensors
     ];
 
