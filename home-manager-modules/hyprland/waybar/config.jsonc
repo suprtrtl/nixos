@@ -50,19 +50,19 @@
 
     "network": {
         "format": "",
-        "format-ethernet": "󱘖 ",
+        "format-ethernet": "󱘖",
         "format-wifi": "{icon}",
         "format-disconnected": " ",
-        "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
         "tooltip-format-wifi": "{essid} ({signalStrength}%)",
         "tooltip-format-ethernet": "{ifname}",
         "tooltip-format-disconnected": "Disconnected",
     },
 
     "bluetooth": {
-        "format": "󰂯 ",
-        "format-disabled": "󰂲 ",
-        "format-connected": "󰂯 ",
+        "format": "󰂯",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂯",
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
@@ -74,15 +74,15 @@
     },
 
 	"custom/power": {
-		"format": "  ",
+		"format": "",
 		"on-click": "~/.config/waybar/scripts/power-menu.sh"
 	},
 
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "󰅶 ",
-            "deactivated": "󰾪 "
+            "activated": "󰅶",
+            "deactivated": "󰾪"
         }
     }
-}
+e
