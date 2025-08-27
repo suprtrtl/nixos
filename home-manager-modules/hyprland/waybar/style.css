@@ -26,14 +26,25 @@
 	background-color: rgba(127, 170, 96, 1.0);
 }
 
+
 #wireplumber,
 #battery,
 #idle_inhibitor,
-#language,
 #network,
 #bluetooth,
 #tray,
 #clock,
 #custon-power {
     padding-right: 3px
+}
+
+#workspaces button:hover,
+#wireplumber:hover,
+#battery:hover,
+#idle_ihibitor:hover,
+#network:hover,
+#bluetooth:hover,
+#tray:hover,
+#custom-power:hover {
+	background-color: rgba(40, 44, 52, 1.0);
 }
