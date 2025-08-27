@@ -73,19 +73,19 @@
         "type": "github"
       }
     },
-    "plugin-nvim-lsp-endhints": {
+    "nvim-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1750099890,
-        "narHash": "sha256-ZssCVWm7/4U7oAsEXB1JgLoSzcdAjXsO2wEDyS40/SQ=",
-        "owner": "chrisgrieser",
-        "repo": "nvim-lsp-endhints",
-        "rev": "7917c7af1ec345ca9b33e8dbcd3723fc15d023c0",
+        "lastModified": 1756324677,
+        "narHash": "sha256-hBge3Uw3yD43xEYPDL9bdpgHExLm6XyZaC7XxMLiUKM=",
+        "owner": "suprtrtl",
+        "repo": "neovim",
+        "rev": "e368e2e50a2ed199176ae4fb43c888518e4c686a",
         "type": "github"
       },
       "original": {
-        "owner": "chrisgrieser",
-        "repo": "nvim-lsp-endhints",
+        "owner": "suprtrtl",
+        "repo": "neovim",
         "type": "github"
       }
     },
@@ -93,7 +93,7 @@
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "plugin-nvim-lsp-endhints": "plugin-nvim-lsp-endhints",
+        "nvim-src": "nvim-src",
         "zen-browser": "zen-browser"
       }
     },
