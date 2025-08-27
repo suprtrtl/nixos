@@ -64,6 +64,7 @@ in {
       name = "Webcord";
       exec = "webcord";
       terminal = false;
+      type = "Application";
     };
   };
 
