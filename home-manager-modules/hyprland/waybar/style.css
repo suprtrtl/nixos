@@ -38,13 +38,6 @@
     padding: 0px 2px;
 }
 
-#workspaces button:hover,
-#wireplumber:hover,
-#battery:hover,
-#idle_ihibitor:hover,
-#network:hover,
-#bluetooth:hover,
-#tray:hover,
-#custom-power:hover {
+#workspaces button:hover {
 	background-color: rgba(40, 44, 52, 1.0);
 }
