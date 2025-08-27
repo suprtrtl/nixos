@@ -16,8 +16,6 @@
     ./editors/neovim.nix
     ./editors/emacs/emacs.nix
 
-    ./gui/notes/obsidian.nix
-
     ./hyprland/hyprland.nix
 
     ./shells/zsh.nix

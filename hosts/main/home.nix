@@ -31,8 +31,6 @@ in {
   emacs.enable = false;
   emacs.doom.enable = false;
 
-  obsidian.enable = true;
-
   alacritty.enable = true;
   ghostty.enable = true;
 
@@ -44,12 +42,13 @@ in {
   oh-my-posh.enable = true;
 
   tmux.enable = true;
-  zellij.enable = true;
+  zellij.enable = false;
 
   programs.zen-browser.enable = true;
 
   # User specific packages
   home.packages = with pkgs; [
+    obsidian
     steamcmd
     steam-tui
     webcord
