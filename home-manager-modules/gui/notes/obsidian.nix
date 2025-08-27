@@ -34,13 +34,6 @@
           "word-count"
         ];
       };
-
-      vaults = {
-        "test-vault" = {
-          enable = true;
-          target = "vaults/test-vault";
-        };
-      };
     };
   };
 }
