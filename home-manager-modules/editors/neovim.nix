@@ -27,6 +27,8 @@
       wl-clipboard
       zig
       tree-sitter
+      ueberzugpp
+      imagemagick
 
       nodejs_20
 
