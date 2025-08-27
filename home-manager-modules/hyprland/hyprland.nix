@@ -19,7 +19,7 @@
     services.mako = {
       enable = true;
       settings = {
-        default-timeout = 500;
+        default-timeout = 1500;
       };
     };
     services.hyprpaper.enable = true;
