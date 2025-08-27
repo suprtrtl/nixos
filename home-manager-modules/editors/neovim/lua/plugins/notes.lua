@@ -32,7 +32,6 @@ return {
 		"epwalsh/obsidian.nvim",
 		version = "*", -- recommended, use latest release instead of latest commit
 		lazy = true,
-		ft = "markdown",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			-- {
@@ -50,6 +49,13 @@ return {
 		},
 		opts = {
 			workspaces = obsidian_vaults,
+			ui = {
+				enable = false,
+			},
+
+			picker = {
+				name = 'mini.pick',
+			},
 		},
 	},
 
