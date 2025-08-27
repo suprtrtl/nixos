@@ -1,3 +1,17 @@
+local obsidian_vaults = {
+	{
+		name = "personal",
+		path = "~/notes/personal",
+	},
+
+	{
+		name = "project-zero",
+		path = "~/notes/worldbuilding/project-zero"
+	}
+
+}
+
+
 return {
 
 	-- Markdown
@@ -8,7 +22,7 @@ return {
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
 		ft = { "markdown" },
 		build = "cd app && yarn install",
-		config = function ()
+		config = function()
 			vim.g.mkdp_markdown_css = vim.fn.expand('~/.config/markdown-style/markdown.css')
 			vim.g.mkdp_highlight_css = vim.fn.expand('~/.config/markdown-style/highlight.css')
 		end
@@ -21,16 +35,24 @@ return {
 		ft = "markdown",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
+			{
+				"hisbaan/dataview.nvim",
+				opts = {
+					vault_dir = function()
+						local dirs = {}
+						for _, value in pairs(obsidian_vaults) do
+							table.insert(dirs, value.path)
+						end
+						return dirs
+					end,
+				}
+			},
 		},
 		opts = {
-			workspaces = {
-				{
-					name = "personal",
-					path = "~/notes/personal"
-				}
-			}
+			workspaces = obsidian_vaults,
 		},
 	},
+
 
 	{
 		"jghauser/follow-md-links.nvim",
