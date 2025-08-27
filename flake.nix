@@ -11,9 +11,9 @@
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
-    # Neovim Plugins
-    plugin-nvim-lsp-endhints = {
-      url = "github:chrisgrieser/nvim-lsp-endhints";
+    # Neovim
+    nvim-src = {
+      url = "github:suprtrtl/neovim";
       flake = false;
     };
   };

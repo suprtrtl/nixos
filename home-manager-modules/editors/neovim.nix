@@ -11,10 +11,7 @@
   };
 
   config = lib.mkIf config.neovim.enable {
-    programs.neovim = let
-      toLua = str: "lua << EOF\n${str}\nEOF\n";
-      toLuaFile = file: "lua << EOF\n${builtins.readFile file}\nEOF\n";
-    in {
+    programs.neovim = {
       enable = true;
 
       # Redirects vi, vim and vimdiff binaries to nvim
@@ -45,13 +42,11 @@
       ripgrep
     ];
 
-    xdg.configFile."nvim".source = ./neovim;
+    xdg.configFile."nvim".source = inputs.nvim-src;
 
     home.sessionVariables = {
       NIX_NEOVIM = 1;
       KITTY_IMAGE_PROTOCOL = 1;
     };
-
-    nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
   };
 }
