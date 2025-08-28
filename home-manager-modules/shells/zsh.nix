@@ -24,5 +24,8 @@
     '';
   };
 
-  home.file."bin/rebuild-nixos".source = ./../../rebuild-nixos.sh;
+  home.file."bin" = {
+    source = ./../../scripts;
+    recursive = true;
+  };
 }
