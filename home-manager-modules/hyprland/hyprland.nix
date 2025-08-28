@@ -38,6 +38,7 @@
         [[ -f "$tofi_cache" ]] && rm "$tofi_cache"
       '';
     };
+
     home.packages = with pkgs; [
       cliphist
       helvum
