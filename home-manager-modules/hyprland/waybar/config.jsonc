@@ -20,6 +20,7 @@
 		"rewrite": {
 			"(.*) — Zen Browser": " $1",
 			"nvim (.*)": " ",
+			"nvim": " ",
 			"tmux": " ",
 			"steam": " ",
 			"(.*) - Obsidian (.*)": "󰎚 - $1"

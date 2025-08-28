@@ -32,8 +32,8 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
+  services.desktopManager.gnome.enable = true;
 
   # services.displayManager.ly.enable = true;
 
@@ -77,6 +77,8 @@
 
   # Hyprland
   hyprland.enable = true;
+
+  spotify.enable = true;
 
   nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
 

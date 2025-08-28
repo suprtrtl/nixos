@@ -9,5 +9,6 @@
 
     ./packages/essential.nix
     ./packages/fonts/essential.nix
+    ./packages/gui/spotify.nix
   ];
 }
