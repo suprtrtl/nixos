@@ -23,9 +23,4 @@
       export PATH="$HOME/bin:$PATH"
     '';
   };
-
-  home.file."bin" = {
-    source = ./../../scripts;
-    recursive = true;
-  };
 }

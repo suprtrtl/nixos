@@ -15,8 +15,4 @@
       fish_add_path $HOME/bin
     '';
   };
-  home.file."bin" = {
-    source = ./../../scripts;
-    recursive = true;
-  };
 }

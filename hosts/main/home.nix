@@ -54,6 +54,12 @@ in {
     webcord
   ];
 
+  # soure scripts
+  home.file."bin" = {
+    source = ./../../scripts;
+    recursive = true;
+  };
+
   # For dotfiles
   home.file = {};
 
