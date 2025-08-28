@@ -23,7 +23,7 @@
 
       extraConfig = ''
          	set-option -g status-position top
-        set-option -g allow-pass-through all
+        set-option -g allow-passthrough all
       '';
 
       tmuxinator = {
