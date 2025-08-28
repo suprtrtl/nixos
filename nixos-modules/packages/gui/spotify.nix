@@ -11,6 +11,7 @@
   config = lib.mkIf config.spotify.enable {
     environment.systemPackages = with pkgs; [
       spotify
+      spotify-player
     ];
 
     networking.firewall.allowedTCPPorts = [57621];
