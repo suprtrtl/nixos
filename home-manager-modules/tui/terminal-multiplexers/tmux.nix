@@ -21,6 +21,11 @@
 
       shortcut = "s";
 
+      extraConfig = ''
+         	set-option -g status-position top
+        set-option -g allow-pass-through all
+      '';
+
       tmuxinator = {
         enable = true;
       };
