@@ -26,6 +26,7 @@
       tree-sitter
       ueberzugpp
       imagemagick
+      rustc
 
       nodejs_20
 
@@ -36,6 +37,7 @@
       typescript-language-server
       vscode-langservers-extracted
       hyprls
+      rust-analyzer
 
       alejandra
 
