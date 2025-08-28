@@ -57,16 +57,6 @@ in {
   # For dotfiles
   home.file = {};
 
-  # .desktop files
-  xdg.desktopEntries = {
-    webcord = {
-      name = "Webcord";
-      exec = "webcord";
-      terminal = false;
-      type = "Application";
-    };
-  };
-
   # ENV Variables
   home.sessionVariables = {
     EDITOR = "nvim";
