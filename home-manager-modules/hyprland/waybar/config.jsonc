@@ -18,8 +18,11 @@
 	"hyprland/window": {
 		"seperate-outputs": true,
 		"rewrite": {
-			"(.*) - Zen Browser": " $1",
-			"nvim (.*)": " - $1",
+			"(.*) -- Zen Browser": " $1",
+			"nvim (.*)": " ",
+			"tmux": " ",
+			"steam": " ",
+			"(.*) - Obsidian (.*)": "󰎚 - $1"
 		},
 	},
 
