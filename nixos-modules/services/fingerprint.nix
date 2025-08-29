@@ -9,6 +9,10 @@
   };
 
   config = lib.mkIf config.fingerprint.enable {
+    environment.systemPackages = with pkgs; [
+      usbutils
+    ];
+
     systemd.services.fprintd = {
       wantedBy = ["multi-user.target"];
       serviceConfig.Type = "simple";
