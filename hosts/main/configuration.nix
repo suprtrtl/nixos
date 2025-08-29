@@ -68,6 +68,9 @@
     pulse.enable = true;
   };
 
+  # Powerbutton
+  services.logind.powerKey = "suspend";
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
