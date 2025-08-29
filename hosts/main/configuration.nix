@@ -69,7 +69,9 @@
   };
 
   # Powerbutton
-  services.logind.powerKey = "suspend";
+  services.logind.settings.Login = {
+    HandlePowerKey = "suspend";
+  };
 
   programs.steam = {
     enable = true;
