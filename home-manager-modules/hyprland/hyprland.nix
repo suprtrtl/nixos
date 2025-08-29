@@ -51,6 +51,7 @@
     xdg.configFile = {
       "hypr/hyprpaper.conf".source = ./hypr/hyprpaper.conf;
       "hypr/hypridle.conf".source = ./hypr/hypridle.conf;
+      "hypr/hyprlock.conf".source = ./hypr/hyprlock.conf;
 
       "tofi".source = ./tofi;
 
