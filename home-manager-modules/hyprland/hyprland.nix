@@ -23,6 +23,7 @@
       };
     };
     services.hyprpaper.enable = true;
+    services.hypridle.enable = true;
 
     programs.waybar.enable = true;
     programs.hyprlock.enable = true;
@@ -49,6 +50,7 @@
 
     xdg.configFile = {
       "hypr/hyprpaper.conf".source = ./hypr/hyprpaper.conf;
+      "hypr/hypridle.conf".source = ./hypr/hypridle.conf;
 
       "tofi".source = ./tofi;
 
