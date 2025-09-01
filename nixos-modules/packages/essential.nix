@@ -3,6 +3,8 @@
     alejandra
     bat
     curl
+    efibootmgr
+    efibooteditor
     fastfetch
     fd
     flameshot
