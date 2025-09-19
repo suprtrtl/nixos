@@ -38,6 +38,11 @@
       vscode-langservers-extracted
       hyprls
       rust-analyzer
+      jdt-language-server
+      vscode-extensions.vscjava.vscode-java-test
+      vscode-extensions.vscjava.vscode-java-debug
+
+      openjdk17
 
       alejandra
 
