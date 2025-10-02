@@ -107,14 +107,15 @@ if ! sudo nixos-rebuild switch --flake "$FLAKE_PATH#$FLAKE_HOST" &> "$LOG_FILE";
 fi
 
 # === Metadata for commit ===
-current=$(nixos-rebuild list-generations | grep current || echo "Unknown Generation")
+current=$(nixos-rebuild list-generations | grep 'True' || echo "Unknown Generation")
 
 gen_num=$(echo "$current" | awk '{print $1}')
-date_part=$(echo "$current" | awk '{print $3}')
-time_part=$(echo "$current" | awk '{print $4}' | cut -c1-5)
-hash_full=$(echo "$current" | awk '{print $5}')
+date_part=$(echo "$current" | awk '{print $2}')
+time_part=$(echo "$current" | awk '{print $3}' | cut -c1-5)
+nixos_version=$(echo "$current" | awk '{print $4}')
+kernel_version=$(echo "$current" | awk '{print $5}')
+hash_full=$(echo "$current" | awk '{print $6}')
 hash_short=${hash_full##*.}
-kernel_version=$(echo "$current" | awk '{print $6}')
 
 commit_msg="gen $gen_num @ $date_part $time_part ($hash_short) kernel $kernel_version"
 
