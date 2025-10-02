@@ -2,6 +2,7 @@
   environment.systemPackages = with pkgs; [
     alejandra
     bat
+    cargo
     curl
     efibootmgr
     efibooteditor
