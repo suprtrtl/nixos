@@ -2,11 +2,19 @@
 
 ## Installation
 
+Make sure you have `git` installed (`nix-shell -p git`)
+
 ```sh
 cd ~
 git clone https://github.com/suprtrtl/nixos.git
 rm -f ~/nixos/hosts/main/hardware-configuration.nix
 sudo cp -r /etc/nixos/hardware-configuration.nix ~/nixos/hosts/main
+```
+
+Open up `scripts/rebuild-nixos.sh` and edit the variables at the top of the file
+Change username and emails in various files
+
+```sh
 sudo nixos-rebuild switch --flake ~/nixos#main
 ```
 
