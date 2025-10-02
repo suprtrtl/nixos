@@ -2,7 +2,11 @@
 
 ## Table of Contents
 
-[#Installation]
+- [Installation](#installation)
+    - [Cloning](#cloning)
+    - [Git Setup](#git-setup)
+- [Roadmap](#roadmap)
+    - [Completed](#completed)
 
 ## Installation
 
