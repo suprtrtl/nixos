@@ -15,7 +15,7 @@
       enableZshIntegration = true;
 
       settings = {
-        theme = "OneHalfDark";
+        theme = "One Half Dark";
         font-size = 10;
       };
     };

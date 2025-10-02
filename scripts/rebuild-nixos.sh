@@ -4,6 +4,7 @@
 
 set -euo pipefail
 
+
 # === Configuration ===
 FLAKE_PATH="$HOME/nixos"
 BRANCH="main"
@@ -46,6 +47,7 @@ if [ "$VERBOSE" = true ]; then
 	set -x
 fi
 
+
 # === Check for hostname ===
 if [[ $# -lt 1 ]]; then
   echo -e "${ERR_COLOR}❌ Error: You must provide a flake host name as the first argument.${NC}"
@@ -68,6 +70,7 @@ mkdir -p "$LOG_DIR"
 pushd "$FLAKE_PATH" > /dev/null
 
 
+echo "$FLAKE_PATH"
 
 # === Check for tracked file changes ===
 if [[ -z "$(git status --porcelain)" ]]; then
@@ -83,9 +86,9 @@ else
 fi
 
 # === Format with alejandra ===
-if ! alejandra . &>/dev/null; then
+if ! sudo alejandra . &>/dev/null; then
     echo -e "\n${ERR_COLOR}Alejandra autoformat failed. Retrying with output...${NC}\n"
-    alejandra . || (echo -e "${ERR_COLOR}Final formatting failed.${NC}" && exit 2)
+    sudo alejandra . || (echo -e "${ERR_COLOR}Final formatting failed.${NC}" && exit 2)
 fi
 
 # === Show diffs ===
