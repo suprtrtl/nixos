@@ -2,6 +2,8 @@
 
 ## Installation
 
+### Cloning
+
 Make sure you have `git` installed (`nix-shell -p git`)
 
 ```sh
@@ -16,6 +18,8 @@ Change username and emails in various files
 ```sh
 sudo nixos-rebuild switch --flake ~/nixos#main
 ```
+
+### Git Setup
 
 Make sure you setup git repository before running `rebuild-nixos.sh`
 
