@@ -11,12 +11,24 @@ rm -f ~/nixos/hosts/main/hardware-configuration.nix
 sudo cp -r /etc/nixos/hardware-configuration.nix ~/nixos/hosts/main
 ```
 
-Open up `scripts/rebuild-nixos.sh` and edit the variables at the top of the file
 Change username and emails in various files
 
 ```sh
 sudo nixos-rebuild switch --flake ~/nixos#main
 ```
+
+Make sure you setup git repository before running `rebuild-nixos.sh`
+
+```sh
+cd ~/nixos
+git init
+git remote add origin <remote url>
+git add -A
+git commit -m "initial commit"
+git push origin main
+```
+
+Open up `scripts/rebuild-nixos.sh` and edit the variables at the top of the file to match your repo setup 
 
 ## ROADMAP
 
