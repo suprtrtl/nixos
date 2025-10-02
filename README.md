@@ -1,3 +1,15 @@
+# My NixOs Config
+
+## Installation
+
+```sh
+cd ~
+git clone https://github.com/suprtrtl/nixos.git
+rm -f ~/nixos/hosts/main/hardware-configuration.nix
+sudo cp -r /etc/nixos/hardware-configuration.nix ~/nixos/hosts/main
+sudo nixos-rebuild switch --flake ~/nixos#main
+```
+
 ## ROADMAP
 
 - [ ] Add Update flag to rebuild script (nix flake update)
