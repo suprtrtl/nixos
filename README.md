@@ -1,5 +1,9 @@
 # My NixOs Config
 
+## Table of Contents
+
+[#Installation]
+
 ## Installation
 
 ### Cloning
@@ -34,7 +38,7 @@ git push origin main
 
 Open up `scripts/rebuild-nixos.sh` and edit the variables at the top of the file to match your repo setup 
 
-## ROADMAP
+## Roadmap
 
 - [ ] Add Update flag to rebuild script (nix flake update)
 - [ ] Add push and pull git flags to rebuild script (-p | pull from github, -P | dont push to github)
