@@ -33,7 +33,7 @@
 
       lua-language-server
       luajitPackages.lua-lsp
-      nil
+      nixd
       bash-language-server
       typescript-language-server
       vscode-langservers-extracted

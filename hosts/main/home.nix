@@ -51,6 +51,7 @@ in {
   # User specific packages
   home.packages = with pkgs; [
     freecad
+    kmonad
     obsidian
     steamcmd
     steam-tui
