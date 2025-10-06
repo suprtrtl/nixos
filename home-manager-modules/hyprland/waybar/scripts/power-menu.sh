@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-case "$(printf "kill\nsleep\nreboot\nshutdown" | tofi --anchor=top-right --width=8% --height=12% --num-results=4 --prompt-text="" --placeholder-text="power option:" --margin-top=42 --margin-right=5 )" in
+case "$(printf "kill\nsleep\nreboot\nshutdown" | tofi --width=20% --height=20% --num-results=4 --prompt-text="" --placeholder-text="power option:" )" in
 	kill) ps -u $USER -o pid,comm,%cpu,%mem | tofi --width=25% | awk '{print $1}' | xargs -r kill ;;
 	sleep) systemctl suspend -i && hyprlock ;;
 	reboot) systemctl reboot -i ;;
