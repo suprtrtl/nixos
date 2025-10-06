@@ -44,10 +44,13 @@ in {
   tmux.enable = true;
   zellij.enable = false;
 
+  robotics.enable = true;
+
   programs.zen-browser.enable = true;
 
   # User specific packages
   home.packages = with pkgs; [
+    freecad
     obsidian
     steamcmd
     steam-tui
