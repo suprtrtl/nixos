@@ -5,7 +5,7 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n󰞋  Help\n  Power
 	"  Tools") 
 		case "$(printf "screenshot\npicker" | tofi )" in
 			screenshot) notify-send "TODO" ;;
-			picker) hyprpicker ;;
+			picker) exit && hyprpicker ;;
 
 			*) exit 1 ;;
 		esac ;;
