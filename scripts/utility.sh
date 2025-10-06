@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-case "$(printf "  Applications\nTools\nPower" | tofi  )" in
+case "$(printf "  Applications\nTools\nPower" | tofi --width=20% )" in
 	"  Applications") tofi-drun --drun-launch=true ;;
 	tools) 
 		case "$(printf "screenshot\npicker" | tofi )" in
