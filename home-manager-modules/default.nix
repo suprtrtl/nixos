@@ -6,6 +6,7 @@
 }: {
   imports = [
     ./styles.nix
+    ./robotics.nix
 
     ./cli/fzf.nix
     ./cli/git.nix

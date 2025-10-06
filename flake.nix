@@ -12,8 +12,8 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
     # Neovim
-    nvim-src = {
-      url = "github:suprtrtl/neovim";
+    nvim-config-src = {
+      url = "github:suprtrtl/neovim/0.12";
       flake = false;
     };
   };

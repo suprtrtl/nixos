@@ -49,7 +49,7 @@
       ripgrep
     ];
 
-    xdg.configFile."nvim".source = inputs.nvim-src;
+    xdg.configFile."nvim".source = inputs.nvim-config-src;
 
     home.sessionVariables = {
       NIX_NEOVIM = 1;
