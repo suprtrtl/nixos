@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 case "$(printf "  Applications\nTools\nPower" | tofi  )" in
-	__Applications) tofi-drun --drun-launch=true ;;
+	"  Applications") tofi-drun --drun-launch=true ;;
 	tools) 
 		case "$(printf "screenshot\npicker" | tofi )" in
 			screenshot) notify-send "Screenshot" ;;
