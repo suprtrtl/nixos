@@ -104,7 +104,7 @@
 	# Selection text
 	selection-color = #98c379
 	selection-background = #222222AA
-	selection-background-padding = 3
+	selection-background-padding = 10
 	selection-background-corner-radius = 3
 
 	# Matching portion of selection text
