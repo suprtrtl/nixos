@@ -155,7 +155,7 @@
 	num-results = 0
 
 	# Spacing between results in pixels. Can be negative.
-	result-spacing = 3
+	result-spacing = 5
 
 	# List results horizontally.
 	horizontal = false
@@ -186,7 +186,7 @@
 	border-color = #00E050
 
 	# Radius of window corners in pixels.
-	corner-radius = 5
+	corner-radius = 3
 
 	# Padding between borders and text. Can be pixels or a percentage.
 	padding-top = 11
