@@ -255,11 +255,11 @@
     "nvim-config-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1759728173,
-        "narHash": "sha256-5OuviCzTGf8ScqosHG8zP8VaoxmuRHwGPyq3Pbkxtj8=",
+        "lastModified": 1759728663,
+        "narHash": "sha256-9S+b7lI03FCCdAwYgRCRejU3p6jHJGEfyMw7jeDwqBk=",
         "owner": "suprtrtl",
         "repo": "neovim",
-        "rev": "b890e7f2aae69b8722b074872a33ec2d29b9ea74",
+        "rev": "88f2425c7dd8b40c51426470a8a80f0c58508737",
         "type": "github"
       },
       "original": {

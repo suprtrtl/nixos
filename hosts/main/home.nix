@@ -50,6 +50,7 @@ in {
 
   # User specific packages
   home.packages = with pkgs; [
+    cava
     freecad
     kmonad
     obsidian
