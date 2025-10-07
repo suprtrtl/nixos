@@ -8,6 +8,7 @@
     ./styles.nix
     ./robotics.nix
 
+    ./cli/cheat.nix
     ./cli/fzf.nix
     ./cli/git.nix
     ./cli/zoxide.nix

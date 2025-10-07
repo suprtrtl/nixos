@@ -46,6 +46,8 @@ in {
 
   robotics.enable = true;
 
+  cheat.enable = true;
+
   programs.zen-browser.enable = true;
 
   # User specific packages
