@@ -59,6 +59,8 @@ in {
     webcord
   ];
 
+  services.tldr-update.enable = true;
+
   # soure scripts
   home.file."bin" = {
     source = ./../../scripts;

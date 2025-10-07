@@ -24,4 +24,6 @@
     unzip
     wget
   ];
+
+  documentation.man.generateCaches = true;
 }
