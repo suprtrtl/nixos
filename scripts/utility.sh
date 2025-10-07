@@ -20,7 +20,7 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
 		esac ;;
 	"  Learn")
 		case "$(printf "󰈙  man\n  TLDR\n  Cheat\n󰖟  cheat.sh (Online)" | tofi)" in
-			"󰈙  man") man "$(man -k . | tofi --width=50% | awk '{print $1}' )" ;;
+			"󰈙  man") ghostty -e "man "$(man -k . | tofi --width=50% | awk '{print $1}' )"" ;;
 			"  TLDR") notify-send "TODO" ;;
 			"  Cheat") notify-send "TODO" ;;
 			"󰖟  cheat.sh (Online)") notify-send "TODO" ;;
