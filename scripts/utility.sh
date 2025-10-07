@@ -21,7 +21,7 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
 	"  Learn")
 		case "$(printf "󰈙  man\n  TLDR\n  Cheat\n󰖟  cheat.sh (Online)\n󰭤  Wikis" | tofi)" in
 			"󰈙  man") ghostty -e sh -c "man "$(man -k . | tofi --width=50% --placeholder-text="Search or Input man page" | awk '{print $1}' )""  ;;
-			"  TLDR") ghostty -e sh -c "tldr "$(tldr -l | tofi --width=20% --placeholder-text="download or search tldr's" | awk '{print $1}' )" | less -R" ;;
+			"  TLDR") ghostty -e sh -c "tldr "$(tldr -l | tofi --width=20% --placeholder-text="download or search tldr's" --require-match=false | awk '{print $1}' )" | less -R" ;;
 			"󰖟  cheat.sh (Online)") ghostty -e sh -c "curl cheat.sh/"$(curl cheat.sh/:list | tofi --width=20% --placeholder-text="search cheat.sh or enter known menu:")" | less -R" ;;
 			"  Cheat") notify-send "TODO" ;;
 			"󰭤  Wikis") notify-send "TODO" ;;

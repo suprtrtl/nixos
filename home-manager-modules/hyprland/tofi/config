@@ -249,14 +249,7 @@
 	# facilitate the creation of custom modes.
 	# history-file = /path/to/histfile
 
-	# Select the matching algorithm used. If normal, substring matching is
-	# used, weighted to favour matches closer to the beginning of the
-	# string. If prefix, only substrings at the beginning of the string are
-	# matched. If fuzzy, searching is performed via a simple fuzzy matching
-	# algorithm.
-	#
-	# Supported values: normal, prefix, fuzzy
-	matching-algorithm = fuzzy
+	fuzzy-match = true
 
 	# If true, require a match to allow a selection to be made. If false,
 	# making a selection with no matches will print input to stdout.
