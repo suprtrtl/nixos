@@ -20,7 +20,7 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
 		esac ;;
 	"  Learn")
 		case "$(printf "󰈙  man\n  TLDR\n  Cheat\n󰖟  cheat.sh (Online)" | tofi)" in
-			"󰈙  man") hyprctl dispatch exec "ghostty -e sh -c "man "$(man -k . | tofi --width=50% --placeholder-text="Search or Input man page" | awk '{print $1}' )""" && sleep 0.5 && hyprctl dispatch togglefloating  ;;
+			"󰈙  man") hyprctl dispatch exec "sh -c ghostty -e sh -c "man "$(man -k . | tofi --width=50% --placeholder-text="Search or Input man page" | awk '{print $1}' )""" && sleep 0.5 && hyprctl dispatch togglefloating  ;;
 			"  TLDR") notify-send "TODO" ;;
 			"  Cheat") notify-send "TODO" ;;
 			"󰖟  cheat.sh (Online)") notify-send "TODO" ;;
