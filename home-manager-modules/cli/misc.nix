@@ -10,7 +10,7 @@
 
   config = lib.mkIf config.bundles.cli.misc.enable {
     home.packages = with pkgs; [
-      astroterm
+      # astroterm
       pastel
     ];
   };

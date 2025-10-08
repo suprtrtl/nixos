@@ -17,6 +17,11 @@
       url = "github:suprtrtl/neovim/0.12";
       flake = false;
     };
+
+    cheat-cheatsheets = {
+      url = "github:cheat/cheatsheets";
+      flake = false;
+    };
   };
 
   outputs = {

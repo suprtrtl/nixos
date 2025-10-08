@@ -2,10 +2,11 @@
   pkgs,
   lib,
   config,
+  inputs,
   ...
 }: {
   options = {
-    cheat.enable = lib.mkEnableOption "enable lazygit";
+    cheat.enable = lib.mkEnableOption "enable cheat cli";
   };
 
   config = lib.mkIf config.cheat.enable {
@@ -14,5 +15,10 @@
     ];
 
     xdg.configFile."cheat".source = ./cheat;
+    home.file.".config/cheat/cheatsheets/community" = {
+      source = inputs.cheat-cheatsheets;
+      recursive = true;
+    };
+    # xdg.configFile."cheat/cheatsheets/personal".source = ./cheat/cheatsheets/personal;
   };
 }
