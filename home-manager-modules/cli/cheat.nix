@@ -14,7 +14,7 @@
       cheat
     ];
 
-    xdg.configFile."cheat".source = ./cheat;
+    home.file.".config/cheat/conf.yml".source = ./cheat/conf.yml;
     home.file.".config/cheat/cheatsheets/community" = {
       source = inputs.cheat-cheatsheets;
       recursive = true;
