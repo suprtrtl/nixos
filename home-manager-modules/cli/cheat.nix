@@ -19,6 +19,6 @@
       source = inputs.cheat-cheatsheets;
       recursive = true;
     };
-    # xdg.configFile."cheat/cheatsheets/personal".source = ./cheat/cheatsheets/personal;
+    home.file.".config/cheat/cheatsheets/personal".source = ./cheat/cheatsheets/personal;
   };
 }
