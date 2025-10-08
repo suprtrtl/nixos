@@ -3,9 +3,11 @@
 case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power" | tofi --width=20% )" in
 	"  Applications") tofi-drun --drun-launch=true ;;
 	"  Tools") 
-		case "$(printf "screenshot\npicker" | tofi )" in
-			screenshot) notify-send "TODO" ;;
-			picker) hyprpicker ;;
+		case "$(printf "  Screenshot\n  Picker\n  Wifi\n󰂯  Bluetooth" | tofi )" in
+			"  Screenshot") notify-send "TODO" ;;
+			"  Picker") hyprpicker ;;
+			"  Wifi") impala ;;
+			"󰂯  Bluetooth") bluetui ;;
 
 			*) exit 1 ;;
 		esac ;;

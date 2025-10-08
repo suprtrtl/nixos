@@ -52,8 +52,10 @@ in {
 
   # User specific packages
   home.packages = with pkgs; [
+    bluetui
     cava
     freecad
+    impala
     kmonad
     obsidian
     steamcmd
