@@ -10,11 +10,12 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
 			*) exit 1 ;;
 		esac ;;
 	"󱄅  Nix")
-		case "$(printf "  Temp Package\n  NixOS Manual\n  NixOS Config Options\n  Home Manager Config Options" | tofi )" in
+		case "$(printf "  Temp Package\n  NixOS Manual\n  NixOS Config Options\n  Home Manager Config Options\n󱞱  Back" | tofi )" in
 			"  Temp Package") notify-send "TODO" ;;
 			"  NixOS Manual") nixos-help && notify-send "Opened in Browser" ;;
 			"  NixOS Config Options") notify-send "TODO" ;;
 			"  Home Manager Config Options") notify-send "TODO" ;;
+			"󱞱  Back") utility.sh ;;
 
 			*) exit 1 ;;
 		esac ;;
