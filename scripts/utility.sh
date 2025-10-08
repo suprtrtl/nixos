@@ -3,7 +3,7 @@
 case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power" | tofi --width=20% )" in
 	"  Applications") tofi-drun --drun-launch=true ;;
 	"  Tools") 
-		case "$(printf "  Screenshot\n  Picker\n  Wifi\n󰂯  Bluetooth" | tofi )" in
+		case "$(printf "  Screenshot\n  Picker\n  Wifi\n󰂯  Bluetooth" | tofi --width=20% )" in
 			"  Screenshot") notify-send "TODO" ;;
 			"  Picker") hyprpicker ;;
 			"  Wifi") ghostty -e "impala" ;;
@@ -17,7 +17,7 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
 			"  NixOS Manual") nixos-help && notify-send "Opened in Browser" ;;
 			"  NixOS Config Options") notify-send "TODO" ;;
 			"  Home Manager Config Options") notify-send "TODO" ;;
-			"󱞱  Back") utility.sh ;;
+			"󱞱  Back") exit && utility.sh ;;
 
 			*) exit 1 ;;
 		esac ;;
