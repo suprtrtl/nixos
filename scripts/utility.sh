@@ -6,8 +6,8 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
 		case "$(printf "  Screenshot\n  Picker\n  Wifi\n󰂯  Bluetooth" | tofi )" in
 			"  Screenshot") notify-send "TODO" ;;
 			"  Picker") hyprpicker ;;
-			"  Wifi") impala ;;
-			"󰂯  Bluetooth") bluetui ;;
+			"  Wifi") ghostty -e "impala" ;;
+			"󰂯  Bluetooth") ghostty -e "bluetui" ;;
 
 			*) exit 1 ;;
 		esac ;;
