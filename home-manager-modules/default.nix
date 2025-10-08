@@ -18,6 +18,8 @@
     ./editors/neovim.nix
     ./editors/emacs/emacs.nix
 
+    ./gui/browsers/nyxt.nix
+
     ./hyprland/hyprland.nix
 
     ./shells/zsh.nix

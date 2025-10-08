@@ -49,6 +49,7 @@ in {
   cheat.enable = true;
 
   programs.zen-browser.enable = true;
+  nyxt.enable = true;
 
   # User specific packages
   home.packages = with pkgs; [

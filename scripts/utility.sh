@@ -22,7 +22,7 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
 			*) exit 1 ;;
 		esac ;;
 	"  Learn")
-		case "$(printf "󰈙  man\n  TLDR\n󰖟  cheat.sh (Online)\n  Cheat\n󰭤  Wikis" | tofi)" in
+		case "$(printf "󰈙  man\n  TLDR\n󰖟  cheat.sh (Online)\n  Cheat\n󰭤  Wikis" | tofi --width=20%)" in
 			"󰈙  man") ghostty -e sh -c "man \$(man -k . | tofi --width=50% --placeholder-text='Search or Input man page' --fuzzy-match=false | awk '{section=\$2; gsub(/[()]/, \"\", section); print section, \$1}') " ;;
 			"  TLDR") ghostty -e sh -c "tldr -c "$(tldr -l | tofi --width=20% --placeholder-text="download or search tldr's" --require-match=false | awk '{print $1}' )" | less -R" ;;
 			"󰖟  cheat.sh (Online)") ghostty -e sh -c "curl cheat.sh/"$(curl cheat.sh/:list | tofi --width=20% --placeholder-text="search cheat.sh or enter known menu:")" | less -R" ;;

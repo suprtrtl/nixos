@@ -124,6 +124,10 @@
   # Install zsh
   programs.zsh.enable = true;
 
+  environment.systemPackages = with pkgs; [
+    nyxt
+  ];
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
