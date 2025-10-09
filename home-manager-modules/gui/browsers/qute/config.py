@@ -5,4 +5,4 @@ config.load_autoconfig(False)
 config.source('onedark.py')
 
 # Tab management
-c.tabs.show = True
+c.tabs.show = "left"
