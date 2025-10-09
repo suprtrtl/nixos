@@ -6,3 +6,4 @@ config.source('onedark.py')
 
 # Tab management
 c.tabs.position = "left"
+c.tabs.shrink = True
