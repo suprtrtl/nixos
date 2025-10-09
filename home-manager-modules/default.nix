@@ -19,6 +19,7 @@
     ./editors/emacs/emacs.nix
 
     ./gui/browsers/nyxt.nix
+    ./gui/browsers/qute.nix
 
     ./hyprland/hyprland.nix
 

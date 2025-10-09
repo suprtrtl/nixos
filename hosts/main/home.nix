@@ -49,7 +49,9 @@ in {
   cheat.enable = true;
 
   programs.zen-browser.enable = true;
+  # Not very Performant
   nyxt.enable = true;
+  qutebrowser.enable = true;
 
   # User specific packages
   home.packages = with pkgs; [
