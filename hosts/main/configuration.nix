@@ -125,7 +125,11 @@
   programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
+    lynx
+    # Not Very Performant Currently
     nyxt
+
+    qutebrowser
   ];
 
   # Allow unfree packages
