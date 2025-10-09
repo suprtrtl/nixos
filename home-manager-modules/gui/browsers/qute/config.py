@@ -1,8 +1,8 @@
 # Sets Autoconfig Loading to false
-c.load_autoconfig(False)
+config.load_autoconfig(False)
 
 # Source Onedark Colors
-c.source('onedark.py')
+config.source('onedark.py')
 
 # Tab management
 c.tabs.show = True
