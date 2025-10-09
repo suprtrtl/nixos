@@ -1,3 +1,5 @@
+# Use :set to see config options
+
 # Sets Autoconfig Loading to false
 config.load_autoconfig(False)
 
@@ -17,3 +19,6 @@ c.content.blocking.method = "both"
 # Cookies
 c.content.cookies.accept = "never"
 c.content.cookies.store = True
+
+# Dark Mode
+c.webpage.preferred_color_scheme = "dark"
