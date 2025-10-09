@@ -6,10 +6,9 @@ config.source('onedark.py')
 
 # Tab management
 c.tabs.position = "left"
-c.tabs.shrink = True
 c.tabs.favicons.scale = 1.2
-c.tabs.max_width = 64
-c.tabs.min_width = 64
+c.tabs.max_width = 32
+c.tabs.min_width = 32
 
 # Ad Blocking
 c.content.blocking.enabled = True
