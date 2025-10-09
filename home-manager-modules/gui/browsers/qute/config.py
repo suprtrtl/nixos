@@ -21,4 +21,4 @@ c.content.cookies.accept = "never"
 c.content.cookies.store = True
 
 # Dark Mode
-c.webpage.preferred_color_scheme = "dark"
+c.colors.webpage.preferred_color_scheme = "dark"
