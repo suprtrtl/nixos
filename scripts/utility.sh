@@ -3,7 +3,8 @@
 case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power" | tofi --width=20% )" in
 	"  Applications") tofi-drun --drun-launch=true ;;
 	"  Tools") 
-		case "$(printf "  Screenshot\n  Picker\n  Wifi\n󰂯  Bluetooth" | tofi --width=20% )" in
+		case "$(printf "  Resources\n  Screenshot\n  Picker\n  Wifi\n󰂯  Bluetooth" | tofi --width=20% )" in
+			"  Resources") ghostty -e "btop" ;;
 			"  Screenshot") notify-send "TODO" ;;
 			"  Picker") hyprpicker ;;
 			"  Wifi") ghostty -e "impala" ;;
