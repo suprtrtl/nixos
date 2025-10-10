@@ -20,7 +20,7 @@ c.content.cookies.store = True
 
 # Dark Mode
 c.colors.webpage.preferred_color_scheme = 'dark'
-c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.enabled = False
 
 # Keybindings
 config.bind('M', 'hint links spawn mpv {hint-url}')

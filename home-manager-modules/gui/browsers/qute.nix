@@ -16,6 +16,7 @@
     };
 
     home.packages = with pkgs; [
+      vaultwarden
       mpv
       yt-dlp
     ];
