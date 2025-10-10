@@ -1,4 +1,5 @@
 {
+  pkgs,
   lib,
   config,
   ...
@@ -13,5 +14,10 @@
       source = ./qute;
       recursive = true;
     };
+
+    home.packages = with pkgs; [
+      mpv
+      yt-dlp
+    ];
   };
 }
