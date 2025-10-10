@@ -34,6 +34,8 @@ in {
   alacritty.enable = true;
   ghostty.enable = true;
 
+  vlc.enable = true;
+
   btop.enable = true;
   rmpc.enable = true;
 

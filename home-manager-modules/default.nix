@@ -18,6 +18,7 @@
     ./editors/neovim.nix
     ./editors/emacs/emacs.nix
 
+    ./gui/vlc.nix
     ./gui/browsers/nyxt.nix
     ./gui/browsers/qute.nix
 
