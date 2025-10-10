@@ -8,7 +8,6 @@ config.source('onedark.py')
 
 # Tab management
 c.tabs.position = "left"
-c.tabs.favicons.scale = 1.2
 c.tabs.max_width = 48
 c.tabs.min_width = 32
 
@@ -23,3 +22,7 @@ c.content.cookies.store = True
 # Dark Mode
 c.colors.webpage.preferred_color_scheme = "dark"
 c.colors.webpage.darkmode.enabled = True
+
+# Aliases
+c.aliases["dm"] = "set colors.webpage.enabled true"
+c.aliases["lm"] = "set colors.webpage.enabled false"
