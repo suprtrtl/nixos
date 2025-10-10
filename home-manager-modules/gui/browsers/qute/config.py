@@ -24,5 +24,5 @@ c.colors.webpage.preferred_color_scheme = "dark"
 c.colors.webpage.darkmode.enabled = True
 
 # Aliases
-c.aliases["dm"] = "set colors.webpage.enabled true"
-c.aliases["lm"] = "set colors.webpage.enabled false"
+c.aliases["dm"] = "set colors.webpage.darkmode.enabled true"
+c.aliases["lm"] = "set colors.webpage.darkmode.enabled false"
