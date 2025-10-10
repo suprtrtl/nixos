@@ -16,7 +16,7 @@
     };
 
     home.packages = with pkgs; [
-      vaultwarden
+      bitwarden
       mpv
       yt-dlp
     ];
