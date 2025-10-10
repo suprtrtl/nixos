@@ -38,5 +38,9 @@ c.aliases['ytd'] = 'hint links spawn ghostty -e yt-dlp {hint-url}'
 # Completion
 c.completion.shrink = True
 
+# Font
+c.fonts.default_size = "12pt"
+c.fonts.default_family = "Cousine Nerd Font"
+
 # PDF's
 c.content.pdfjs = True
