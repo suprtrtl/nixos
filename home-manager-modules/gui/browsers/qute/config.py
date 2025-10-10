@@ -8,8 +8,7 @@ config.source('onedark.py')
 
 # Tab management
 c.tabs.position = 'left'
-c.tabs.max_width = 48
-c.tabs.min_width = 32
+c.tabs.width = "10%"
 
 # Ad Blocking
 c.content.blocking.enabled = True
@@ -39,7 +38,7 @@ c.aliases['ytd'] = 'hint links spawn ghostty -e yt-dlp {hint-url}'
 c.completion.shrink = True
 
 # Font
-c.fonts.default_size = "12pt"
+c.fonts.default_size = "11pt"
 c.fonts.default_family = "Cousine Nerd Font"
 
 # PDF's
