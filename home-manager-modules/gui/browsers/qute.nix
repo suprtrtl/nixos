@@ -17,6 +17,8 @@
 
     home.packages = with pkgs; [
       bitwarden
+      bitwarden-cli
+      bitwarden-menu
       mpv
       yt-dlp
     ];
