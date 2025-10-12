@@ -126,8 +126,8 @@
 
   environment.systemPackages = with pkgs; [
     lynx
-    # Not Very Performant Currently
-    nyxt
+    nyxt # Not Very Performant Currently
+    protonup-qt # Add to steam.nix
 
     qutebrowser
   ];

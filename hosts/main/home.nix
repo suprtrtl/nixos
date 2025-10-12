@@ -63,6 +63,8 @@ in {
     impala
     kmonad
     obsidian
+    protonvpn-cli
+    protonvpn-gui
     steamcmd
     steam-tui
     webcord
