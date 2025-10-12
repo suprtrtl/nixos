@@ -14,6 +14,7 @@
     gcc
     git
     git-credential-manager
+    gparted
     libnotify
     pavucontrol
     rustc
