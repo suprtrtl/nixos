@@ -22,6 +22,9 @@
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  # Driverss
+  hardware.enableRedistributableFirmware = true;
+
   # Enable networking
   networking.networkmanager.enable = true;
 
