@@ -63,6 +63,8 @@ in {
     impala
     kmonad
     obsidian
+    python3
+    python3Packages.pip
     protonvpn-cli
     protonvpn-gui
     steamcmd

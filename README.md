@@ -49,9 +49,10 @@ Open up `scripts/rebuild-nixos.sh` and edit the variables at the top of the file
 - [ ] Prism Launcher
 - [ ] Separate `essentials.nix` into a folder with sub category folders (eg. `essentials/dev.nix`)
 - [ ] refactor `nixos-modules/` to actually be module based (eg. nix module for `systemd-boot`)
+- [ ] Test out [Niri](https://github.com/YaLTeR/niri)
+- [ ] Check out [MangoWC](https://github.com/DreamMaoMao/mangowc)
 - [ ] Transfer from GNOME to KDE
 - [ ] Rice KDE
-- [ ] Test out [Niri](https://github.com/YaLTeR/niri)
 
 ### Completed
 
