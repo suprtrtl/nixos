@@ -195,7 +195,7 @@ configuration {
   spacing: 0;
   background-color: transparent;
 
-	font: "JetBrainsMono Nerd Font 12";
+font: "JetBrainsMono Nerd Font 12";
   text-color: @text;
 }
 
@@ -232,7 +232,7 @@ entry {
 }
 
 listview {
-  spacing: 5px;
+  spacing: 0px;
   dynamic: true;
   scrollbar: false;
 }
