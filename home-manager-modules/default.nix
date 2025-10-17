@@ -23,6 +23,7 @@
     ./gui/browsers/qute.nix
 
     ./hyprland/hyprland.nix
+    ./niri/niri.nix
 
     ./shells/zsh.nix
     ./shells/fish.nix

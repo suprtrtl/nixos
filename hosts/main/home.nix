@@ -21,6 +21,7 @@ in {
   # Programs
 
   hyprland.enable = true;
+  niri.enable = true;
 
   fzf.enable = true;
   zoxide.enable = true;

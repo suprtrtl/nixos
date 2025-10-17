@@ -83,7 +83,7 @@
 
 	"custom/power": {
 		"format": "  ",
-		"on-click": "~/.config/waybar/scripts/power-menu.sh",
+		"on-click": "~/.config/waybar/niri-scripts/power-menu.sh",
 		"tooltip-format": "Power Menu"
 	},
 

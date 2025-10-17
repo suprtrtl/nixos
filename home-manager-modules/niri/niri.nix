@@ -40,12 +40,10 @@
     xdg.configFile = {
       "niri".source = ./niri;
 
-      "tofi".source = ./tofi;
+      "waybar/config.niri.jsonc".source = ./waybar/config.jsonc;
+      "waybar/style.niri.css".source = ./waybar/style.css;
 
-      "waybar/config.jsonc".source = ./waybar/config.niri.jsonc;
-      "waybar/style.css".source = ./waybar/style.niri.css;
-
-      "waybar/scripts" = {
+      "waybar/niri-scripts" = {
         source = ./waybar/scripts;
         recursive = true;
       };

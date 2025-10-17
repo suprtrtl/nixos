@@ -54,12 +54,10 @@
       "hypr/hyprlock.conf".source = ./hypr/hyprlock.conf;
       "hypr/autostart.sh".source = ./autostart.sh;
 
-      "tofi".source = ./tofi;
-
       "waybar/config.hypr.jsonc".source = ./waybar/config.jsonc;
       "waybar/style.hypr.css".source = ./waybar/style.css;
 
-      "waybar/scripts" = {
+      "waybar/hypr-scripts" = {
         source = ./waybar/scripts;
         recursive = true;
       };
