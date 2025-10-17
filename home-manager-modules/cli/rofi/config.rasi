@@ -200,9 +200,7 @@ font: "JetBrainsMono Nerd Font 12";
 }
 
 window {
-  transparency: "real";
-  fullscreen: false;
-  background-color: #00000000;
+  background-color: @bg;
   border: 2px;
   border-color: @green;
 }
