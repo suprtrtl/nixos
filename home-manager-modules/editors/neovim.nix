@@ -42,7 +42,7 @@
       jdt-language-server
       vscode-extensions.vscjava.vscode-java-test
       vscode-extensions.vscjava.vscode-java-debug
-      python313Packages.jedi-language-server
+      python3Packages.jedi-language-server
 
       openjdk17
 
