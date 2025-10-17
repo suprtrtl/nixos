@@ -7,6 +7,6 @@
   programs.tofi.enable = true;
 
   xdg.configFile = {
-    "tofi/config" = ./config;
+    "tofi/config".source = ./config;
   };
 }

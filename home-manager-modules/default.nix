@@ -11,6 +11,7 @@
     ./cli/cheat.nix
     ./cli/fzf.nix
     ./cli/git.nix
+    ./cli/tofi/tofi.nix
     ./cli/zoxide.nix
 
     ./cli/misc.nix
