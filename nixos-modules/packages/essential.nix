@@ -9,6 +9,7 @@
     efibooteditor
     fastfetch
     fd
+    ffmpeg
     flameshot
     fzf
     gcc

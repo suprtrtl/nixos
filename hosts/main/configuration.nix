@@ -82,6 +82,9 @@
   # Fingerprint
   fingerprint.enable = true;
 
+  # enables external packages
+  programs.nix-ld.enable = true;
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
@@ -91,6 +94,9 @@
 
   # Hyprland
   hyprland.enable = true;
+
+  # Niri
+  niri.enable = true;
 
   spotify.enable = true;
 

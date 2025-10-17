@@ -6,6 +6,7 @@
 }: {
   imports = [
     ./hyprland/hyprland.nix
+    ./niri/niri.nix
 
     ./packages/essential.nix
     ./packages/fonts/essential.nix
