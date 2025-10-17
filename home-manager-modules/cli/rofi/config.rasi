@@ -1,0 +1,63 @@
+# Rofi Configuration
+
+# Font settings
+*font: JetBrainsMono NerdFont 13
+*line-height: 1.2
+*font-features: ""
+*font-variations: ""
+
+# Text Color
+*foreground: #dcdfe4
+*background: #282c34
+*selected-background: #222222AA
+*selected-foreground: #98c379
+
+# Placeholder and input text
+*prompt: ""
+*placeholder: ""
+*input-background: #00000000
+*input-foreground: #FFFFFF
+*cursor-color: #FFFFFF
+*cursor-style: bar
+
+# Selection
+*selected-background: #222222AA
+*selected-foreground: #98c379
+*selected-background-padding: 3
+*selected-background-corner-radius: 3
+*matching-background: #00000000
+*matching-foreground: #78a369
+
+# Window settings
+*window-width: 40%
+*window-height: 40%
+*corner-radius: 3
+*border-width: 1
+*border-color: #00E050
+*outline-width: 1
+*outline-color: #98c379
+
+# Positioning
+*anchor: center
+*margin: 0px
+*exclusive-zone: -1
+*scale: true
+
+# Behaviour
+*hide-cursor: false
+*history: true
+*fuzzy-search: true
+*require-match: true
+*auto-accept-single: false
+*drun-launch: false
+*drun-terminal: foot
+*multi-instance: false
+
+# Layout and Spacing
+*width: 40%
+*height: 40%
+*line-margin: 5
+*horizontal: false
+
+# Other settings (you can tweak these for specific needs)
+*border-radius: 3
