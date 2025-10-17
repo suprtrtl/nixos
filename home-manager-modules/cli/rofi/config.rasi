@@ -202,7 +202,7 @@ configuration {
 window {
   transparency: "real";
   fullscreen: true;
-  background-color: #282c34dd;
+  background-color: #00000000;
 }
 
 mainbox {
