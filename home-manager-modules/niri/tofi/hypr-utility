@@ -1,4 +1,4 @@
-#  Default config for tofi
+# Default config for tofi
 #
 # Copy this file to ~/.config/tofi/config and get customising!
 #
@@ -16,7 +16,7 @@
 	font = "JetBrainsMono NerdFont"
 
 	# Point size of text.
-	font-size = 13
+	font-size = 12
 
 	# Comma separated list of OpenType font feature settings to apply,
 	# if supported by the chosen font. The format is similar to the CSS
@@ -103,12 +103,12 @@
 
 	# Selection text
 	selection-color = #98c379
-	selection-background = #222222AA
-	selection-background-padding = 3
-	selection-background-corner-radius = 3
+	selection-background = #00000000
+	selection-background-padding = 0
+	selection-background-corner-radius = 0
 
 	# Matching portion of selection text
-	selection-match-color = #78a369
+	selection-match-color = #00000000
 
 
 #
@@ -145,17 +145,17 @@
 	prompt-text = ""
 
 	# Extra horizontal padding between prompt and input.
-	prompt-padding = 5
+	prompt-padding = 0
 
 	# Placeholder input text.
-	placeholder-text = ""
+	placeholder-text = "run:"
 
 	# Maximum number of results to display.
 	# If 0, tofi will draw as many results as it can fit in the window.
 	num-results = 0
 
 	# Spacing between results in pixels. Can be negative.
-	result-spacing = 5
+	result-spacing = 0
 
 	# List results horizontally.
 	horizontal = false
@@ -167,30 +167,30 @@
 ### Window theming
 #
 	# Width and height of the window. Can be pixels or a percentage.
-	width = 40%
-	height = 40%
+	width = 15%
+	height = 25%
 
 	# Window background color
 	background-color = #282c34
 
 	# Width of the border outlines in pixels.
-	outline-width = 1
+	outline-width = 2
 
 	# Border outline color
 	outline-color = #98c379
 
 	# Width of the border in pixels.
-	border-width = 1
+	border-width = 0
 
 	# Border color
 	border-color = #00E050
 
 	# Radius of window corners in pixels.
-	corner-radius = 3
+	corner-radius = 5
 
 	# Padding between borders and text. Can be pixels or a percentage.
-	padding-top = 11
-	padding-bottom = 3
+	padding-top = 8
+	padding-bottom = 0
 	padding-left = 8
 	padding-right = 8
 
@@ -249,7 +249,14 @@
 	# facilitate the creation of custom modes.
 	# history-file = /path/to/histfile
 
-	fuzzy-match = true
+	# Select the matching algorithm used. If normal, substring matching is
+	# used, weighted to favour matches closer to the beginning of the
+	# string. If prefix, only substrings at the beginning of the string are
+	# matched. If fuzzy, searching is performed via a simple fuzzy matching
+	# algorithm.
+	#
+	# Supported values: normal, prefix, fuzzy
+	matching-algorithm = normal
 
 	# If true, require a match to allow a selection to be made. If false,
 	# making a selection with no matches will print input to stdout.
@@ -269,6 +276,16 @@
 	# string is given, input will be completely hidden.
 	# This option only has an effect when hide-input is set to true.
 	hidden-character = "*"
+
+	# If true, use physical keys for shortcuts, regardless of the current
+	# keyboard layout. If false, use the current layout's keys.
+	physical-keybindings = true
+
+	# Instead of printing the selected entry, print the 1-based index of
+	# the selection. This option has no effect in run or drun mode. If
+	# require-match is set to false, non-matching input will still result
+	# in the input being printed.
+	print-index = false
 
 	# If true, directly launch applications on selection when in drun mode.
 	# Otherwise, just print the command line to stdout.

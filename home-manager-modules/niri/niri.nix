@@ -6,27 +6,18 @@
   ...
 }: {
   options = {
-    hyprland.enable = lib.mkEnableOption "enable hyprland home manager";
+    niri.enable = lib.mkEnableOption "enable niri home manager";
   };
 
-  config = lib.mkIf config.hyprland.enable {
-    wayland.windowManager.hyprland = {
-      enable = true;
-
-      extraConfig = "${builtins.readFile ./hypr/hyprland.conf}";
-    };
-
+  config = lib.mkIf config.niri.enable {
     services.mako = {
       enable = true;
       settings = {
         default-timeout = 1500;
       };
     };
-    services.hyprpaper.enable = true;
-    services.hypridle.enable = true;
 
     programs.waybar.enable = true;
-    programs.hyprlock.enable = true;
 
     # Tofi
     programs.tofi.enable = true;
@@ -43,21 +34,16 @@
     home.packages = with pkgs; [
       cliphist
       helvum
-      hyprpicker
-      hyprshot
       lm_sensors
     ];
 
     xdg.configFile = {
-      "hypr/hyprpaper.conf".source = ./hypr/hyprpaper.conf;
-      "hypr/hypridle.conf".source = ./hypr/hypridle.conf;
-      "hypr/hyprlock.conf".source = ./hypr/hyprlock.conf;
-      "hypr/autostart.sh".source = ./autostart.sh;
+      "niri".source = ./niri;
 
       "tofi".source = ./tofi;
 
-      "waybar/config.hypr.jsonc".source = ./waybar/config.jsonc;
-      "waybar/style.hypr.css".source = ./waybar/style.css;
+      "waybar/config.jsonc".source = ./waybar/config.niri.jsonc;
+      "waybar/style.css".source = ./waybar/style.niri.css;
 
       "waybar/scripts" = {
         source = ./waybar/scripts;
