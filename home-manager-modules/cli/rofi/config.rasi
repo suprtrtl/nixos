@@ -231,7 +231,7 @@ entry {
 
 listview {
   spacing: 0px;
-  dynamic: true;
+  dynamic: false;
   scrollbar: false;
 }
 
