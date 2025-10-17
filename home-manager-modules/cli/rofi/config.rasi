@@ -201,7 +201,7 @@ configuration {
 
 window {
   transparency: "real";
-  fullscreen: false;
+  fullscreen: true;
   background-color: #282c34dd;
 }
 
