@@ -200,13 +200,14 @@ font: "JetBrainsMono Nerd Font 12";
 }
 
 window {
-  background-color: @bg;
-  border: 2px;
-  border-color: @green;
+	fullscreen: true;
+	background-color: #00000000;
 }
 
 mainbox {
   padding: 30% 30%;
+  border: 2px;
+  border-color: @blue;
 }
 
 inputbar {
@@ -231,8 +232,8 @@ entry {
 
 listview {
   spacing: 0px;
-  dynamic: false;
-  scrollbar: false;
+  dynamic: true;
+  scrollbar: true;
 }
 
 element {
