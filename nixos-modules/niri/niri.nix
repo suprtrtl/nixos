@@ -15,6 +15,7 @@
       alacritty
       fuzzel
       swaylock
+      xwayland-satellite
     ];
 
     hardware = {
