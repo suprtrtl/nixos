@@ -173,7 +173,7 @@ configuration {
  * Based on OneDark.vim (https://github.com/joshdick/onedark.vim)
  *
  * Author: Benjamin Stauss
- * User: me-benni
+ * Modified: suprtrtl
  *
  */
 
@@ -195,13 +195,13 @@ configuration {
   spacing: 0;
   background-color: transparent;
 
-  font: "Knack Nerd Font 14";
+	font: "JetBrainsMono Nerd Font 12";
   text-color: @text;
 }
 
 window {
   transparency: "real";
-  fullscreen: true;
+  fullscreen: false;
   background-color: #282c34dd;
 }
 
