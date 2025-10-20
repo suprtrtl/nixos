@@ -44,6 +44,11 @@
   # services.displayManager.ly.enable = true;
 
   services.smartd.enable = true;
+  services.smartd.devices = [
+    {
+      device = "/dev/disk/by-id/nvme-SAMSUNG_MZALQ512HALU-000L2_S4UKNX0R685928";
+    }
+  ];
 
   # Configure keymap in X11
   services.xserver.xkb = {
