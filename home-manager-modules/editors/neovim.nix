@@ -47,7 +47,7 @@
       python3Packages.pylsp-rope
       python3Packages.pylint
       python3Packages.pylint-venv
-      python3Packages.pyflakes
+      python3Packages.flake8
       python3Packages.yapf
 
       openjdk17

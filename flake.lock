@@ -271,11 +271,11 @@
     "nvim-config-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1761023438,
-        "narHash": "sha256-ZLtBB6iHyqh+gsGTEpy+Zzmnv8+9vO47r+bnfQ1nHls=",
+        "lastModified": 1761025142,
+        "narHash": "sha256-DYfViJpN2qBCnue17ENxiIa1VpAHS5q1ZTHw3xig5LM=",
         "owner": "suprtrtl",
         "repo": "neovim",
-        "rev": "9ce66ef2d5e965a951fa95f57cf793b2ce8f9c9b",
+        "rev": "7ff6e057eda910589bad00849765dedf04cf2690",
         "type": "github"
       },
       "original": {
