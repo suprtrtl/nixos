@@ -79,6 +79,10 @@
               }
               {
                 type = "nix-shell";
+                properties = {
+                  display_mode = "context";
+                  fetch_virtual_env = true;
+                };
                 style = "powerline";
                 foreground = "blue";
                 background = "transparent";
