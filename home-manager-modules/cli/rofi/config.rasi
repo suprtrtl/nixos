@@ -205,7 +205,7 @@ window {
 }
 
 mainbox {
-  padding: 30% 30%;
+  margin: 30% 30%;
   border: 2px;
   border-color: @blue;
 }
