@@ -68,7 +68,7 @@
                 type = "node";
               }
               {
-                foreground = "blue";
+                foreground = "yellow";
                 properties = {
                   display_mode = "context";
                   fetch_virtual_env = true;
@@ -76,6 +76,13 @@
                 style = "plain";
                 template = "|  {{ .Venv }} ";
                 type = "python";
+              }
+              {
+                type = "nix-shell";
+                style = "powerline";
+                foreground = "blue";
+                background = "transparent";
+                template = "| 󱄅 {{ .Type }} ";
               }
               {
                 foreground_templates = [
