@@ -65,7 +65,7 @@ in {
     kmonad
     obsidian
     python3
-    python3Packages.pip
+    python3Packages.numpy
     protonvpn-cli
     protonvpn-gui
     steamcmd
