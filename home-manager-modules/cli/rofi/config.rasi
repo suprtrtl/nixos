@@ -244,6 +244,9 @@ element {
   text-color: @text-alt;
   highlight: bold #95ee8f; /* green */
   border-radius: 3px;
+}
+
+element normal {
   background-color: @bg;
 }
 
