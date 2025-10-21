@@ -44,6 +44,7 @@
       vscode-extensions.vscjava.vscode-java-debug
       python3Packages.jedi-language-server
       python3Packages.python-lsp-server
+      python3Packages.rope
       python3Packages.pylsp-rope
       python3Packages.pylint
       python3Packages.pylint-venv
