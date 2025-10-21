@@ -23,8 +23,4 @@
       export PATH="$HOME/bin:$PATH"
     '';
   };
-
-  home.sessionVariables = {
-    NIX_BUILD_SHELL = "zsh";
-  };
 }
