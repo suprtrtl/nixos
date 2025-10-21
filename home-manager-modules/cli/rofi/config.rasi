@@ -190,7 +190,8 @@ configuration {
   text:       #dfdfdf;
   text-alt:   #b2b2b2;
   fg:         #abb2bf;
-  bg:         #282c34;
+  bg:         #2d3239;
+  bg-alt:     #383c44;
 
   spacing: 0;
   background-color: transparent;
@@ -243,6 +244,7 @@ element {
   text-color: @text-alt;
   highlight: bold #95ee8f; /* green */
   border-radius: 3px;
+  background-color: @bg;
 }
 
 element selected {
