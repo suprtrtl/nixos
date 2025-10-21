@@ -82,7 +82,7 @@
                 style = "powerline";
                 foreground = "blue";
                 background = "transparent";
-                template = "{{ if ne .Type \"unknown\" }}| 󱄅  {{.Type}} {{ end }}";
+                template = "{{ if ne .Type \"unknown\" }}| 󱄅 {{.Type}} {{ end }}";
               }
               {
                 foreground_templates = [
