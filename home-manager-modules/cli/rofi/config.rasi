@@ -204,7 +204,7 @@ configuration {
 	bg1:          #181a1f;
 	bg2:          #3b3f4c;
 	fg0:          #abb2bf;
-	fg1:          #898f99;
+	fg1:          #c3cad8;
 	red-dark:     #cc241d;
 	red-light:    #fb4934;
 	yellow-dark:  #93691d;
