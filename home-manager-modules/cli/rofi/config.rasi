@@ -237,6 +237,7 @@ listview {
   spacing: 0px;
   dynamic: true;
   scrollbar: true;
+  background-color: @bg;
 }
 
 element {
