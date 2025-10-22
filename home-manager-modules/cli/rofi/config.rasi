@@ -207,15 +207,16 @@ configuration {
 	fg1:          #898f99;
 	red-dark:     #cc241d;
 	red-light:    #fb4934;
-	blue-dark:    #73b8f1;
-	blue-light:   #61afef;
+	yellow-dark:  #93691d;
+	yellow-light: #e5c07b;
 	gray:         #5c6370;
+	blue:         #61afef;
 
 	/* Theme colors */
 	background:                  @bg1;
 	background-color:            @background;
 	foreground:                  @fg1;
-	border-color:                @gray;
+	border-color:                @blue;
 	separatorcolor:              @border-color;
 	scrollbar-handle:            @border-color;
 
@@ -226,11 +227,11 @@ configuration {
 	selected-normal-background:  @bg2;
 	selected-normal-foreground:  @fg0;
 
-	active-background:           @blue-dark;
+	active-background:           @yellow-dark;
 	active-foreground:           @background;
 	alternate-active-background: @active-background;
 	alternate-active-foreground: @active-foreground;
-	selected-active-background:  @blue-light;
+	selected-active-background:  @yellow-light;
 	selected-active-foreground:  @active-foreground;
 
 	urgent-background:           @red-dark;
