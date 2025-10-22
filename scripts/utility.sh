@@ -2,8 +2,8 @@
 
 case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power" | rofi -dmenu -i -p "Select Option" -width 20%)" in
     "  Applications") 
-        rofi -dmenu -i -p "Applications" -width 20% -lines 10 | xargs -r tofi-drun --drun-launch=true
-        ;;
+        rofi -show drun
+		;;
     "  Tools")
         case "$(printf "  Resources\n  Screenshot\n  Picker\n  Wifi\n󰂯  Bluetooth" | rofi -dmenu -i -p "Select Tool" -width 20%)" in
             "  Resources") ghostty -e "btop" ;;
