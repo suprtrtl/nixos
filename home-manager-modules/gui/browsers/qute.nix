@@ -20,6 +20,7 @@
       bitwarden-cli
       bitwarden-menu
       mpv
+      keyutils
       yt-dlp
     ];
   };
