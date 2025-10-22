@@ -20,7 +20,7 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
             "  NixOS Manual") nixos-help && notify-send "Opened in Browser" ;;
             "  NixOS Config Options") notify-send "TODO" ;;
             "  Home Manager Config Options") notify-send "TODO" ;;
-            "󱞱  Back") exit && utility.sh ;;
+            "󱞱  Back") utility.sh ;;
             *) exit 1 ;;
         esac
         ;;
