@@ -169,12 +169,7 @@ configuration {
 
 /*
  * ROFI One Dark
- *
- * Based on OneDark.vim (https://github.com/joshdick/onedark.vim)
- *
- * Author: Benjamin Stauss
- * Modified: suprtrtl
- *
+ * Based on OneDark.nvim  *
  */
 
 
@@ -204,17 +199,17 @@ configuration {
 	highlight: bold;
 	scrollbar: true;
 
-	/* Gruvbox dark colors */
-	bg0:          #282828;
-	bg1:          #1d2021;
-	bg2:          #504945;
-	fg0:          #fbf1c7;
-	fg1:          #ebdbb2;
+	/* OneDark colors */
+	bg0:          #282c34;
+	bg1:          #181a1f;
+	bg2:          #3b3f4c;
+	fg0:          #abb2bf;
+	fg1:          #9bcba2;
 	red-dark:     #cc241d;
 	red-light:    #fb4934;
-	yellow-dark:  #d79921;
-	yellow-light: #fabd2f;
-	gray:         #a89984;
+	blue-dark:    #73b8f1;
+	blue-light:   #61afef;
+	gray:         #5c6370;
 
 	/* Theme colors */
 	background:                  @bg1;
@@ -231,11 +226,11 @@ configuration {
 	selected-normal-background:  @bg2;
 	selected-normal-foreground:  @fg0;
 
-	active-background:           @yellow-dark;
+	active-background:           @blue-dark;
 	active-foreground:           @background;
 	alternate-active-background: @active-background;
 	alternate-active-foreground: @active-foreground;
-	selected-active-background:  @yellow-light;
+	selected-active-background:  @blue-light;
 	selected-active-foreground:  @active-foreground;
 
 	urgent-background:           @red-dark;
