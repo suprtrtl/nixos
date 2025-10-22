@@ -203,8 +203,8 @@ configuration {
 	bg0:          #282c34;
 	bg1:          #181a1f;
 	bg2:          #3b3f4c;
-	fg0:          #a898f9;
-	fg1:          #9baba2;
+	fg0:          #abb2bf;
+	fg1:          #9bb2bf;
 	red-dark:     #cc241d;
 	red-light:    #fb4934;
 	blue-dark:    #73b8f1;
