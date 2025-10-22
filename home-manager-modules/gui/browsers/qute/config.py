@@ -33,6 +33,7 @@ config.bind('xx', 'config-cycle statusbar.show always never;; config-cycle tabs.
 c.aliases['sdm'] = 'set colors.webpage.darkmode.enabled true'
 c.aliases['slm'] = 'set colors.webpage.darkmode.enabled false'
 c.aliases['ytd'] = 'hint links spawn ghostty -e yt-dlp {hint-url}'
+c.aliases['pass'] = 'spawn --userscript qute-bitwarden'
 
 # Completion
 c.completion.shrink = True
