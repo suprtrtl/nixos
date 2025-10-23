@@ -9,14 +9,16 @@
     "modules-center": ["niri/window"],
     "modules-right": ["wireplumber", "battery", "idle_inhibitor", "network", "bluetooth", "tray", "clock", "custom/power"],
 
-    "hyprland/workspaces": {
+    "niri/workspaces": {
         "on-click": "activate",
         "icon-size": 10,
         "sort-by-number": true,
     },
 
-	"hyprland/window": {
+	"niri/window": {
 		"seperate-outputs": true,
+		"icon": true,
+		"icon_size": 14,
 		"rewrite": {
 			"(.*) — Zen Browser": " $1",
 			"nvim (.*)": " ",
