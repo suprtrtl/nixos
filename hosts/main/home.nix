@@ -65,6 +65,7 @@ in {
     kmonad
     obsidian
     python3
+    prismlauncher
     protonvpn-cli
     protonvpn-gui
     steamcmd
