@@ -60,6 +60,7 @@ in {
   home.packages = with pkgs; [
     bluetui
     cava
+    cbonsai
     freecad
     impala
     kmonad
