@@ -123,7 +123,7 @@
   users.users.suprtrtl = {
     isNormalUser = true;
     description = "suprtrtl";
-    extraGroups = ["networkmanager" "wheel" "bluetooth"];
+    extraGroups = ["networkmanager" "wheel" "bluetooth" "dialout" "uupc"];
     shell = pkgs.zsh;
     packages = with pkgs; [
       #  thunderbird
