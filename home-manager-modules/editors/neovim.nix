@@ -43,6 +43,7 @@
       vscode-extensions.vscjava.vscode-java-test
       vscode-extensions.vscjava.vscode-java-debug
       python3Packages.jedi-language-server
+      clang
 
       openjdk17
 
