@@ -74,12 +74,22 @@
       settings = {
         General = {
           Experimental = true;
+          Privacy = "device";
+          JustWorksRepairing = "always";
+          Class = "0x000100";
+          FastConnectable = true;
         };
       };
     };
   };
 
   services.blueman.enable = true;
+  hardware.xpadneo.enable = true;
+  boot = {
+    extraModprobeConfig = ''
+      options bluetooth disable_ertm=Y
+    '';
+  };
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
