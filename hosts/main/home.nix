@@ -58,6 +58,7 @@ in {
 
   # User specific packages
   home.packages = with pkgs; [
+    armagetronad
     bluetui
     cava
     cbonsai
@@ -67,7 +68,6 @@ in {
     obsidian
     python3
     prismlauncher
-    protonvpn-cli
     protonvpn-gui
     steamcmd
     steam-tui
