@@ -72,6 +72,7 @@ in {
     protonvpn-gui
     steamcmd
     steam-tui
+    thonny
     webcord
   ];
 
