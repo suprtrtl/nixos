@@ -342,7 +342,8 @@ window-rule {
 
 window-rule {
 	match app-id="Aurora.exe"
-	open-maxamized true
+
+	open-maximized true
 	prefer-no-csd false 
 
 }
