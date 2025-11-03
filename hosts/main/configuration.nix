@@ -168,7 +168,8 @@
     protontricks # Add to steam.nix
 
     qutebrowser
-    wine
+    wineWowPackages.stable
+    wineWowPackages.waylandFull
     winetricks
   ];
 
