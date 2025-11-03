@@ -19,6 +19,7 @@
     gparted
     libnotify
     pavucontrol
+    rar
     rustc
     neovim
     networkmanager
