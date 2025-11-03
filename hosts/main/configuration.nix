@@ -162,6 +162,7 @@
 
   environment.systemPackages = with pkgs; [
     lynx
+    mono
     nyxt # Not Very Performant Currently
     protonup-qt # Add to steam.nix
     protontricks # Add to steam.nix

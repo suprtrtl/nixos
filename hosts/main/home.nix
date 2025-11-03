@@ -37,6 +37,8 @@ in {
 
   vlc.enable = true;
 
+  godot.enable = true;
+
   btop.enable = true;
   rmpc.enable = true;
 
