@@ -168,6 +168,8 @@
     protontricks # Add to steam.nix
 
     qutebrowser
+    wine
+    winetricks
   ];
 
   # Allow unfree packages
