@@ -10,10 +10,10 @@
 
   config = lib.mkIf config.godot.enable {
     home.packages = with pkgs; [
-      aseprite
+      # aseprite * use steam to install
       audacity
       itch
-      godot-mono
+      # godot-mono * use steam to install
       sfxr
     ];
   };
