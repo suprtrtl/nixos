@@ -21,6 +21,7 @@
     ./editors/emacs/emacs.nix
 
     ./gui/vlc.nix
+    ./gui/lutris.nix
     ./gui/browsers/nyxt.nix
     ./gui/browsers/qute.nix
     ./gui/dev/godot.nix
