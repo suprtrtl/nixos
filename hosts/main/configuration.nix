@@ -169,7 +169,6 @@
 
     qutebrowser
     wineWowPackages.stable
-    wineWowPackages.waylandFull
     winetricks
   ];
 
