@@ -8,7 +8,7 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
         case "$(printf "  Resources\n  Screenshot\n  Picker\n  Wifi\n󰂯  Bluetooth" | rofi -dmenu -i -p "Select Tool" -width 20%)" in
             "  Resources") ghostty -e "btop" ;;
             "  Screenshot") notify-send "TODO" ;;
-            "  Picker") hyprpicker ;;
+            "  Picker") hyprpicker -a ;;
             "  Wifi") ghostty -e "impala" ;;
             "󰂯  Bluetooth") ghostty -e "bluetui" ;;
             *) exit 1 ;;
