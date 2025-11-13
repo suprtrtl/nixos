@@ -171,7 +171,7 @@
     wineWowPackages.stable
     winetricks
 
-    openjdk25
+    openjdk8
   ];
 
   # Allow unfree packages
