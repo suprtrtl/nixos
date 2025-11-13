@@ -170,6 +170,8 @@
     qutebrowser
     wineWowPackages.stable
     winetricks
+
+    openjdk25
   ];
 
   # Allow unfree packages
