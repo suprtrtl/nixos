@@ -66,16 +66,23 @@ in {
     bluetui
     cava
     cbonsai
+    #cinny
+    #cook-cli
+    #dwarf-fortress
+    #element-web
     freecad
+    #iamb
     impala
+    #irssi
     kmonad
+    #libqalculate
+    mapscii
     obsidian
     python3
     prismlauncher
     protonvpn-gui
     steamcmd
     steam-tui
-    thonny
     webcord
   ];
 
