@@ -68,7 +68,7 @@ in {
     cbonsai
     cinny
     cook-cli
-    #dwarf-fortress
+    dwarf-fortress
     #element-web
     freecad
     #iamb
