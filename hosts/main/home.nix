@@ -75,6 +75,7 @@ in {
     irssi
     kmonad
     libqalculate
+    libsecret
     mapscii
     obsidian
     python3
