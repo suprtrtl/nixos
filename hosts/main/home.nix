@@ -66,9 +66,9 @@ in {
     bluetui
     cava
     cbonsai
-    cinny
     cook-cli
     dwarf-fortress
+    element-desktop
     freecad
     iamb
     impala
