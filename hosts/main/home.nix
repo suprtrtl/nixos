@@ -73,7 +73,7 @@ in {
     freecad
     #iamb
     impala
-    #irssi
+    irssi
     kmonad
     libqalculate
     mapscii
