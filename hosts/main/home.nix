@@ -63,7 +63,6 @@ in {
   # User specific packages
   home.packages = with pkgs; [
     arduino-ide
-    armagetronad
     bluetui
     cava
     cbonsai
