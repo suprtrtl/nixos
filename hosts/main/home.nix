@@ -66,7 +66,7 @@ in {
     bluetui
     cava
     cbonsai
-    #cinny
+    cinny
     #cook-cli
     #dwarf-fortress
     #element-web
