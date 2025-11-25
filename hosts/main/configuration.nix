@@ -161,6 +161,8 @@
   programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
+    libgnome-keyring
+    libsecret
     lynx
     mono
     nyxt # Not Very Performant Currently
