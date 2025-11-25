@@ -19,6 +19,12 @@
       viAlias = true;
       vimAlias = true;
       vimdiffAlias = true;
+
+      extraWrapperArgs = [
+        "--set"
+        "NVIM_PACK_LOCKFILE"
+        "${config.xdg.stateHome}/nvim/nvim-pack-lock.json"
+      ];
     };
 
     home.packages = with pkgs; [
