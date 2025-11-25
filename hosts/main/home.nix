@@ -71,7 +71,7 @@ in {
     dwarf-fortress
     #element-web
     freecad
-    #iamb
+    iamb
     impala
     irssi
     kmonad
