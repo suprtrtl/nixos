@@ -75,7 +75,7 @@ in {
     impala
     #irssi
     kmonad
-    #libqalculate
+    libqalculate
     mapscii
     obsidian
     python3
