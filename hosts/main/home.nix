@@ -67,7 +67,7 @@ in {
     cava
     cbonsai
     cinny
-    #cook-cli
+    cook-cli
     #dwarf-fortress
     #element-web
     freecad
