@@ -69,7 +69,6 @@ in {
     cinny
     cook-cli
     dwarf-fortress
-    #element-web
     freecad
     iamb
     impala
