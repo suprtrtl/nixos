@@ -18,6 +18,7 @@
     ./cli/misc.nix
 
     ./editors/neovim.nix
+    ./editors/vscode.nix
     ./editors/emacs/emacs.nix
 
     ./gui/vlc.nix

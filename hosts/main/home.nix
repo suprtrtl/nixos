@@ -29,6 +29,7 @@ in {
   bundles.cli.misc.enable = true;
 
   neovim.enable = true;
+  vscode.enable = true;
   emacs.enable = false;
   emacs.doom.enable = false;
 
@@ -81,6 +82,7 @@ in {
     python3
     prismlauncher
     protonvpn-gui
+    prusa-slicer
     steamcmd
     steam-tui
     webcord
