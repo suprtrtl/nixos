@@ -17,6 +17,7 @@
       fman = "compgen -c | fzf | xargs man";
       ":q" = "exit";
       q = "exit";
+      "code ." = "codium .";
     };
 
     initContent = lib.mkOrder 1000 ''

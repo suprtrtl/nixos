@@ -16,9 +16,22 @@
       package = pkgs.vscodium;
       extensions = with pkgs.vscode-extensions; [
         emroussel.atomize-atom-one-dark-theme
-        jnoortheen.nix-ide
         vscodevim.vim
+
+        # Languages
+
+        # Nix
+        jnoortheen.nix-ide
+
+        # Java
         vscjava.vscode-java-pack
+        redhat.java
+        vscjava.vscode-maven
+        vscjava.vscode-java-test
+        vscjava.vscode-java-pack
+        vscjava.vscode-java-dependency
+        vscjava.vscode-java-debug
+        vscjava.vscode-gradle
       ];
     };
 
