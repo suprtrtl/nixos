@@ -112,6 +112,10 @@
   # enables external packages
   programs.nix-ld.enable = true;
 
+  services.openssh = {
+    enable = true;
+  };
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;

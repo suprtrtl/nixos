@@ -23,6 +23,9 @@
         # Nix
         jnoortheen.nix-ide
 
+        # rust
+        rust-lang.rust-analyzer
+
         # Java
         vscjava.vscode-java-pack
         redhat.java
@@ -38,6 +41,7 @@
     home.packages = with pkgs; [
       wl-clipboard
       ripgrep
+      jdk25
     ];
 
     home.sessionVariables = {

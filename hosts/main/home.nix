@@ -79,6 +79,7 @@ in {
     libsecret
     mapscii
     obsidian
+    processing
     python3
     prismlauncher
     protonvpn-gui

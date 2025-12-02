@@ -45,7 +45,7 @@
       python3Packages.jedi-language-server
       clang
 
-      openjdk17
+      jdk25
 
       alejandra
 
