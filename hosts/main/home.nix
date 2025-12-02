@@ -79,7 +79,6 @@ in {
     libsecret
     mapscii
     obsidian
-    osu-lazer
     processing
     python3
     prismlauncher
