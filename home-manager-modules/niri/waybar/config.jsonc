@@ -5,9 +5,14 @@
     "height": 24,
     "spacing": 5,
 
-    "modules-left": ["niri/workspaces"],
+    "modules-left": ["custom/home", "niri/workspaces"],
     "modules-center": ["niri/window"],
     "modules-right": ["wireplumber", "battery", "idle_inhibitor", "network", "bluetooth", "tray", "clock", "custom/power"],
+
+    "custom/home": {
+        "on-click": "ghostty -e fastfetch",
+        "format": "  "
+    },
 
     "niri/workspaces": {
         "on-click": "activate",
