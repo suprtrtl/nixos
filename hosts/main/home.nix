@@ -79,6 +79,7 @@ in {
     libsecret
     mapscii
     obsidian
+    openscad
     processing
     python3
     prismlauncher
