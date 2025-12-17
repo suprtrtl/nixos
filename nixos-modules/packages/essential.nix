@@ -17,6 +17,7 @@
     git
     git-credential-manager
     gparted
+    gnumake
     libnotify
     pavucontrol
     rar
