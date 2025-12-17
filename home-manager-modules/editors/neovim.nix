@@ -50,6 +50,8 @@
       alejandra
 
       ripgrep
+
+      yarn
     ];
 
     xdg.configFile."nvim".source = inputs.nvim-config-src;
