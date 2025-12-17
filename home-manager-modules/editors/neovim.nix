@@ -56,6 +56,8 @@
       ripgrep
 
       yarn
+
+      tectonic
     ];
 
     xdg.configFile."nvim".source = inputs.nvim-config-src;

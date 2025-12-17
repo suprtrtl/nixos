@@ -27,6 +27,7 @@ in {
   zoxide.enable = true;
 
   bundles.cli.misc.enable = true;
+  lazygit.enable = true;
 
   neovim.enable = true;
   vscode.enable = true;
