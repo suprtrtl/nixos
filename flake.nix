@@ -14,7 +14,7 @@
     # Neovim
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     nvim-config-src = {
-      url = "github:suprtrtl/neovim/0.12";
+      url = "github:suprtrtl/neovim/lazy";
       flake = false;
     };
 

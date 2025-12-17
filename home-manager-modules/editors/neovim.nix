@@ -57,7 +57,6 @@
     home.sessionVariables = {
       NIX_NEOVIM = 1;
       KITTY_IMAGE_PROTOCOL = 1;
-      NVIM_PACK_LOCKFILE = "$HOME/.local/state/nvim/nvim-pack-lock.json";
     };
   };
 }
