@@ -34,7 +34,7 @@ in {
   emacs.enable = false;
   emacs.doom.enable = false;
 
-  alacritty.enable = true;
+  alacritty.enable = false;
   ghostty.enable = true;
 
   vlc.enable = true;
@@ -59,7 +59,7 @@ in {
 
   programs.zen-browser.enable = true;
   # Not very Performant
-  nyxt.enable = true;
+  nyxt.enable = false;
   qutebrowser.enable = true;
 
   # User specific packages
@@ -70,15 +70,16 @@ in {
     cbonsai
     cook-cli
     dwarf-fortress
-    element-desktop
+    # element-desktop
     freecad
+    helix
     iamb
     impala
     irssi
-    kmonad
+    # kmonad
     libqalculate
     libsecret
-    mapscii
+    # mapscii
     obsidian
     openscad
     processing
@@ -86,8 +87,8 @@ in {
     prismlauncher
     protonvpn-gui
     prusa-slicer
-    steamcmd
-    steam-tui
+    # steamcmd
+    # steam-tui
     webcord
   ];
 

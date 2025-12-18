@@ -169,7 +169,7 @@
     libsecret
     lynx
     mono
-    nyxt # Not Very Performant Currently
+    # nyxt # Not Very Performant Currently
     protonup-qt # Add to steam.nix
     protontricks # Add to steam.nix
 
