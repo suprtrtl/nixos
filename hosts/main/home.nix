@@ -20,7 +20,7 @@ in {
 
   # Programs
 
-  hyprland.enable = true;
+  hyprland.enable = false;
   niri.enable = true;
 
   fzf.enable = true;
