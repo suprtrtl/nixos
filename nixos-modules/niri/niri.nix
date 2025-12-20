@@ -15,6 +15,7 @@
       alacritty
       fuzzel
       swaylock
+      swww
       xwayland-satellite
     ];
 
