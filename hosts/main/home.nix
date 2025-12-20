@@ -58,6 +58,7 @@ in {
   cheat.enable = true;
 
   programs.zen-browser.enable = true;
+  programs.aichat.enable = true;
   # Not very Performant
   nyxt.enable = false;
   qutebrowser.enable = true;
@@ -69,6 +70,7 @@ in {
     cava
     cbonsai
     cook-cli
+    discordo
     dwarf-fortress
     # element-desktop
     freecad
