@@ -63,6 +63,13 @@ in {
   nyxt.enable = false;
   qutebrowser.enable = true;
 
+  accounts.email.accounts.personal = {
+    enable = true;
+    address = "owen.rodway@gmail.com";
+    primary = true;
+    neomutt.enable = true;
+  };
+
   # User specific packages
   home.packages = with pkgs; [
     arduino-ide
@@ -82,7 +89,6 @@ in {
     libqalculate
     libsecret
     # mapscii
-    neomutt
     obsidian
     openscad
     processing
