@@ -82,6 +82,7 @@ in {
     libqalculate
     libsecret
     # mapscii
+    neomutt
     obsidian
     openscad
     processing
