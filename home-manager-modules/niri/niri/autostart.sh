@@ -1,3 +1,3 @@
 waybar -c ~/.config/waybar/config.niri.jsonc -s ~/.config/waybar/style.niri.css
-awww img ~/wallpapers/mountain.jpg
+swww img ~/wallpapers/mountain.jpg
 
