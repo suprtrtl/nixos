@@ -7,7 +7,7 @@
 
     "modules-left": ["custom/home", "niri/workspaces"],
     "modules-center": ["niri/window"],
-    "modules-right": ["wirepexeclumber", "battery", "idle_inhibitor", "network", "bluetooth", "tray", "clock", "custom/power"],
+    "modules-right": ["wireplumber", "battery", "idle_inhibitor", "network", "bluetooth", "tray", "clock", "custom/power"],
 
     "custom/home": {
         "on-click": "ghostty -e fastfetch",

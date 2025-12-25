@@ -3,6 +3,7 @@
     p7zip
     alejandra
     bat
+    brightnessctl
     cargo
     cheat
     curl
