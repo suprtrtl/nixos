@@ -65,22 +65,39 @@ in {
 
   programs.neomutt.enable = true;
 
-  accounts.email.accounts.personal = {
-    primary = true;
-    address = "owen.rodway@gmail.com";
-    userName = "owen.rodway@gmail.com";
-    realName = "Owen Rodway";
-    flavor = "gmail.com";
-    imap = {
-      host = "imap.gmail.com";
-      port = 993;
+  accounts.email = {
+    maildirBasePath = "Maildir"; # gives ~/Maildir
+    accounts.personal = {
+      primary = true;
+      address = "owen.rodway@gmail.com";
+      userName = "owen.rodway@gmail.com";
+      realName = "Owen Rodway";
+
+      flavor = "gmail.com"; # pulls correct IMAP/SMTP defaults
+
+      # Ensure there is a maildir for this account
+      mbsync = {
+        enable = true;
+        create = "maildir";
+      };
+
+      # Optional: override subdirectory name under ~/Maildir
+      # maildir.path = "gmail";
+
+      # imap = {
+      #   host = "imap.gmail.com";
+      #   port = 993;
+      # };
+
+      # smtp = {
+      #   host = "smtp.gmail.com";
+      #   # port = 587;
+      # };
+
+      neomutt.enable = true;
+      msmtp.enable = true;
+      passwordCommand = "pass show gmail/owen.rodway"; # or your secret manager
     };
-    smtp = {
-      host = "smtp.gmail.com";
-      # port = 587;
-    };
-    #passwordCommand = "pass show gmail/owen.rodway"; # or whatever you use
-    neomutt.enable = true;
   };
 
   # User specific packages
