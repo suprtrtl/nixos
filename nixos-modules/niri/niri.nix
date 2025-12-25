@@ -14,6 +14,7 @@
     environment.systemPackages = with pkgs; [
       alacritty
       fuzzel
+      quickshell
       swaylock
       swww
       xwayland-satellite
