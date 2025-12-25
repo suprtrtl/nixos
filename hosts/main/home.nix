@@ -63,10 +63,23 @@ in {
   nyxt.enable = false;
   qutebrowser.enable = true;
 
+  programs.neomutt.enable = true;
+
   accounts.email.accounts.personal = {
-    enable = true;
-    address = "owen.rodway@gmail.com";
     primary = true;
+    address = "owen.rodway@gmail.com";
+    userName = "owen.rodway@gmail.com";
+    realName = "Owen Rodway";
+    flavor = "gmail.com";
+    imap = {
+      host = "imap.gmail.com";
+      port = 993;
+    };
+    smtp = {
+      host = "smtp.gmail.com";
+      # port = 587;
+    };
+    #passwordCommand = "pass show gmail/owen.rodway"; # or whatever you use
     neomutt.enable = true;
   };
 

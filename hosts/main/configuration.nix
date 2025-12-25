@@ -183,6 +183,8 @@
     winetricks
 
     openjdk8
+
+    neomutt
   ];
 
   # Allow unfree packages
