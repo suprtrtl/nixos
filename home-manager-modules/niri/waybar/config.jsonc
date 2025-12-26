@@ -7,7 +7,7 @@
 
     "modules-left": ["custom/home", "niri/workspaces"],
     "modules-center": ["niri/window"],
-    "modules-right": ["wireplumber", "battery", "idle_inhibitor", "network", "bluetooth", "tray", "clock", "custom/power"],
+    "modules-right": ["wireplumber", "backlight", "battery", "idle_inhibitor", "network", "bluetooth", "tray", "clock", "custom/power"],
 
     "custom/home": {
         "on-click": "ghostty -e fastfetch",
@@ -48,6 +48,12 @@
         "max-volume": 100,
         "scroll-step": 5
     },
+
+	"backlight": {
+   		"device": "intel_backlight",
+    	"format": "{percent}% {icon}",
+    	"format-icons": ["", ""]
+	},
 
     "battery": {
         "interval": 60,
