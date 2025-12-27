@@ -51,7 +51,8 @@
 
 	"backlight": {
    		"device": "intel_backlight",
-    	"format": "  {percent}%"
+    	"format": "  {percent}%",
+		"scroll-step": 5
 	},
 
     "battery": {
