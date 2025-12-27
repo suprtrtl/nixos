@@ -22,7 +22,6 @@
 		"idle_inhibitor", 
 		"network", 
 		"bluetooth", 
-		"custom/seperator", 
 		"tray", 
 		"custom/seperator",
 		"clock", 
@@ -122,7 +121,7 @@
 	},
 
 	"custom/seperator": {
-		"format": " | "
+		"format": "|"
 	},
 
     "idle_inhibitor": {
