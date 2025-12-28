@@ -18,8 +18,7 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
     "󱄅  Nix")
         case "$(printf "  Temp Package\n  NixOS Manual\n  NixOS Config Options\n  Home Manager Config Options" | rofi -dmenu -i -p "Select Nix Option" -width 20%)" in
             "  Temp Package") 
-					read -pr "Search for Keyword: " search
-					nix-shell -p $(nix-search "$search" | fzf | awk 'print{$1}')
+				ghostty -e sh -c "nix-shell -p $(nix-search $(rofi -dmenu -p "Filter for Package") | fzf | awk 'print{$1}')"
 				;;
             "  NixOS Manual") nixos-help && notify-send "Opened in Browser" ;;
             "  NixOS Config Options") notify-send "TODO" ;;
