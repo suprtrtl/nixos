@@ -5,22 +5,25 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
         rofi -show drun
 		;;
     "  Tools")
-        case "$(printf "  Resources\n  Screenshot\n  Picker\n  Wifi\n󰂯  Bluetooth" | rofi -dmenu -i -p "Select Tool" -width 20%)" in
+		case "$(printf "  Resources\n  Screenshot\n  Picker\n  Wifi\n  Wifi (nmtui)\n󰂯  Bluetooth" | rofi -dmenu -i -p "Select Tool" -width 20%)" in
             "  Resources") ghostty -e "btop" ;;
             "  Screenshot") notify-send "TODO" ;;
             "  Picker") hyprpicker -a ;;
             "  Wifi") ghostty -e "impala" ;;
+			"  Wifi (nmtui)") ghostty -e "nmtui" ;;
             "󰂯  Bluetooth") ghostty -e "bluetui" ;;
             *) exit 1 ;;
         esac
         ;;
     "󱄅  Nix")
-        case "$(printf "  Temp Package\n  NixOS Manual\n  NixOS Config Options\n  Home Manager Config Options\n󱞱  Back" | rofi -dmenu -i -p "Select Nix Option" -width 20%)" in
-            "  Temp Package") notify-send "TODO" ;;
+        case "$(printf "  Temp Package\n  NixOS Manual\n  NixOS Config Options\n  Home Manager Config Options" | rofi -dmenu -i -p "Select Nix Option" -width 20%)" in
+            "  Temp Package") 
+					read -pr "Search for Keyword: " search
+					nix-shell -p $(nix-search "$search" | fzf | awk 'print{$1}')
+				;;
             "  NixOS Manual") nixos-help && notify-send "Opened in Browser" ;;
             "  NixOS Config Options") notify-send "TODO" ;;
             "  Home Manager Config Options") notify-send "TODO" ;;
-            "󱞱  Back") utility.sh ;;
             *) exit 1 ;;
         esac
         ;;
