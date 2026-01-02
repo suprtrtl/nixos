@@ -28,6 +28,6 @@ Singleton {
 			}
 		}
 
-		return UPower.onBattery ? getIconFromPercentage() : "get icon from web you bum"
+		return UPower.onBattery ? getIconFromPercentage() : "󰂄"
 	}
 }
