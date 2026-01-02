@@ -30,6 +30,8 @@
     ./hyprland/hyprland.nix
     ./niri/niri.nix
 
+    # ./quickshell/quickshell.nix
+
     ./shells/zsh.nix
     ./shells/fish.nix
 

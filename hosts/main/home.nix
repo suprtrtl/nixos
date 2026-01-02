@@ -111,6 +111,7 @@ in {
     dwarf-fortress
     # element-desktop
     freecad
+    minigalaxy
     # helix
     iamb
     impala
