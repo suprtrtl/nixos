@@ -128,6 +128,7 @@ in {
     protonvpn-gui
     prusa-slicer
     # steamcmd
+    steam-run
     # steam-tui
     webcord
   ];
