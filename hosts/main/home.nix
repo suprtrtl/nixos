@@ -106,12 +106,12 @@ in {
     bluetui
     cava
     cbonsai
-    cook-cli
-    discordo
-    dwarf-fortress
+    # cook-cli
+    # discordo
+    # dwarf-fortress
     # element-desktop
     freecad
-    minigalaxy
+    # minigalaxy
     # helix
     iamb
     impala

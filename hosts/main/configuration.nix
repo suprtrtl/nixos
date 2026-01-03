@@ -18,7 +18,7 @@
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.wireless.iwd.enable = true;
+  # networking.wireless.iwd.enable = true;
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
@@ -164,7 +164,7 @@
   };
 
   # Install firefox.
-  programs.firefox.enable = true;
+  programs.firefox.enable = false;
 
   # Install zsh
   programs.zsh.enable = true;
@@ -184,7 +184,7 @@
 
     openjdk8
 
-    neomutt
+    # neomutt
   ];
 
   # Allow unfree packages
