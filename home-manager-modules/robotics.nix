@@ -10,7 +10,7 @@
 
   config = lib.mkIf config.robotics.enable {
     home.packages = with pkgs; [
-      freecad
+      # freecad
       android-studio
       android-studio-tools
     ];

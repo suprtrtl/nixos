@@ -37,6 +37,12 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  # Mem and CPU caps
+  nix.settings = {
+    cores = 3;
+    max-jobs = 2;
+  };
+
   # Enable the GNOME Desktop Environment.
   # services.displayManager.gdm.enable = true;
   # services.desktopManager.gnome.enable = true;
@@ -65,9 +71,9 @@
   services.printing.enable = true;
 
   hardware = {
-    opengl = {
+    graphics = {
       enable = true;
-      driSupport32Bit = true;
+      enable32Bit = true;
       extraPackages = with pkgs; [
         intel-media-driver
         libvdpau-va-gl

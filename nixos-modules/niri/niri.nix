@@ -21,7 +21,7 @@
     ];
 
     hardware = {
-      opengl.enable = true;
+      graphics.enable = true;
     };
 
     xdg.portal.enable = true;

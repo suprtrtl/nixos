@@ -4,7 +4,7 @@
   pkgs,
   ...
 }: let
-  system = "x86_64-linux";
+  stdenv.hostPlatform.system = "x86_64-linux";
 in {
   imports = [
     inputs.zen-browser.homeModules.beta
@@ -110,7 +110,7 @@ in {
     # discordo
     # dwarf-fortress
     # element-desktop
-    freecad
+    # freecad
     # minigalaxy
     # helix
     iamb
@@ -130,7 +130,7 @@ in {
     # steamcmd
     steam-run
     # steam-tui
-    webcord
+    # webcord
   ];
 
   services.tldr-update.enable = true;

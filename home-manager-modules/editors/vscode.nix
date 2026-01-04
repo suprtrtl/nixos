@@ -14,28 +14,32 @@
     programs.vscode = {
       enable = true;
       package = pkgs.vscodium;
-      extensions = with pkgs.vscode-extensions; [
-        emroussel.atomize-atom-one-dark-theme
-        vscodevim.vim
+      profiles = {
+        defualt = {
+          extensions = with pkgs.vscode-extensions; [
+            emroussel.atomize-atom-one-dark-theme
+            vscodevim.vim
 
-        # Languages
+            # Languages
 
-        # Nix
-        jnoortheen.nix-ide
+            # Nix
+            jnoortheen.nix-ide
 
-        # rust
-        rust-lang.rust-analyzer
+            # rust
+            rust-lang.rust-analyzer
 
-        # Java
-        vscjava.vscode-java-pack
-        redhat.java
-        vscjava.vscode-maven
-        vscjava.vscode-java-test
-        vscjava.vscode-java-pack
-        vscjava.vscode-java-dependency
-        vscjava.vscode-java-debug
-        vscjava.vscode-gradle
-      ];
+            # Java
+            vscjava.vscode-java-pack
+            redhat.java
+            vscjava.vscode-maven
+            vscjava.vscode-java-test
+            vscjava.vscode-java-pack
+            vscjava.vscode-java-dependency
+            vscjava.vscode-java-debug
+            vscjava.vscode-gradle
+          ];
+        };
+      };
     };
 
     home.packages = with pkgs; [
