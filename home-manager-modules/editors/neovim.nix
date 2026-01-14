@@ -48,6 +48,7 @@
       vscode-extensions.vscjava.vscode-java-debug
       python3Packages.jedi-language-server
       clang
+      zls
 
       jdk25
 
