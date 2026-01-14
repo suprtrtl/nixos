@@ -121,6 +121,7 @@ in {
     libsecret
     # mapscii
     obsidian
+    obs-studio
     openscad
     processing
     python3
