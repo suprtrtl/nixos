@@ -24,17 +24,29 @@
     };
 
     zig.url = "github:mitchellh/zig-overlay";
+    zig.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = {
+  outputs = inputs @ {
     nixpkgs,
     home-manager,
     zig,
     ...
-  } @ inputs: let
+  }: let
+    system = "x86_64-linux";
+
     overlays = [
-      inputs.zig.overlays.default
+      zig.overlays.defualt
+
+      (final: prev: {
+        zig = final.zigpkgs.master;
+      })
     ];
+
+    pkgs = import nixpkgs {
+      inherit system overlays;
+      config.allowUnfree = true;
+    };
   in {
     nixosConfigurations.main = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
