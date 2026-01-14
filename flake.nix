@@ -36,7 +36,7 @@
     system = "x86_64-linux";
 
     overlays = [
-      zig.overlays.defualt
+      zig.overlays.default
 
       (final: prev: {
         zig = final.zigpkgs.master;
