@@ -22,11 +22,15 @@
       url = "github:cheat/cheatsheets";
       flake = false;
     };
+
+    zig.url = "github:mitchellh/zig-overlay";
+    zig.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
     nixpkgs,
     home-manager,
+    zig,
     ...
   } @ inputs: {
     nixosConfigurations.main = nixpkgs.lib.nixosSystem {
