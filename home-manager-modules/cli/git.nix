@@ -15,7 +15,7 @@
 
       credential = {
         helper = "manager";
-        "https://github.com".username = "suprtrtl";
+        "https://codeberg.org".username = "suprtrtl";
         credentialStore = "cache";
       };
     };
