@@ -60,7 +60,7 @@
 
     nixosConfigurations.vm = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
-      system = "x86_64-linux";
+      inherit system pkgs;
       modules = [
         ./hosts/vm/configuration.nix
         inputs.home-manager.nixosModules.default
