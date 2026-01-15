@@ -27,7 +27,6 @@
 
     home.packages = with pkgs; [
       wl-clipboard
-      zig
       tree-sitter
       ueberzugpp
       imagemagick

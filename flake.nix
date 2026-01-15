@@ -27,19 +27,21 @@
     zig.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs @ {
+  outputs = {
+    self,
     nixpkgs,
     home-manager,
     zig,
     ...
-  }: let
+  } @ inputs: let
     system = "x86_64-linux";
 
-    overlays = [
-      zig.overlays.default
+    # Call zig-overlay for this system
+    zigPkgs = zig.packages.${system};
 
+    overlays = [
       (final: prev: {
-        zig = final.zigpkgs.master;
+        zigpkgs = zigPkgs;
       })
     ];
 
@@ -59,8 +61,8 @@
     };
 
     nixosConfigurations.vm = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
       inherit system pkgs;
+      specialArgs = {inherit inputs pkgs;};
       modules = [
         ./hosts/vm/configuration.nix
         inputs.home-manager.nixosModules.default
@@ -71,24 +73,18 @@
     homeManagerModules.default = ./home-manager-modules;
 
     homeConfigurations.main = home-manager.lib.homeManagerConfiguration {
-      system = "x86_64-linux";
-      inherit pkgs;
-
-      modules = [
-        ./home-manager-modules
-      ];
+      inherit system pkgs;
+      modules = [./home-manager-modules];
       extraSpecialArgs = {
-        inherit inputs pkgs;
-        system = "x86_64-linux";
+        inherit inputs pkgs system;
       };
     };
 
     homeConfigurations.wsl = home-manager.lib.homeManagerConfiguration {
       pkgs = import nixpkgs {
-        system = "x86_64-linux";
+        inherit system;
         config.allowUnfree = true;
       };
-
       modules = [
         ./hosts/wsl/home.nix
         ./home-manager-modules
