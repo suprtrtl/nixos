@@ -73,10 +73,10 @@
     homeManagerModules.default = ./home-manager-modules;
 
     homeConfigurations.main = home-manager.lib.homeManagerConfiguration {
-      inherit system pkgs;
+      inherit system pkgs zigPkgs;
       modules = [./home-manager-modules];
       extraSpecialArgs = {
-        inherit inputs pkgs system;
+        inherit inputs pkgs system zigPkgs;
       };
     };
 
