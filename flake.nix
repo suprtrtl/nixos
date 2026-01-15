@@ -49,8 +49,8 @@
     };
   in {
     nixosConfigurations.main = nixpkgs.lib.nixosSystem {
+      inherit system pkgs;
       specialArgs = {inherit inputs;};
-      system = "x86_64-linux";
       modules = [
         ./hosts/main/configuration.nix
         inputs.home-manager.nixosModules.default
