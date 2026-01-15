@@ -190,6 +190,8 @@
 
     openjdk8
 
+    zig
+
     # neomutt
   ];
 
