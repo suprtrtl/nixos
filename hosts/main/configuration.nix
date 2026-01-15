@@ -137,7 +137,7 @@ in {
   };
 
   # Hyprland
-  hyprland.enable = true;
+  hyprland.enable = false;
 
   # Niri
   niri.enable = true;
