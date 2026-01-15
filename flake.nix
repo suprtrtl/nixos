@@ -50,7 +50,7 @@
   in {
     nixosConfigurations.main = nixpkgs.lib.nixosSystem {
       inherit system pkgs;
-      specialArgs = {inherit inputs;};
+      specialArgs = {inherit inputs pkgs;};
       modules = [
         ./hosts/main/configuration.nix
         inputs.home-manager.nixosModules.default
@@ -78,7 +78,7 @@
         ./home-manager-modules
       ];
       extraSpecialArgs = {
-        inherit inputs;
+        inherit inputs pkgs;
         system = "x86_64-linux";
       };
     };
