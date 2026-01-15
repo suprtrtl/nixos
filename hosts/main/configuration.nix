@@ -193,6 +193,7 @@ in {
     openjdk8
 
     zig
+    zls
 
     # neomutt
   ];
