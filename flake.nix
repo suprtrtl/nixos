@@ -72,10 +72,7 @@
 
     homeConfigurations.main = home-manager.lib.homeManagerConfiguration {
       system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        system = "x86_64-linux";
-        config.allowUnfree = true;
-      };
+      inherit pkgs;
 
       modules = [
         ./home-manager-modules
