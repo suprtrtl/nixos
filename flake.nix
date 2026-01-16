@@ -25,9 +25,6 @@
 
     zig.url = "github:mitchellh/zig-overlay";
     zig.inputs.nixpkgs.follows = "nixpkgs";
-
-    zls.url = "github:zigtools/zls";
-    zls.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
@@ -35,7 +32,6 @@
     nixpkgs,
     home-manager,
     zig,
-    zls,
     ...
   } @ inputs: let
     system = "x86_64-linux";
