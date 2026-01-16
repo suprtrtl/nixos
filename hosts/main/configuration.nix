@@ -5,9 +5,6 @@
   ...
 }: let
   zig = pkgs.zigpkgs.master;
-  zls = pkgs.zls.overrideAttrs (prev: {
-    nativeBuildInputes = [zig];
-  });
 in {
   imports = [
     ./hardware-configuration.nix

@@ -23,21 +23,21 @@
       flake = false;
     };
 
-    zig.url = "github:mitchellh/zig-overlay";
-    zig.inputs.nixpkgs.follows = "nixpkgs";
+    zig-overlay.url = "github:mitchellh/zig-overlay";
+    zig-overlay.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
-    zig,
+    zig-overlay,
     ...
   } @ inputs: let
     system = "x86_64-linux";
 
     # Call zig-overlay for this system
-    zigPkgs = zig.packages.${system};
+    zigPkgs = zig-overlay.packages.${system};
 
     overlays = [
       (final: prev: {
@@ -77,7 +77,6 @@
       modules = [./home-manager-modules];
       extraSpecialArgs = {
         inherit inputs pkgs system zigPkgs;
-        zls = pkgs.zls.override {zig = zigPkgs.master;};
       };
     };
 
