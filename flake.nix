@@ -46,7 +46,6 @@
     overlays = [
       (final: prev: {
         zigpkgs = zigPkgs;
-        zls = zls.packages.${prev.system}.zls;
       })
     ];
 
@@ -82,6 +81,7 @@
       modules = [./home-manager-modules];
       extraSpecialArgs = {
         inherit inputs pkgs system zigPkgs;
+        zls = pkgs.zls.override {zig = zigPkgs.master;};
       };
     };
 

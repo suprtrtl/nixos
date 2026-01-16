@@ -13,5 +13,6 @@
     ./packages/gui/spotify.nix
 
     ./services/fingerprint.nix
+    ./services/docker.nix
   ];
 }

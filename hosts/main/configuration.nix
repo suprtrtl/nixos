@@ -144,6 +144,8 @@ in {
 
   spotify.enable = true;
 
+  docker.enable = true;
+
   nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];
 
   users.users.suprtrtl = {
@@ -193,7 +195,6 @@ in {
     openjdk8
 
     zig
-    zls
 
     # neomutt
   ];
