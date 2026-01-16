@@ -42,6 +42,7 @@
     overlays = [
       (final: prev: {
         zigpkgs = zigPkgs;
+        zig = zigPkgs.master;
       })
     ];
 

@@ -198,6 +198,8 @@
     # neomutt
   ];
 
+  environment.variables.ZIG_PATH = "${pkgs.zig}/bin/zig";
+
   # Allow unfree packages
   # nixpkgs.config.allowUnfree = true;
 
