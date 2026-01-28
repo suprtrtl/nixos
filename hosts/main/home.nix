@@ -130,6 +130,7 @@ in {
     prusa-slicer
     # steamcmd
     steam-run
+    vintagestory
     # steam-tui
     # webcord
   ];
