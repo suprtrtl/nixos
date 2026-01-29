@@ -130,7 +130,6 @@ in {
     prusa-slicer
     # steamcmd
     steam-run
-    syncthing
     vintagestory
     # steam-tui
     # webcord

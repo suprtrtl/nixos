@@ -29,6 +29,13 @@
   networking.networkmanager.enable = true;
   services.tailscale.enable = true;
 
+  services.syncthing = {
+    enable = true;
+    openDefaultPorts = true;
+  };
+
+  networking.firewall.allowedTCPPorts = [8384];
+
   # Set your time zone.
   time.timeZone = "America/Edmonton";
 
