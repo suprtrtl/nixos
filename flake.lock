@@ -199,11 +199,11 @@
     "nvim-config-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1769954089,
-        "narHash": "sha256-Qt6lzlyqDAAp/YSEkD/mP7PIvB/wE+IwLwcWmQvsLJI=",
+        "lastModified": 1770076125,
+        "narHash": "sha256-86CMAy1TjL67s8frFxEKwLe2vVfPbeurd7LrH1+DU9o=",
         "ref": "lazy",
-        "rev": "ec2815ea60bbee65cbed9e475cd9591e1d8651c5",
-        "revCount": 69,
+        "rev": "5e9513d4cfcc9b8ad8e1fed1ad7f76edcb847ff2",
+        "revCount": 70,
         "type": "git",
         "url": "https://codeberg.org/suprtrtl/neovim.git"
       },
@@ -268,11 +268,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1769560701,
-        "narHash": "sha256-sVKeHTxgU43jhORqQXvD2+r+X2fJtdNU7Xex2JFj6Wc=",
+        "lastModified": 1769861710,
+        "narHash": "sha256-7WBmKtSvs+laiTJlBp7fVJGppIFmGvsEYHOv1myFisI=",
         "owner": "mitchellh",
         "repo": "zig-overlay",
-        "rev": "0bdf1ac16143b63c72c0be767f621a5965db04d7",
+        "rev": "d80fa53a23c4cf621cd72d9a6fb71392968ea04c",
         "type": "github"
       },
       "original": {
