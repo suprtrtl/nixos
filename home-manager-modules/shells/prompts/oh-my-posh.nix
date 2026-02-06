@@ -78,6 +78,13 @@
                 type = "python";
               }
               {
+                type = "zig";
+                style = "powerline";
+                foreground = "yellow";
+                background = "transparent";
+                template = "|  {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ";
+              }
+              {
                 type = "nix-shell";
                 style = "powerline";
                 foreground = "blue";
