@@ -3,7 +3,9 @@ if [[ "$version" != "" ]]; then
 	if [[ "$version" == "latest" ]]; then
 		nix shell "github:mitchellh/zig-overlay"
 	else
+	echo "Launching Zig Shell ($version)"
 	nix shell "github:mitchellh/zig-overlay#\"$version\""
+	echo "Make sure you use 'exit' to exit the shell"
 	fi
 fi
 	
