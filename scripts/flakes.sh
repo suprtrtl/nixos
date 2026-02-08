@@ -3,4 +3,6 @@
 FLAKES_PATH="$HOME/nixos/scripts/flakes"
 flake=$(basename "$(find "$FLAKES_PATH")" | fzf)
 
-cp "$FLAKES_PATH/$flake" flake.nix
+if [[ "$flake" != "" ]]; then
+	cp "$FLAKES_PATH/$flake" flake.nix
+fi
