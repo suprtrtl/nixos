@@ -1,4 +1,7 @@
+#!/usr/bin/env bash
+
 version=$(printf "master\nlatest\n0.15.2\n0.15.1\n0.14.1\n0.14.0\n0.13.0" | fzf)
+
 if [[ "$version" != "" ]]; then
 	echo "Launching Zig Shell ($version)"
 	echo "Make sure you use 'exit' to exit the shell"
