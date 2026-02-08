@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-FLAKES_PATH="$HOME/nixos/scripts/flakes"
-flake=$(basename "$(find "$FLAKES_PATH")" | fzf)
+FLAKES_PATH="$HOME/nixos/scripts/flakes/"
+flake=$(find "$FLAKES_PATH" -name "*.nix" | fzf --preview 'bat  --color=always {}');
 
 if [[ "$flake" != "" ]]; then
-	cp "$FLAKES_PATH/$flake" flake.nix
+	cp "$flake" flake.nix
 fi
