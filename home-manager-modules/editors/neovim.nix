@@ -50,6 +50,7 @@
       python3Packages.jedi-language-server
       clang
       zls
+      gopls
 
       jdk25
 

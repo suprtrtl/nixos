@@ -111,6 +111,7 @@ in {
     # dwarf-fortress
     # element-desktop
     # freecad
+    go
     # minigalaxy
     # helix
     iamb
