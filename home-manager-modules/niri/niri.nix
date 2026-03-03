@@ -23,6 +23,7 @@
       cliphist
       helvum
       lm_sensors
+      swaylock-effects
       rofi
     ];
 
