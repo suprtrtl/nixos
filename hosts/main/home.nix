@@ -132,6 +132,7 @@ in {
     # steamcmd
     steam-run
     vintagestory
+    vesktop
     # steam-tui
     # webcord
   ];
