@@ -130,6 +130,7 @@ in {
     protonvpn-gui
     prusa-slicer
     # steamcmd
+
     steam-run
     vintagestory
     vesktop

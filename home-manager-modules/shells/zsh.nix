@@ -21,7 +21,7 @@
     };
 
     initContent = lib.mkOrder 1000 ''
-      export PATH="$HOME/bin:$PATH"
+      export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
     '';
   };
 }
