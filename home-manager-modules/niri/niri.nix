@@ -23,7 +23,7 @@
       cliphist
       helvum
       lm_sensors
-      swaylock-effects
+      swaylock
       rofi
     ];
 
@@ -31,6 +31,7 @@
       "niri".source = ./niri;
 
       "mako".source = ./mako;
+      "swaylock".source = ./swaylock;
 
       "waybar/config.niri.jsonc".source = ./waybar/config.jsonc;
       "waybar/style.niri.css".source = ./waybar/style.css;
