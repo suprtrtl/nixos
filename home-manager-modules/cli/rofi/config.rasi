@@ -257,7 +257,7 @@ mainbox {
 }
 
 message {
-    border:       2px 0 0;
+    border:       0px 0 0;
     border-color: @separatorcolor;
     padding:      1px;
 }
@@ -268,7 +268,7 @@ textbox {
 }
 
 listview {
-    border:       2px solid 0 0;
+    border:       0px solid 0 0;
     padding:      2px 0 0;
     border-color: @separatorcolor;
     spacing:      2px;
@@ -308,21 +308,6 @@ element.selected.urgent {
 element.selected.active {
     background-color: @selected-active-background;
     text-color:       @selected-active-foreground;
-}
-
-element.alternate.normal {
-    background-color: @alternate-normal-background;
-    text-color:       @alternate-normal-foreground;
-}
-
-element.alternate.urgent {
-    background-color: @alternate-urgent-background;
-    text-color:       @alternate-urgent-foreground;
-}
-
-element.alternate.active {
-    background-color: @alternate-active-background;
-    text-color:       @alternate-active-foreground;
 }
 
 scrollbar {
