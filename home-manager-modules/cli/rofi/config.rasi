@@ -222,7 +222,7 @@ configuration {
 
 	normal-background:           @background;
 	normal-foreground:           @foreground;
-	alternate-normal-background: @bg0;
+	alternate-normal-background: @background;
 	alternate-normal-foreground: @foreground;
 	selected-normal-background:  @bg2;
 	selected-normal-foreground:  @fg0;
