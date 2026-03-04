@@ -3,4 +3,4 @@ theme = One Half Dark
 
 font-size = 10
 
-custom-shader = ~/.config/ghostty/shaders/gears.glsl
+custom-shader = ~/.config/ghostty/shaders/crt.glsl
