@@ -9,15 +9,9 @@
   };
 
   config = lib.mkIf config.ghostty.enable {
-    programs.ghostty = {
-      enable = true;
+    programs.ghostty.enable = true;
 
-      enableZshIntegration = true;
-
-      settings = {
-        theme = "One Half Dark";
-        font-size = 10;
-      };
-    };
+    xdg.configFile."ghostty".source = ./ghostty;
+    xdg.configFile."ghostty/shaders".source = ./ghostty/shaders;
   };
 }

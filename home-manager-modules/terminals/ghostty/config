@@ -1,0 +1,6 @@
+shell-integration = zsh
+theme = One Half Dark
+
+font-size = 10
+
+custom-shader = ~/.config/ghostty/shaders/galaxy.glsl
