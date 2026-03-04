@@ -30,6 +30,8 @@
     xdg.configFile = {
       "niri".source = ./niri;
 
+      "mako".source = ./mako;
+
       "waybar/config.niri.jsonc".source = ./waybar/config.jsonc;
       "waybar/style.niri.css".source = ./waybar/style.css;
 
