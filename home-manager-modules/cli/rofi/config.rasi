@@ -247,7 +247,7 @@ configuration {
 
 window {
     background-color: @background;
-    border:           0;
+    border:           2;
     padding:          2;
 }
 
@@ -257,7 +257,7 @@ mainbox {
 }
 
 message {
-    border:       0px 0 0;
+    border:       2px 0 0;
     border-color: @separatorcolor;
     padding:      1px;
 }
@@ -268,7 +268,7 @@ textbox {
 }
 
 listview {
-    border:       0px solid 0 0;
+    border:       2px solid 0 0;
     padding:      2px 0 0;
     border-color: @separatorcolor;
     spacing:      2px;
