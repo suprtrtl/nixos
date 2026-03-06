@@ -21,9 +21,17 @@ keybind = ctrl+s>k=new_split:up
 keybind = ctrl+s>l=new_split:right
 keybind = ctrl+s>f=toggle_split_zoom
 
-keybind = ctrl+s>n=next_tab
-keybind = ctrl+s>p=previous_tab
+keybind = ctrl+alt+h=resize_split:left,10
+keybind = ctrl+alt+j=resize_split:down,10
+keybind = ctrl+alt+k=resize_split:up,10
+keybind = ctrl+alt+l=resize_split:right,10
 
-keybind = ctrl+s>ctrl+space=toggle_quick_terminal
+keybind = ctrl+s>bracketRight=next_tab
+keybind = ctrl+s>bracketLeft=previous_tab
+keybind = ctrl+s>t=new_tab
+keybind = ctrl+s>w=close_tab:this
+
+keybind = ctrl+s>shift+semicolon=toggle_command_palette
+keybind = ctrl+s>backquote=toggle_quick_terminal
 
 window-save-state = always
