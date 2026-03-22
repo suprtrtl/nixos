@@ -23,7 +23,7 @@
 
     initContent = lib.mkOrder 1000 ''
              export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
-      function gitignores() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ && echo Cheers;}
+      function gitignores() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ && echo '\n';}
 
     '';
   };
