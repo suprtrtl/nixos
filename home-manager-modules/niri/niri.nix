@@ -21,7 +21,7 @@
 
     home.packages = with pkgs; [
       cliphist
-      helvum
+      crosspipe
       lm_sensors
       swaylock
       rofi
