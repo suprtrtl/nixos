@@ -5,6 +5,7 @@
     bat
     brightnessctl
     cargo
+    clang
     cheat
     curl
     efibootmgr
