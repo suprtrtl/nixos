@@ -18,6 +18,7 @@
       ":q" = "exit";
       q = "exit";
       "code ." = "codium .";
+      nd = "nix develop -c zsh";
     };
 
     initContent = lib.mkOrder 1000 ''

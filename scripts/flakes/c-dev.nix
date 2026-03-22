@@ -26,7 +26,6 @@
             [
               pkgs.clang
               pkgs.clang-tools # adds clangd, clang-format, clang-tidy
-              pkgs.llvmPackages_17.bintools
 
               pkgs.lldb
               pkgs.gdb
