@@ -188,8 +188,8 @@
   environment.systemPackages = with pkgs; [
     libgnome-keyring
     libsecret
-    lynx
-    mono
+    # lynx
+    # mono
     # nyxt # Not Very Performant Currently
     protonup-qt # Add to steam.nix
     protontricks # Add to steam.nix

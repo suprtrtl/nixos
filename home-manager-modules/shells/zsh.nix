@@ -22,7 +22,8 @@
     };
 
     initContent = lib.mkOrder 1000 ''
-      export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
+         export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
+      function gi() { curl -sLw \"\\\n\" https://www.toptal.com/developers/gitignore/api/\$@ ;}
     '';
   };
 }
