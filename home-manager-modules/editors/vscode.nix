@@ -37,6 +37,9 @@
             vscjava.vscode-java-dependency
             vscjava.vscode-java-debug
             vscjava.vscode-gradle
+
+            # odin
+            danielgavin.ols
           ];
         };
       };
