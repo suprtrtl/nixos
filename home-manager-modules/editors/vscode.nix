@@ -43,6 +43,8 @@
           ];
         };
       };
+
+      mutableExtensionsDir = false;
     };
 
     home.packages = with pkgs; [
