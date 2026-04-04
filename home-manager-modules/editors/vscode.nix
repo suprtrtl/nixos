@@ -15,7 +15,7 @@
       enable = true;
       package = pkgs.vscodium;
       profiles = {
-        defualt = {
+        default = {
           extensions = with pkgs.vscode-extensions; [
             emroussel.atomize-atom-one-dark-theme
             vscodevim.vim

@@ -30,7 +30,7 @@ in {
   lazygit.enable = true;
 
   neovim.enable = true;
-  vscode.enable = true;
+  vscode.enable = false;
   emacs.enable = false;
   emacs.doom.enable = false;
 
