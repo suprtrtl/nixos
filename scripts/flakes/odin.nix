@@ -27,7 +27,8 @@
           ];
 
           shellHook = ''
-            echo "Welcome to the Odin development environment for ${system}!"
+            export ODIN_DIR=${pkgs.odin}
+                     echo "Welcome to the Odin development environment for ${system}!"
           '';
         };
       }
