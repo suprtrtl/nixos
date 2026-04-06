@@ -71,7 +71,7 @@ in {
     # element-desktop
     # freecad
     go
-    iamb
+    # iamb
     irssi
     # kmonad
     libqalculate
