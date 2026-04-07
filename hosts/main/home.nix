@@ -67,6 +67,7 @@ in {
   home.packages = with pkgs; [
     arduino-ide
     bluetui
+    en-croissant
     cava
     # element-desktop
     # freecad
