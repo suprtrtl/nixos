@@ -63,7 +63,9 @@
   services.displayManager.ly = {
     enable = true;
     settings = {
-      animation = "matrix";
+      animation = "colormix";
+      battery_id = "BAT0";
+      bigclock = "en";
     };
   };
 
