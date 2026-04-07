@@ -60,7 +60,13 @@
   services.desktopManager.cosmic.enable = true;
   services.desktopManager.cosmic.xwayland.enable = true;
 
-  services.displayManager.ly.enable = true;
+  services.displayManager.ly = {
+    enable = true;
+    settings = {
+      animation = "dur_file";
+      dur_file_path = "/home/suprtrtl/wallpapers/ly/blackhole.dur";
+    };
+  };
 
   services.smartd.enable = true;
   services.smartd.devices = [
