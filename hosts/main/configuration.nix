@@ -63,8 +63,7 @@
   services.displayManager.ly = {
     enable = true;
     settings = {
-      animation = "dur_file";
-      dur_file_path = "/home/suprtrtl/wallpapers/ly/blackhole.dur";
+      animation = "doom";
     };
   };
 
