@@ -63,7 +63,6 @@
   services.displayManager.ly = {
     enable = true;
     settings = {
-      animation = "gameoflife";
       battery_id = "BAT0";
       bigclock = "en";
     };
