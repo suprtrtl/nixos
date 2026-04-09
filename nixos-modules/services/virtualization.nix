@@ -11,5 +11,7 @@
   config = lib.mkIf config.virt-manager.enable {
     virtualisation.libvirtd.enable = true;
     programs.virt-manager.enable = true;
+
+    users.users."suprtrtl".extraGroups = ["libvirtd"];
   };
 }
