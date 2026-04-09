@@ -156,6 +156,7 @@
 
   spotify.enable = true;
 
+  virt-manager.enable = true;
   docker.enable = true;
 
   nix.nixPath = ["nixpkgs=${inputs.nixpkgs}"];

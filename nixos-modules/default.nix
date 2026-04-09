@@ -14,5 +14,6 @@
 
     ./services/fingerprint.nix
     ./services/docker.nix
+    ./services/virtualization.nix
   ];
 }
