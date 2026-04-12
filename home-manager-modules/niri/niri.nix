@@ -23,6 +23,7 @@
       cliphist
       crosspipe
       lm_sensors
+      swayidle
       swaylock
       rofi
       swww
