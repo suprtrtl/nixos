@@ -39,7 +39,7 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
     "  Power")
         case "$(printf "kill\nsleep\nreboot\nshutdown" | rofi -dmenu -i -p "Power Option" -width 20% -height 20% -num-results 4)" in
             kill) ps -u $USER -o pid,comm,%cpu,%mem | rofi -dmenu -i -p "Select Process to Kill" -width 25% | awk '{print $1}' | xargs -r kill ;;
-            sleep) systemctl suspend -i && hyprlock ;;
+            sleep) systemctl suspend -i && swaylock ;;
             reboot) systemctl reboot -i ;;
             shutdown) systemctl poweroff -i ;;
             *) exit 1 ;;

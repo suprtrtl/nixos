@@ -4,5 +4,6 @@ awww img ~/wallpapers/mountain.png
 swayidle -w \
   timeout 300 'swaylock &' \
   timeout 330 'niri msg action power-off-monitors' \
+  timeout 600 'systemctl suspend -i' \
   resume 'niri msg action power-on-monitors' \
   before-sleep 'swaylock &'
