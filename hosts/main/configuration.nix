@@ -55,11 +55,6 @@
   # services.displayManager.gdm.enable = true;
   # services.desktopManager.gnome.enable = true;
 
-  # COSMIC
-
-  services.desktopManager.cosmic.enable = true;
-  services.desktopManager.cosmic.xwayland.enable = true;
-
   services.displayManager.ly = {
     enable = true;
     settings = {
@@ -148,11 +143,11 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
-  # Hyprland
-  hyprland.enable = false;
-
   # Niri
   niri.enable = true;
+
+  # COSMIC
+  cosmic.enable = true;
 
   spotify.enable = true;
 

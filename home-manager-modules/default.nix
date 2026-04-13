@@ -27,7 +27,6 @@
     ./gui/browsers/qute.nix
     ./gui/dev/godot.nix
 
-    ./hyprland/hyprland.nix
     ./niri/niri.nix
 
     # ./quickshell/quickshell.nix
