@@ -12,6 +12,6 @@
     programs.ghostty.enable = true;
 
     xdg.configFile."ghostty".source = ./ghostty;
-    xdg.configFile."ghostty/shaders".source = ./ghostty/shaders;
+    # xdg.configFile."ghostty/shaders".source = ./ghostty/shaders;
   };
 }

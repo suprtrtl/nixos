@@ -38,7 +38,7 @@ in {
 
   vlc.enable = true;
 
-  lutris.enable = true;
+  lutris.enable = false;
 
   godot.enable = true;
 
