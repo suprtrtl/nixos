@@ -77,6 +77,7 @@ in {
     libqalculate
     libsecret
     obsidian
+    openrct2
     processing
     prismlauncher
     protonvpn-gui
