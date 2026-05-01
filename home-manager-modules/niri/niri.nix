@@ -27,6 +27,10 @@
       swaylock
       rofi
       swww
+
+      # utility
+      wifitui
+      bluetui
     ];
 
     xdg.configFile = {

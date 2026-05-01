@@ -8,8 +8,8 @@ case "$(printf "  Applications\n  Tools\n󱄅  Nix\n  Learn\n  Power
 		case "$(printf "  Resources\n  Screenshot\n  Picker\n  Wifi\n  Wifi (nmtui)\n󰂯  Bluetooth" | rofi -dmenu -i -p "Select Tool" -width 20%)" in
             "  Resources") ghostty -e "btop" ;;
             "  Screenshot") notify-send "TODO" ;;
-            "  Picker") hyprpicker -a ;;
-            "  Wifi") ghostty -e "impala" ;;
+            "  Picker") niri msg pick-color | grep Hex | awk '{print $2}' | wl-copy && notify-send "Color Copied to Clipboard";;
+            "  Wifi") ghostty -e "wifitui" ;;
 			"  Wifi (nmtui)") ghostty -e "nmtui" ;;
             "󰂯  Bluetooth") ghostty -e "bluetui" ;;
             *) exit 1 ;;
