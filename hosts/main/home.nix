@@ -71,6 +71,7 @@ in {
     # element-desktop
     # freecad
     go
+    godot-mono
     # iamb
     irssi
     # kmonad
