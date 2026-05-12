@@ -74,6 +74,7 @@ in {
     godot-mono
     # iamb
     irssi
+    inkscape
     # kmonad
     libqalculate
     libsecret
