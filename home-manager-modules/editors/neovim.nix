@@ -34,8 +34,6 @@
 
       # pkgs.zigpkgs.master
 
-      nodejs_20
-
       lua-language-server
       luajitPackages.lua-lsp
       nixd
