@@ -22,7 +22,7 @@
       shortcut = "s";
 
       extraConfig = ''
-         	set-option -g status-position top
+        	set-option -g status-position top
         set-option -g allow-passthrough all
       '';
 
