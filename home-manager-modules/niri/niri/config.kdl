@@ -335,7 +335,7 @@ window-rule {
 	match app-id="com.mitchellh.ghostty"
 	match is-floating=false
 
-	opacity 0.5
+	opacity 0.8
 }
 
 
