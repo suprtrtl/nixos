@@ -85,6 +85,27 @@
                 template = "|  {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ";
               }
               {
+                type = "go";
+                style = "powerline";
+                foreground = "cyan";
+                background = "transparent";
+                template = "|  {{ .Full }} ";
+              }
+              {
+                type = "ocaml";
+                style = "powerline";
+                foreground = "#d08770";
+                background = "transparent";
+                template = "|  {{ .Full }} ";
+              }
+              {
+                type = "rust";
+                style = "powerline";
+                foreground = "red";
+                background = "transparent";
+                template = "|  {{ .Full }} ";
+              }
+              {
                 type = "nix-shell";
                 style = "powerline";
                 foreground = "blue";
