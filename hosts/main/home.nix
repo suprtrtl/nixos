@@ -56,6 +56,8 @@ in {
 
   cheat.enable = true;
 
+  opencode.enable = true;
+
   programs.zen-browser.enable = true;
   programs.aichat.enable = true;
   # Not very Performant

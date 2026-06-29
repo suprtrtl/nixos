@@ -17,7 +17,7 @@
       in {
         packages = {
           default = buildDunePackage {
-            pname = "My Ocaml Package";
+            pname = "project-name";
             duneVersion = "3";
             version = "0.1";
             installTargets = "all doc";
@@ -25,6 +25,7 @@
             nativeBuildInputs = with pkgs.ocamlPackages; [
               dune_3
             ];
+            preBuild = "export HOME=$TMPDIR";
           };
         };
         devShells = {

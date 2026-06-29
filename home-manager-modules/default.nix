@@ -8,6 +8,8 @@
     ./styles.nix
     ./robotics.nix
 
+    ./ai/opencode.nix
+
     ./cli/cheat.nix
     ./cli/fzf.nix
     ./cli/git.nix
