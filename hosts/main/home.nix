@@ -50,6 +50,7 @@ in {
   oh-my-posh.enable = true;
 
   tmux.enable = true;
+  herdr.enable = true;
   zellij.enable = false;
 
   robotics.enable = true;

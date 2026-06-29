@@ -47,6 +47,7 @@
     ./tui/files/yazi.nix
     ./tui/music/rmpc.nix
 
+    ./tui/terminal-multiplexers/herdr.nix
     ./tui/terminal-multiplexers/tmux.nix
     ./tui/terminal-multiplexers/zellij.nix
   ];
