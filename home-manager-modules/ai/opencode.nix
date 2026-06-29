@@ -7,7 +7,7 @@
     opencode.enable = lib.mkEnableOption "enable opencode";
   };
 
-  config = lib.mkIf config.lutris.enable {
+  config = lib.mkIf config.opencode.enable {
     programs.opencode = {
       enable = true;
     };
