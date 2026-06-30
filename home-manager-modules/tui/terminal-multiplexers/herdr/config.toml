@@ -13,7 +13,7 @@ name = "one-dark"
 
 # Override individual color tokens on top of the base theme.
 # Accepts: hex (#rrggbb), named colors, rgb(r,g,b), or panel_bg = "reset"
-# [theme.custom]
+[theme.custom]
 # panel_bg = "reset"
 accent = "#ff0000"
 # red = "#ff6188"
@@ -48,7 +48,6 @@ accent = "#ff0000"
 # Most reliable direct bindings are ctrl+letter, function keys, and explicit modified chords.
 # alt+..., cmd/super, and punctuation-with-modifiers may depend on your terminal/tmux setup.
 # prefix = "ctrl+b"
-prefix = "ctrl+s"
 
 # Prefix-mode actions
 # help = "prefix+?"
