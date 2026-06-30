@@ -9,7 +9,6 @@ mouse-hide-while-typing = true
 scrollback-limit = 1000000
 
 keybind = ctrl+n=new_window
-keybind = ctrl+s=unbind
 
 # keybind = ctrl+h=goto_split:left
 # keybind = ctrl+j=goto_split:bottom
