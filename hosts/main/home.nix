@@ -82,6 +82,7 @@ in {
     libqalculate
     libsecret
     obsidian
+    basalt
     openrct2
     processing
     prismlauncher
