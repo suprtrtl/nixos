@@ -15,7 +15,7 @@ name = "one-dark"
 # Accepts: hex (#rrggbb), named colors, rgb(r,g,b), or panel_bg = "reset"
 [theme.custom]
 # panel_bg = "reset"
-accent = "#ff0000"
+# accent = "#ff0000"
 # red = "#ff6188"
 # green = "#a6e3a1"
 
@@ -169,7 +169,7 @@ command = "lazygit"
 
 # Accent color for highlights, borders, and navigation UI.
 # Accepts: hex (#89b4fa), named colors (cyan, blue, magenta), or rgb(r,g,b)
-# accent = "cyan"
+accent = "cyan"
 
 # Background notification popup delivery
 [ui.toast]
