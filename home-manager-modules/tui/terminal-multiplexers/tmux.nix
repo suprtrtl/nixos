@@ -22,10 +22,8 @@
       shortcut = "a";
 
       extraConfig = ''
-              set-option -g status-position top
-              set-option -g allow-passthrough all
-
-        set -g @tokyo-night-tmux_theme storm
+        set-option -g status-position top
+        set-option -g allow-passthrough all
       '';
 
       tmuxinator = {
@@ -34,7 +32,13 @@
 
       plugins = with pkgs.tmuxPlugins; [
         {
-          plugin = tokyo-night-tmux;
+          plugin = onedark-theme.overrideAttrs (old: {
+            postInstall =
+              (old.postInstall or "")
+              + ''
+                patchShebangs $out/share/tmux-plugins/onedark-theme
+              '';
+          });
         }
       ];
     };
