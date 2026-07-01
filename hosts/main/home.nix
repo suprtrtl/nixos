@@ -51,7 +51,7 @@ in {
 
   tmux.enable = true;
   herdr.enable = true;
-  zellij.enable = true;
+  zellij.enable = false;
 
   robotics.enable = true;
 
