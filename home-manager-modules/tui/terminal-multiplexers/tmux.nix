@@ -32,7 +32,7 @@
 
       plugins = with pkgs.tmuxPlugins; [
         {
-          plugin = onedark-theme;
+          plugin = tokyo-night-tmux;
         }
       ];
     };
