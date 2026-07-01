@@ -46,10 +46,9 @@
 		"rewrite": {
 			"(.*) — Zen Browser": "  $1",
 			"(.*) — qutebrowser": "  $1",
-			"nvim (.*)": " ",
+			"nvim (.*)": " - $1",
 			"nvim": " ",
-			"tmux": " ",
-			"steam": " ",
+			"steam": "  Steam",
 			"(.*) - Obsidian (.*)": "󰎚 - $1"
 		},
 	},
