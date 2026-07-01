@@ -36,7 +36,8 @@
             postInstall =
               (old.postInstall or "")
               + ''
-                patchShebangs $out/share/tmux-plugins/onedark-theme
+                sed -i '1s|#!/bin/bash|#!${pkgs.bash}/bin/bash|' \
+                  $out/share/tmux-plugins/onedark-theme/tmux-onedark-theme.tmux
               '';
           });
         }
