@@ -7,7 +7,7 @@ load_plugins {
 keybinds {
 	normal clear-defaults=true {
     	// tmux 
-    	bind "Ctrl f" { SwitchToMode "Tmux"; }
+    	bind "Ctrl a" { SwitchToMode "Tmux"; }
     	unbind "Ctrl b"
     }
     tmux clear-defaults=true {
