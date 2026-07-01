@@ -19,12 +19,12 @@
       shell = "${pkgs.zsh}/bin/zsh";
       terminal = "screen-256color";
 
-      shortcut = "s";
+      shortcut = "a";
 
-      # extraConfig = ''
-      #   	set-option -g status-position top
-      #   set-option -g allow-passthrough all
-      # '';
+      extraConfig = ''
+        set-option -g status-position top
+        set-option -g allow-passthrough all
+      '';
 
       tmuxinator = {
         enable = true;
