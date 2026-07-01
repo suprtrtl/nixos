@@ -22,8 +22,14 @@
       shortcut = "a";
 
       extraConfig = ''
-        set-option -g status-position top
-        set-option -g allow-passthrough all
+                set-option -g status-position top
+                set-option -g allow-passthrough all
+
+
+        bind -n h select-pane -L
+        bind -n j select-pane -D
+        bind -n k select-pane -U
+        bind -n l select-pane -R
       '';
 
       tmuxinator = {
