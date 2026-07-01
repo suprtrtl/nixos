@@ -22,8 +22,10 @@
       shortcut = "a";
 
       extraConfig = ''
-        set-option -g status-position top
-        set-option -g allow-passthrough all
+              set-option -g status-position top
+              set-option -g allow-passthrough all
+
+        set -g @tokyo-night-tmux_theme storm
       '';
 
       tmuxinator = {
