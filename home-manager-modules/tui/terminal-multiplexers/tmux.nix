@@ -22,23 +22,19 @@
       shortcut = "a";
 
       extraConfig = ''
-        set-option -g status-position top
-        set-option -g allow-passthrough all
+              set-option -g status-position top
+              set-option -g allow-passthrough all
 
-              bind h select-pane -L
-              bind j select-pane -D
-              bind k select-pane -U
-              bind l select-pane -R
+        bind h select-pane -L
+        bind j select-pane -D
+        bind k select-pane -U
+        bind l select-pane -R
 
-        bind -r H resize-pane -L 5
-        bind -r J resize-pane -D 5
-        bind -r K resize-pane -U 5
-        bind -r L resize-pane -R 5
+              bind -r H resize-pane -L 5
+              bind -r J resize-pane -D 5
+              bind -r K resize-pane -U 5
+              bind -r L resize-pane -R 5
       '';
-
-      tmuxinator = {
-        enable = true;
-      };
 
       plugins = with pkgs.tmuxPlugins; [
         {
