@@ -20,6 +20,7 @@ DELETE_OLD=false
 FORCE=false
 VERBOSE=false
 UPDATE=false
+OFFLINE=false
 
 usage() {
 	echo -e "Usage: $0 [-dfv] <flake-host>\n"
@@ -28,15 +29,17 @@ usage() {
 	echo -e "-f | force program to run\n"
 	echo -e "-u | update nix flake\n"
 	echo -e "-v | verbose mode\n"
+	echo -e "-o | offline mode\n"
 }
 
 
-while getopts "dfuv" flag; do
+while getopts "dfuvo" flag; do
 	case ${flag} in
 		d) DELETE_OLD=true ;;
 		f) FORCE=true ;;
 		u) UPDATE=true ;;
 		v) VERBOSE=true ;;
+		o) OFFLINE=true ;;
 		*) usage; exit 1 ;;
 	esac
 done
@@ -99,11 +102,20 @@ echo -e "\n${GEN_COLOR}End of git diff output.${NC}\n"
 # === NixOS Rebuild ===
 git add -A
 echo -e "${GEN_COLOR}Rebuilding NixOS...${NC}\n"
-if ! sudo nixos-rebuild switch --flake "$FLAKE_PATH#$FLAKE_HOST" &> "$LOG_FILE"; then
-    echo -e "\n${ERR_COLOR}Rebuild failed. Showing errors:${NC}\n"
-    grep --color=auto -Ei "error|failed|panic" "$LOG_FILE" || cat "$LOG_FILE"
-    notify-send "❌ NixOS rebuild failed!" "Check $LOG_FILE" || true
-    exit 1
+if [ "OFFLINE" = true ]; then
+	if ! sudo nixos-rebuild switch --offline --flake "$FLAKE_PATH#$FLAKE_HOST" &> "$LOG_FILE"; then
+		echo -e "\n${ERR_COLOR}Rebuild failed. Showing errors:${NC}\n"
+		grep --color=auto -Ei "error|failed|panic" "$LOG_FILE" || cat "$LOG_FILE"
+		notify-send "❌ NixOS rebuild failed!" "Check $LOG_FILE" || true
+		exit 1
+	fi
+else
+	if ! sudo nixos-rebuild switch --flake "$FLAKE_PATH#$FLAKE_HOST" &> "$LOG_FILE"; then
+		echo -e "\n${ERR_COLOR}Rebuild failed. Showing errors:${NC}\n"
+		grep --color=auto -Ei "error|failed|panic" "$LOG_FILE" || cat "$LOG_FILE"
+		notify-send "❌ NixOS rebuild failed!" "Check $LOG_FILE" || true
+		exit 1
+	fi
 fi
 
 # === Metadata for commit ===
@@ -123,7 +135,7 @@ commit_msg="gen $gen_num @ $date_part $time_part ($hash_short) kernel $kernel_ve
 echo -e "\n${GEN_COLOR}Committing changes: ${NC}$commit_msg\n"
 git commit -m "$commit_msg" || echo -e "${ERR_COLOR}Nothing to commit.${NC}"
 
-if [ "$AUTO_PUSH" = true ]; then
+if [ "$AUTO_PUSH" = true ] && [ "$OFFLINE" = false ]; then
     echo -e "\n${GEN_COLOR}Pushing to remote '$REMOTE'...${NC}\n"
     git push "$REMOTE" "$BRANCH" || echo -e "${ERR_COLOR}Push failed.${NC}"
 fi
