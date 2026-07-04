@@ -11,5 +11,9 @@
     programs.pi-coding-agent = {
       enable = true;
     };
+
+    programs.npm = {
+      enable = true;
+    };
   };
 }
