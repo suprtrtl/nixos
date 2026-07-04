@@ -1,14 +1,10 @@
-{
-  pkgs,
-  lib,
-  inputs,
-  ...
-}: {
+{...}: {
   imports = [
     ./styles.nix
     ./robotics.nix
 
     ./ai/opencode.nix
+    ./ai/pi.nix
 
     ./cli/cheat.nix
     ./cli/fzf.nix

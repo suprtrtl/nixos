@@ -58,6 +58,7 @@ in {
   cheat.enable = true;
 
   opencode.enable = true;
+  pi.enable = true;
 
   programs.zen-browser.enable = true;
   programs.aichat.enable = true;
