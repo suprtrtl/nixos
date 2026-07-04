@@ -59,6 +59,7 @@ in {
 
   opencode.enable = true;
   pi.enable = true;
+  ollama.enable = true;
 
   programs.zen-browser.enable = true;
   programs.aichat.enable = true;

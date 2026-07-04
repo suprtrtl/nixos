@@ -3,6 +3,7 @@
     ./styles.nix
     ./robotics.nix
 
+    ./ai/ollama.nix
     ./ai/opencode.nix
     ./ai/pi.nix
 
