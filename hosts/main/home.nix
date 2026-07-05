@@ -56,7 +56,7 @@ in {
   cheat.enable = true;
 
   opencode.enable = true;
-  pi.enable = false;
+  pi.enable = true;
   ollama.enable = false;
 
   programs.zen-browser.enable = true;
