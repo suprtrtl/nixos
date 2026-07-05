@@ -30,8 +30,6 @@ in {
 
   neovim.enable = true;
   vscode.enable = true;
-  emacs.enable = false;
-  emacs.doom.enable = false;
 
   alacritty.enable = false;
   ghostty.enable = true;
@@ -58,7 +56,7 @@ in {
   cheat.enable = true;
 
   opencode.enable = true;
-  pi.enable = true;
+  pi.enable = false;
   ollama.enable = false;
 
   programs.zen-browser.enable = true;
@@ -69,24 +67,15 @@ in {
 
   # User specific packages
   home.packages = with pkgs; [
-    arduino-ide
     bluetui
-    en-croissant
     cava
-    # element-desktop
-    # freecad
     go
     godot-mono
-    # iamb
-    irssi
     inkscape
-    # kmonad
     libqalculate
     libsecret
     obsidian
     basalt
-    openrct2
-    processing
     prismlauncher
     protonvpn-gui
     steam-run
