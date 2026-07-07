@@ -181,11 +181,11 @@
     "nvim-config-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1783444374,
-        "narHash": "sha256-fxZIrZjRrJtuieRBX8lYpa+8DMKVHYJdNGF3WrmkWvs=",
+        "lastModified": 1783452853,
+        "narHash": "sha256-9ury6o/5fuLANtglJC52TwdVV+TsuLT93DDEuEX1gD4=",
         "ref": "lazy",
-        "rev": "7af0ed10eccf3f6cecc18c6d35af912f3b9ca1e1",
-        "revCount": 95,
+        "rev": "9e3f2952d8dab3466b03a01732ab86214b390cf3",
+        "revCount": 96,
         "type": "git",
         "url": "https://codeberg.org/suprtrtl/neovim.git"
       },

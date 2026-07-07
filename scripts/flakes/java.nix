@@ -46,6 +46,9 @@
             ncurses
             patchelf
             zlib
+            jdt-language-server
+            vscode-extensions.vscjava.vscode-java-test
+            vscode-extensions.vscjava.vscode-java-debug
             self.formatter.${system}
           ];
 
