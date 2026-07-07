@@ -49,6 +49,7 @@
             jdt-language-server
             vscode-extensions.vscjava.vscode-java-test
             vscode-extensions.vscjava.vscode-java-debug
+            python3
             self.formatter.${system}
           ];
 
