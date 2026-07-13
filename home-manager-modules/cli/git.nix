@@ -16,6 +16,7 @@
       credential = {
         helper = "manager";
         "https://codeberg.org".username = "suprtrtl";
+        "https://codeberg.org".provider = "generic";
         credentialStore = "cache";
       };
     };
