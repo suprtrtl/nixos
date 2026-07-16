@@ -70,7 +70,6 @@ in {
     bluetui
     cava
     go
-    godot-mono
     inkscape
     libqalculate
     libsecret
