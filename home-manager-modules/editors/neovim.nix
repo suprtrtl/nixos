@@ -4,7 +4,9 @@
   config,
   inputs,
   ...
-}: {
+}: let
+  localPath = "${config.home.homeDirectory}/neovim";
+in {
   options = {
     neovim.enable =
       lib.mkEnableOption "enable neovim";
@@ -57,11 +59,10 @@
       ripgrep
 
       yarn
-
-      tectonic
     ];
 
-    xdg.configFile."nvim".source = inputs.nvim-config-src;
+    xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink localPath;
+    xdg.configFile."nvim/init.lua".enable = lib.mkForce false;
 
     home.sessionVariables = {
       NIX_NEOVIM = 1;
