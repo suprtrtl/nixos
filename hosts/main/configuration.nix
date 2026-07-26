@@ -143,6 +143,8 @@
     localNetworkGameTransfers.openFirewall = true;
   };
 
+  programs.librepods.enable = true;
+
   # Niri
   niri.enable = true;
 
@@ -159,7 +161,7 @@
   users.users.suprtrtl = {
     isNormalUser = true;
     description = "suprtrtl";
-    extraGroups = ["networkmanager" "wheel" "bluetooth" "dialout" "uucp"];
+    extraGroups = ["networkmanager" "wheel" "bluetooth" "dialout" "uucp" "librepods"];
     shell = pkgs.zsh;
     packages = with pkgs; [
       #  thunderbird
