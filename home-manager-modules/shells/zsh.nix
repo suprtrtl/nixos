@@ -25,7 +25,7 @@
                 export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
          function gitignores() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ && echo '\n';}
 
-      eval "$(${pkgs.devenv} hook zsh)"
+      eval "$(devenv hook zsh)"
 
     '';
   };
