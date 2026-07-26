@@ -8,6 +8,7 @@
     ./ai/pi.nix
 
     ./cli/cheat.nix
+    ./cli/devenv.nix
     ./cli/fzf.nix
     ./cli/git.nix
     ./cli/rofi/rofi.nix

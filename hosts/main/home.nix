@@ -25,6 +25,8 @@ in {
   fzf.enable = true;
   zoxide.enable = true;
 
+  devenv.enable = true;
+
   bundles.cli.misc.enable = true;
   lazygit.enable = true;
 
