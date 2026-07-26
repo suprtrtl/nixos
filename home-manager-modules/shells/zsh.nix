@@ -22,8 +22,10 @@
     };
 
     initContent = lib.mkOrder 1000 ''
-             export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
-      function gitignores() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ && echo '\n';}
+                export PATH="$HOME/bin:$HOME/.cargo/bin:$PATH"
+         function gitignores() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ && echo '\n';}
+
+      eval "$(${pkgs.devenv} hook zsh)"
 
     '';
   };
