@@ -14,5 +14,7 @@
       package = pkgs.devenv;
       enableZshIntegration = true;
     };
+
+    home.sessionVariables.DEVENV_INSTALLED = 1;
   };
 }
