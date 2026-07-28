@@ -71,6 +71,7 @@ in {
   home.packages = with pkgs; [
     bluetui
     cava
+    cht-sh
     go
     inkscape
     libqalculate
