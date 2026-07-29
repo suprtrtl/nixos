@@ -1,1 +1,2 @@
-cht.sh :list | fzf
+selected=$(cht.sh :list | fzf)
+cht.sh "$selected"
